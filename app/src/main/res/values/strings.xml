@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NHSF</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="tabs">
+        <item>About</item>
+        <item>Campus</item>
+        <item>Events</item>
+        <item>Learning</item>
+        <item>Sewa</item>
+    </string-array>
+
+</resources>
