@@ -17,12 +17,18 @@ public class BaseActivity extends ActionBarActivity {
         //If no toolbar has been created then create a new toolbar using Toolbar View app_bar
         if(mToolbar == null) {
             mToolbar = (Toolbar) findViewById(R.id.toolbar);
+
+            mToolbar.setSubtitle("National Hindu Students' Forum (UK)");
+
             //If toolbar already created then no need to create a new one.
             if(mToolbar != null) {
                 //Use current toolbar
                 setSupportActionBar(mToolbar);
             }
         }
+
+        mToolbar.getMenu().clear();
+
         //Return the created Toolbar
         return mToolbar;
     }

@@ -4,11 +4,11 @@
 
 
     <string-array name="tabs">
-        <item>About</item>
-        <item>Campus</item>
-        <item>Events</item>
-        <item>Learning</item>
-        <item>Sewa</item>
+        <item>ABOUT</item>
+        <item>CAMPUS</item>
+        <item>EVENTS</item>
+        <item>LEARNING</item>
+        <item>SEWA</item>
     </string-array>
 
 </resources>

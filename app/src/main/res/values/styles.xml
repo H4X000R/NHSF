@@ -13,7 +13,7 @@
         <item name="colorPrimaryDark">@color/baseSecondaryBackgroundColour</item>
         <item name="windowActionBar">false</item> <!--Not using an Action Bar-->
         <item name="android:windowNoTitle">true</item> <!--Don't want to show a title-->
-        <item name="android:windowBackground">@color/baseBackgroundColour</item> <!--Default Background Coloer-->
+        <item name="android:windowBackground">@color/baseBackgroundColour</item> <!--Default Background Colour-->
     </style>
 
     <!--Basic Theme. Theme.Custom inherits from theme.base which inherits from AppTheme -->
@@ -31,7 +31,7 @@
     <!--Action Bar Title Text -->
     <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/basePrimaryTextColour</item>
-        <item name="android:textSize">18sp</item> <!-- Standard Pixels -->
+        <item name="android:textSize">22sp</item> <!-- Standard Pixels -->
     </style>
 
 </resources>

@@ -1,10 +1,14 @@
 package com.divyeshbc.NHSF;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ImageSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -53,7 +57,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        //getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -62,18 +66,19 @@ public class MainActivity extends BaseActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        //int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        //if (id == R.id.action_settings) {
+        //    return true;
+        //}
 
         return super.onOptionsItemSelected(item);
     }
 
     class MyPagerAdapter extends FragmentPagerAdapter {
 
+        /*
         String[] tabs;
 
         public  MyPagerAdapter(FragmentManager fm) {
@@ -81,11 +86,11 @@ public class MainActivity extends BaseActivity {
 
             //Initialising the strings array of the tabs
             tabs = getResources().getStringArray(R.array.tabs);
+        */
 
 
-        /*
         //Setting up integer array of icons
-        int icons[] = {R.drawable.about_us, R.drawable.campus};
+        int icons[] = {R.drawable.about_us, R.drawable.campus, R.drawable.events, R.drawable.learning, R.drawable.sewa};
 
         //Defined from strings.xml
         String[] tabText = getResources().getStringArray(R.array.tabs);
@@ -94,8 +99,6 @@ public class MainActivity extends BaseActivity {
             super(fm);
             //Initialising the strings array of tabs
             tabText = getResources().getStringArray(R.array.tabs);
-
-        */
 
         }
 
@@ -143,8 +146,6 @@ public class MainActivity extends BaseActivity {
         @Override
         public CharSequence getPageTitle(int position) {
 
-            /*
-
             //Constructing drawable object from the icon position
             Drawable drawable = getResources().getDrawable(icons[position]);
 
@@ -165,10 +166,10 @@ public class MainActivity extends BaseActivity {
             //Return the spannable string with icons embedded
             return spannableString;
 
-            */
+
 
             //Return the text of the position clicked and display this as the title for the tab
-            return tabs[position];
+            //return tabs[position];
         }
 
         @Override
