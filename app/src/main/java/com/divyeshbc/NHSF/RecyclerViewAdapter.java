@@ -48,9 +48,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         //This will get the current position of the Information object from the Information array
         Information current = data.get(position);
+        //Information subCurrent = data.get(position);
 
         //Setting the text in the row to be the custom_row text
-        holder.text.setText(current.title);
+        holder.title.setText(current.getTitle());
+        holder.subTitle.setText(current.getSubtitle());
 
     }
 
@@ -62,13 +64,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView text;
+        TextView title;
+        TextView subTitle;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            //Here setting the id of the textview in teh recycler view holder to be the list view from the custom_row xml
-            text = (TextView) itemView.findViewById(R.id.listText);
+            //Here setting the id of the textview in the recycler view holder to be the list view from the custom_row xml
+            title = (TextView) itemView.findViewById(R.id.listText);
+            subTitle = (TextView) itemView.findViewById(R.id.subTitle);
         }
     }
 }

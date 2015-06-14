@@ -1,14 +1,10 @@
 package com.divyeshbc.NHSF;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.ImageSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -78,7 +74,7 @@ public class MainActivity extends BaseActivity {
 
     class MyPagerAdapter extends FragmentPagerAdapter {
 
-        /*
+
         String[] tabs;
 
         public  MyPagerAdapter(FragmentManager fm) {
@@ -86,9 +82,10 @@ public class MainActivity extends BaseActivity {
 
             //Initialising the strings array of the tabs
             tabs = getResources().getStringArray(R.array.tabs);
-        */
 
+        }
 
+        /*
         //Setting up integer array of icons
         int icons[] = {R.drawable.about_us, R.drawable.campus, R.drawable.events, R.drawable.learning, R.drawable.sewa};
 
@@ -101,6 +98,7 @@ public class MainActivity extends BaseActivity {
             tabText = getResources().getStringArray(R.array.tabs);
 
         }
+        */
 
         @Override
         public Fragment getItem(int position) {
@@ -146,6 +144,8 @@ public class MainActivity extends BaseActivity {
         @Override
         public CharSequence getPageTitle(int position) {
 
+            /*
+
             //Constructing drawable object from the icon position
             Drawable drawable = getResources().getDrawable(icons[position]);
 
@@ -166,10 +166,10 @@ public class MainActivity extends BaseActivity {
             //Return the spannable string with icons embedded
             return spannableString;
 
-
+/           */
 
             //Return the text of the position clicked and display this as the title for the tab
-            //return tabs[position];
+            return tabs[position];
         }
 
         @Override

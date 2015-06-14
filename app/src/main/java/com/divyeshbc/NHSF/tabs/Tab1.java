@@ -26,6 +26,8 @@ public class Tab1 extends Fragment {
     //Creating an instance of the adapter object
     private RecyclerViewAdapter adapter;
 
+    private static final int ITEM_COUNT = 2;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -58,17 +60,24 @@ public class Tab1 extends Fragment {
         List<Information> data = new ArrayList<>();
 
         //String array of text for the recycler view
-        String[] menu = {"What is NHSF?", "Natcom (National Committee)"};
+        String[] text = {"Introduction", "National Committee (Natcom)"};
+        String[] subText = {"What is NHSF?", "Admin Team and Team Coordinators"};
 
         //For loop to go through entire length of the menu string
-        for(int i=0; i<menu.length; i++){
+        //for(int i=0; i<menu.length; i++) {
 
-            Information current = new Information();
+        for(int i=0; i<ITEM_COUNT; i++){
 
-            current.title=menu[i];
 
-            data.add(current);
-        }
+                //Information current = new Information();
+                //Information subCurrent = new Information();
+
+                //current.title = text[i];
+                //subCurrent.subtitle = subText[i];
+
+                data.add(new Information(text[i], subText[i]));
+
+            }
 
         return data;
     }

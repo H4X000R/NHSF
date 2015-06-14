@@ -18,7 +18,8 @@ public class BaseActivity extends ActionBarActivity {
         if(mToolbar == null) {
             mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
-            mToolbar.setSubtitle("National Hindu Students' Forum (UK)");
+            //mToolbar.setSubtitle("National Hindu Students' Forum (UK)");
+
 
             //If toolbar already created then no need to create a new one.
             if(mToolbar != null) {

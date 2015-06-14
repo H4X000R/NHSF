@@ -1,17 +1,14 @@
 package com.divyeshbc.NHSF;
 
 /**
- * Created by DivyeshBC on 26/05/15.
+ * Created by DivyeshBC on 14/06/15.
  */
-
-public class Information {
-
-    //Integer iconId;
+public class Item {
 
     public String title;
     public String subtitle;
 
-    public Information(String title, String subtitle) {
+    Item(String title, String subtitle) {
         this.title = title;
         this.subtitle = subtitle;
     }
@@ -24,3 +21,4 @@ public class Information {
         return subtitle;
     }
 }
+
