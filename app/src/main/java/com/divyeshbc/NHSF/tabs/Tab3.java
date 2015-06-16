@@ -13,9 +13,9 @@ import com.divyeshbc.NHSF.R;
  * Created by DivyeshBC on 04/06/15.
  */
 public class Tab3 extends Fragment{
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.tab_3, container, false);
-        return v;
+        @Override
+        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+            View v = inflater.inflate(R.layout.tab_3,container,false);
+            return v;
+        }
     }
-}

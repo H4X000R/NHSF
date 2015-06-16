@@ -1,4 +1,4 @@
-package com.divyeshbc.NHSF;
+package com.divyeshbc.NHSF.tabs.learning;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,13 +7,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.divyeshbc.NHSF.Information;
+import com.divyeshbc.NHSF.R;
+
 import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by DivyeshBC on 26/05/15.
+ * Created by DivyeshBC on 16/06/15.
  */
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerViewAdapterLearning.MyViewHolder> {
 
     private LayoutInflater inflater;
 
@@ -22,7 +25,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     List<Information> data = Collections.emptyList();
 
     //Passing in the array list argument
-    public RecyclerViewAdapter(Context context, List<Information> data){
+    public RecyclerViewAdapterLearning(Context context, List<Information> data){
 
         inflater = LayoutInflater.from(context);
 
@@ -34,7 +37,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //Inflating the row and getting the root of view of the custom row (Linear Layout)
-        View view = inflater.inflate(R.layout.custom_row, parent, false);
+        View view = inflater.inflate(R.layout.custom_row_learning, parent, false);
 
         //Passing the root view through as an argument
         MyViewHolder holder = new MyViewHolder(view);
