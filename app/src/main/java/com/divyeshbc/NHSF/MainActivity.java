@@ -13,7 +13,7 @@ import com.divyeshbc.NHSF.tabs.aboutUs.Tab1;
 import com.divyeshbc.NHSF.tabs.Tab2;
 import com.divyeshbc.NHSF.tabs.Tab3;
 import com.divyeshbc.NHSF.tabs.learning.Tab4;
-import com.divyeshbc.NHSF.tabs.Tab5;
+import com.divyeshbc.NHSF.tabs.sewa.Tab5;
 
 
 public class MainActivity extends BaseActivity {
