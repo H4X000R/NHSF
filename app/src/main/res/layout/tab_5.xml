@@ -3,17 +3,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="178dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/sewa_image"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentRight="false"
-        android:layout_alignParentEnd="false"/>
-
     <!-- A RecyclerView with some commonly used attributes -->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/sewa_recycler_view"
@@ -23,6 +12,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/imageView"/>
+        />
 
 </RelativeLayout>

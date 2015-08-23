@@ -31,7 +31,7 @@ public class Tab1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View layout =inflater.inflate(R.layout.tab_1,container,false);
+        final View layout =inflater.inflate(R.layout.tab_1,container,false);
 
         //Instantiating the recycler view as defined in tab_1
         mRecyclerView = (RecyclerView) layout.findViewById(R.id.about_us_recycler_view);
@@ -42,6 +42,10 @@ public class Tab1 extends Fragment {
         //Initialising the adapter - Passing in the activity and the getData method
         adapter = new RecyclerViewAdapter(getActivity(), getData());
 
+        //Here passing in the click listener into the Adapter. 'this' signifies that it is the fragment that handles the click listener.
+        //This is possible as the on Click Listener interface is being implemented.
+        //adapter.setClickListener(this);
+
         //Setting the adapter
         mRecyclerView.setAdapter(adapter);
 
@@ -50,18 +54,28 @@ public class Tab1 extends Fragment {
 
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
+        /*
+        //Adding the item click listener - Passing in the active Recycler View
+        mRecyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this,
+                mRecyclerView, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public View onItemClick(View view, int position) {
+
+                //Adding intent to allow the Long Click to navigate to the Photo Details Class
+                Intent intent = new Intent(MainActivity.this, Introduction.class);
+        */
         return layout;
     }
 
 
-    //Creating an array list of information objects that can be passed into the recycler view
+            //Creating an array list of information objects that can be passed into the recycler view
     public static List<Information> getData() {
 
         List<Information> data = new ArrayList<>();
 
         //String array of text for the recycler view
         String[] text = {"Introduction", "National Committee (Natcom)"};
-        String[] subText = {"What is NHSF?", "Admin Team and Team Coordinators"};
+        String[] subText = {"what is NHSF?", "Admin Team and Team Coordinators"};
 
         //For loop to go through entire length of the menu string
         //for(int i=0; i<menu.length; i++) {
@@ -81,4 +95,15 @@ public class Tab1 extends Fragment {
 
         return data;
     }
+
+    /*
+    //Because the click listener interface is being implemented, here it needs to be overridden
+    @Override
+    public void itemClicked(View view, int position) {
+
+        //Now starting the Activity to open the pdf document
+        startActivity(new Intent(getActivity(), Introduction.class));
+
+    }
+    */
 }

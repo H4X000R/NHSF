@@ -34,7 +34,7 @@ public class BaseActivity extends ActionBarActivity {
         return mToolbar;
     }
 
-    /*
+
     //Method to add the 'Back Arrow' to allow user to navigate back to Home View
     protected Toolbar activateToolbarWithHomeEnabled() {
         //Create standard Toolbar
@@ -45,6 +45,6 @@ public class BaseActivity extends ActionBarActivity {
         }
         return mToolbar;
     }
-    */
+
 
 }

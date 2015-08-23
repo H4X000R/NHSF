@@ -37,7 +37,7 @@ public class RecyclerViewAdapterSewa extends RecyclerView.Adapter<RecyclerViewAd
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //Inflating the row and getting the root of view of the custom row (Linear Layout)
-        View view = inflater.inflate(R.layout.custom_row_learning, parent, false);
+        View view = inflater.inflate(R.layout.custom_row_sewa, parent, false);
 
         //Passing the root view through as an argument
         MyViewHolder holder = new MyViewHolder(view);

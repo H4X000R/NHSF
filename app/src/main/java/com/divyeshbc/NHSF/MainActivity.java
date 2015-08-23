@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 import com.divyeshbc.NHSF.tabs.SlidingTabLayout;
 import com.divyeshbc.NHSF.tabs.aboutUs.Tab1;
-import com.divyeshbc.NHSF.tabs.Tab2;
+import com.divyeshbc.NHSF.tabs.campus.Tab2;
 import com.divyeshbc.NHSF.tabs.Tab3;
 import com.divyeshbc.NHSF.tabs.learning.Tab4;
 import com.divyeshbc.NHSF.tabs.sewa.Tab5;
@@ -108,7 +108,7 @@ public class MainActivity extends BaseActivity {
                 Tab1 tab1 = new Tab1();
                 return tab1;
 
-            } else if (position == 1)           // As we are having 2 tabs if the position is now 0 it must be 1 so we are returning second tab
+            } else if (position == 1)
             {
                 Tab2 tab2 = new Tab2();
                 return tab2;
