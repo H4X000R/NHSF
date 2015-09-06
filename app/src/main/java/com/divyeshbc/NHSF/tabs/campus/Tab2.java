@@ -55,24 +55,57 @@ public class Tab2 extends Fragment {
     public void setChapters(){
 
         final String[] affiliatedChapters = {"NHSF Aston", "NHSF BCU", "NHSF Birmingham", "NHSF BPP",
-                "NHSF Bradford", "NHSF Brighton", "NHSF Bristol", "NHSF Brunel",
-                "NHSF Bucks New Uni"};
+                "NHSF Bradford", "NHSF Brighton", "NHSF Bristol", "NHSF Brunel", "NHSF Bucks New Uni"};
         final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_bradford, R.drawable.nhsf_brighton, R.drawable.nhsf_bristol, R.drawable.nhsf_brunel, R.drawable.nhsf_bucks_new_uni};
 
         final String[] zones = {"Central Zone - Coordinator: Shivanee Ardeshana", "Central Zone - Coordinator: Shivanee Ardeshana",
-                "Central Zone - Coordinator: Shivanee Ardeshana", "Central Zone - Coordinator: Shivanee Ardeshana", "Central Zone - Coordinator: Shivanee Ardeshana",
-                "Central Zone - Coordinator: Shivanee Ardeshana", "Central Zone - Coordinator: Shivanee Ardeshana", "Central Zone - Coordinator: Shivanee Ardeshana",
-                "Central Zone - Coordinator: Shivanee Ardeshana"};
+                "Central Zone - Coordinator: Shivanee Ardeshana", "London Zone - Coordinator: Ritesh Thakrar", "North Zone - Coordinator: Nakul Rajani",
+                "South Zone - Coordinator: Reva Shah", "South Zone - Coordinator: Reva Shah", "London Zone - Coordinator: Ritesh Thakrar",
+                "South Zone - Coordinator: Reva Shah"};
 
+        //--NHSF ASTON --
         final String[] chapterCommittees = {"PRESIDENT: Shailee Patel \nVP: Dhimant Mehta \nSECRETARIES: Raj Sivlal & Karishma Patel \nTREASURERS: Ajay Mistry & Akshay Nagda " +
                 "\nEVENTS: Ashni Mehta, Avni Vaghela & Natasha Sandle \nPR: Hetal Patel, Trisha Kandlur & Priyesh Patel \nSEWA: Krishna Jethwa & Chandni Gadhia " +
-                "\nLEARNING: Akshay Bhardwa & Trusha Parikh \nSPORTS: Neelam Mistry & Colette Rodrigues \nRELIGIOUS: Trusha Parikh & Akshay Bhardwa, " +
+                "\nLEARNING: Akshay Bhardwa & Trusha Parikh \nSPORTS: Neelam Mistry & Colette Rodrigues \nRELIGIOUS: Trusha Parikh & Akshay Bhardwa " +
                 "\nADVISORY: Nikhil Parekh, Dev Patel, Anjali Bharania, Rupal Chavda & Radhika Madlani",
 
-                "President: AAAA, VP: sadsff, Secretrary: dfsfs",
-                "President: AAAA, VP: sadsff, Secretrary: dfsfs", "President: AAAA, VP: sadsff, Secretrary: dfsfs", "President: AAAA, VP: sadsff, Secretrary: dfsfs",
-                "President: AAAA, VP: sadsff, Secretrary: dfsfs", "President: AAAA, VP: sadsff, Secretrary: dfsfs",
-                "President: AAAA, VP: sadsff, Secretrary: dfsfs", "President: AAAA, VP: sadsff, Secretrary: dfsfs"};
+                //-- NHSF BCU --
+                "PRESIDENT: Akshay Depala \nVP: Kalindi Parikh \nSECRETARY: Sittal Patel \nTREASURER: Kushagra Rastogi" +
+                "\nEVENTS: Rahul Depala, Avni Shah, Jessica Chumber & Aman Sadhwani \nSEWA: Kiran Nayee & Kushal Thakkar, " +
+                        "\nLEARNING: Kiran Nayee & Kushal Thakkar \nSPORTS: Sachin Dadhania",
+
+                //-- NHSF BIRMINGHAM --
+                "PRESIDENT: Anuj Popat \nVP: Dylan Patel-Vathvali \nSECRETARY: Noureen Lakhani \nTREASURER: Roshni Rupalaria" +
+                        "\nEVENTS: Sachin Malkan, Roshni Dodhia & Himani Amin \nPR: Janu Shah & Sham Patel \nSEWA: Thineswari Pandiyan, Sushma Roy & Vanisha Solanki " +
+                        "\nLEARNING: Henna Patel \nSPORTS: Reeya Patel & Rikesh Mistry \nDESIGNER: Janeena Sahota",
+
+                //-- NHSF BPP --
+                "PRESIDENT: Monica Mohan \nADVISORY: Ritesh Thakrar",
+
+                //-- NHSF BRADFORD --
+                "PRESIDENT: Mitesh Gunpath \nSECRETARY: Bindiya Kotecha \nEVENTS: Kieran Mistry \nPR: Fahim Mulla \nSEWA: Pavithra Natatrajan " +
+                        "\nLEARNING: Radhika Chaudhury \nSPORTS: Kirujan Ravichandran & Sagiram Surendirarasa",
+
+                //-- NHSF BRIGHTON --
+                "PRESIDENT: Chintan Patel \nVP: Shreena Patel \nSECRETARIES: Roshni Patel & Suhani Ghiya \nTREASURER: Nity Kapoor" +
+                        "\nEVENTS: Amisha Patel & Duckshini Sivalingam \nPR: Bhavisha Patel \nSEWA: Ramya Shanthikumar " +
+                        "\nSPORTS: Yogesh Karunavannam & Krishan Patel \nMEDIA: Divya Lakhani",
+
+                //-- NHSF BRISTOL --
+                "PRESIDENT: Nihir Shah \nVP: Jagrati Chopra \nSECRETARY: Siddhant Shah \nTREASURER: Shria Radia" +
+                        "\nEVENTS: Rishi Nanavati & Bhawick Jain \nSEWA: Krishna Ravichandar " +
+                        "\nLEARNING: Krishna Ravichandar \nSPORTS: Vishal Davda & Aarti Gogna" +
+                        "\nSIKH REP: Gulpuvan Sidhu",
+
+                //-- NHSF BRUNEL--
+                "PRESIDENT: Anisha Devani \nVP: Priya Leela Nair \nSECRETARY: Neha Chauhan \nTREASURER: Reeya Chetri" +
+                        "\nEVENTS: Rajiv Chadha \nSEWA: Matthew Bavisi Bird \nLEARNING: Shivaley Tank " +
+                        "\nSPORTS: Tejas Depala \nWEB: Minisha Kiran Mahay \nMEETINGS OFFICER: Shivaley Tank " +
+                        "\nUNIVERSTIY OFFICER: Neha Joshi \nSPONSORSHIP: Priyen Patel",
+
+                //-- NHSF BUCKS NEW UNI --
+                "PRESIDENT: Anand Joshi \nVP: Rushi Patel \nSECRETARY: Karishma Sureja \nTREASURER: Rushi Patel"};
+
 
         chapters = new ArrayList<Chapter>();
 
