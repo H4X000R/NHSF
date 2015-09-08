@@ -75,7 +75,7 @@ public class Tab1 extends Fragment {
 
         //String array of text for the recycler view
         String[] text = {"Introduction", "National Committee (Natcom)"};
-        String[] subText = {"what is NHSF?", "Admin Team and Team Coordinators"};
+        String[] subText = {"What is NHSF?", "Admin Team and Team Coordinators"};
 
         //For loop to go through entire length of the menu string
         //for(int i=0; i<menu.length; i++) {
