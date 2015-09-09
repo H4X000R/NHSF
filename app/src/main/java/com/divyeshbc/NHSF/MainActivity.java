@@ -9,9 +9,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.divyeshbc.NHSF.tabs.SlidingTabLayout;
+import com.divyeshbc.NHSF.tabs.Tab3;
 import com.divyeshbc.NHSF.tabs.aboutUs.Tab1;
 import com.divyeshbc.NHSF.tabs.campus.Tab2;
-import com.divyeshbc.NHSF.tabs.Tab3;
 import com.divyeshbc.NHSF.tabs.learning.Tab4;
 import com.divyeshbc.NHSF.tabs.sewa.Tab5;
 

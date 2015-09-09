@@ -56,17 +56,17 @@ public class Tab2 extends Fragment {
 
         final String[] affiliatedChapters = {"NHSF Aston", "NHSF BCU", "NHSF Birmingham", "NHSF BPP",
                 "NHSF Bradford", "NHSF Brighton", "NHSF Bristol", "NHSF Brunel", "NHSF Bucks New Uni", "NHSF City", "NHSF Coventry",
-                "NHSF DMU"};
+                "NHSF DMU", "NHSF Exeter"};
 
         final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_bradford, R.drawable.nhsf_brighton,
                              R.drawable.nhsf_bristol, R.drawable.nhsf_brunel, R.drawable.nhsf_bucks_new_uni, R.drawable.nhsf_city, R.drawable.nhsf_coventry,
-                             R.drawable.nhsf_dmu};
+                             R.drawable.nhsf_dmu, R.drawable.nhsf_exeter};
 
         final String[] zones = {"Central Zone - Coordinator: Shivanee Ardeshana", "Central Zone - Coordinator: Shivanee Ardeshana",
                 "Central Zone - Coordinator: Shivanee Ardeshana", "London Zone - Coordinator: Ritesh Thakrar", "North Zone - Coordinator: Nakul Rajani",
                 "South Zone - Coordinator: Reva Shah", "South Zone - Coordinator: Reva Shah", "London Zone - Coordinator: Ritesh Thakrar",
                 "South Zone - Coordinator: Reva Shah", "London Zone - Coordinator: Ritesh Thakrar", "Central Zone - Coordinator: Shivanee Ardeshana",
-                "Central Zone - Coordinator: Shivanee Ardeshana"};
+                "Central Zone - Coordinator: Shivanee Ardeshana", "South Zone - Coordinator: Reva Shah"};
 
         //--NHSF ASTON --
         final String[] chapterCommittees = {"PRESIDENT: Shailee Patel \nVP: Dhimant Mehta \nSECRETARIES: Raj Sivlal & Karishma Patel \nTREASURERS: Ajay Mistry & Akshay Nagda " +
@@ -121,7 +121,11 @@ public class Tab2 extends Fragment {
                 //-- NHSF DMU --
                 "PRESIDENT: Dipali Jivram \nVP: Ravi Jagatia & Rishal Rathod \nSECRETARIES: Rozy Shukla & Sharad Pala " +
                         "\nTREASURER: Radhika Shikotra & Ajay Main \nEVENTS: Nikita Ladwa & Kanika Sharma \nSEWA: Jai Makwana & Rishan Gudka " +
-                        "\nSPORTS: Anirrudh Ganatra, Nikita Patel & Himansh"};
+                        "\nSPORTS: Anirrudh Ganatra, Nikita Patel & Himansh",
+
+                // -- NHSF EXETER --
+                "PRESIDENT: Shivam Joshi & Neha Toteja \nSECRETARY: Navin Nagesh  \nTREASURER: Sai Suhruta Jasthi \nEVENTS: Nikita Sethu Menon & Praveena Nanthakumaran" +
+                        "\nSEWA: Visha Rach \nLEARNING: Yajur Kapoor \nSPORTS: Amaritpal Singh Siani \nPR: Ridhi Jogia"};
 
 
         chapters = new ArrayList<Chapter>();
