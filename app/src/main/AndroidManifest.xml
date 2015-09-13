@@ -17,13 +17,13 @@
     <!-- -->
 
     <application
-        android:name="com.divyeshbc.NHSF.ParseApplication"
+        android:name=".ParseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/nhsf_app_logo_androidx144"
         android:label="@string/app_name"
         android:theme="@style/Theme.Custom" >
         <activity
-            android:name="com.divyeshbc.NHSF.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,13 +34,14 @@
         </activity>
 
         <service android:name="com.parse.PushService" />
+
         <receiver android:name="com.parse.ParseBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.USER_PRESENT" />
             </intent-filter>
         </receiver>
-        <!--
+
         <receiver android:name="com.parse.ParsePushBroadcastReceiver"
                   android:exported="false">
             <intent-filter>
@@ -49,14 +50,12 @@
                 <action android:name="com.parse.push.intent.OPEN" />
             </intent-filter>
         </receiver>
-        -->
 
         <receiver android:name="com.parse.GcmBroadcastReceiver"
                   android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-
         <!--
         <activity
             android:name="com.divyeshbc.NHSF.tabs.aboutUs.Introduction"
@@ -72,6 +71,8 @@
             </intent-filter>
         </receiver>
         <!-- -->
+        <meta-data android:name="com.divyeshbc.NHSF.notifcation_icon"
+                   android:resource="@mipmap/nhsf_logo_push_android"/>
     </application>
 
 </manifest>

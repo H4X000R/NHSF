@@ -14,6 +14,8 @@ import com.divyeshbc.NHSF.tabs.aboutUs.Tab1;
 import com.divyeshbc.NHSF.tabs.campus.Tab2;
 import com.divyeshbc.NHSF.tabs.learning.Tab4;
 import com.divyeshbc.NHSF.tabs.sewa.Tab5;
+import com.parse.ParseAnalytics;
+import com.parse.ParseInstallation;
 
 
 public class MainActivity extends BaseActivity {
@@ -26,6 +28,12 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // To track statistics around application
+        ParseAnalytics.trackAppOpened(getIntent());
+
+        // inform the Parse Cloud that it is ready for notifications
+        ParseInstallation.getCurrentInstallation().saveInBackground();
 
         //Calling Activate Toolbar method
         activateToolBar();
