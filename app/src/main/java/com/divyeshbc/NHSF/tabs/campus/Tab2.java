@@ -56,17 +56,18 @@ public class Tab2 extends Fragment {
 
         final String[] affiliatedChapters = {"NHSF Aston", "NHSF BCU", "NHSF Birmingham", "NHSF BPP",
                 "NHSF Bradford", "NHSF Brighton", "NHSF Bristol", "NHSF Brunel", "NHSF Bucks New Uni", "NHSF City", "NHSF Coventry",
-                "NHSF DMU", "NHSF Exeter"};
+                "NHSF DMU", "NHSF Exeter", "NHSF Greenwich", "NHSF Hertfordshire", "NHSF Huddersfield"};
 
         final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_bradford, R.drawable.nhsf_brighton,
                              R.drawable.nhsf_bristol, R.drawable.nhsf_brunel, R.drawable.nhsf_bucks_new_uni, R.drawable.nhsf_city, R.drawable.nhsf_coventry,
-                             R.drawable.nhsf_dmu, R.drawable.nhsf_exeter};
+                             R.drawable.nhsf_dmu, R.drawable.nhsf_exeter, R.drawable.nhsf_greenwich, R.drawable.nhsf_hertfordshire, R.drawable.nhsf_huddersfield};
 
         final String[] zones = {"Central Zone - Coordinator: Shivanee Ardeshana", "Central Zone - Coordinator: Shivanee Ardeshana",
                 "Central Zone - Coordinator: Shivanee Ardeshana", "London Zone - Coordinator: Ritesh Thakrar", "North Zone - Coordinator: Nakul Rajani",
                 "South Zone - Coordinator: Reva Shah", "South Zone - Coordinator: Reva Shah", "London Zone - Coordinator: Ritesh Thakrar",
                 "South Zone - Coordinator: Reva Shah", "London Zone - Coordinator: Ritesh Thakrar", "Central Zone - Coordinator: Shivanee Ardeshana",
-                "Central Zone - Coordinator: Shivanee Ardeshana", "South Zone - Coordinator: Reva Shah"};
+                "Central Zone - Coordinator: Shivanee Ardeshana", "South Zone - Coordinator: Reva Shah", "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Ritesh Thakrar", "North Zone - Coordinator - Nakul Rajani"};
 
         //--NHSF ASTON --
         final String[] chapterCommittees = {"PRESIDENT: Shailee Patel \nVP: Dhimant Mehta \nSECRETARIES: Raj Sivlal & Karishma Patel \nTREASURERS: Ajay Mistry & Akshay Nagda " +
@@ -125,7 +126,19 @@ public class Tab2 extends Fragment {
 
                 // -- NHSF EXETER --
                 "PRESIDENT: Shivam Joshi & Neha Toteja \nSECRETARY: Navin Nagesh  \nTREASURER: Sai Suhruta Jasthi \nEVENTS: Nikita Sethu Menon & Praveena Nanthakumaran" +
-                        "\nSEWA: Visha Rach \nLEARNING: Yajur Kapoor \nSPORTS: Amaritpal Singh Siani \nPR: Ridhi Jogia"};
+                        "\nSEWA: Visha Rach \nLEARNING: Yajur Kapoor \nSPORTS: Amaritpal Singh Siani \nPR: Ridhi Jogia",
+
+                // -- NHSF GREENWICH --
+                "PRESIDENT: Deepa Dabaisa \nVP: Roshan Patel \nSECRETARY: Chetan Sablawat \nTREASURER: Mishali Paragjee " +
+                        "\nSPORTS: Sapna Chudasama & Bhumit Patel \nPR: Nikhil Parbat \nGREENWICH REP: Nidhi Naik",
+
+                // -- NHSF HERTFORDSHIRE --
+                "PRESIDENT: Gayatri Bhudia \nVP: Sonali Pabali \nSECRETARY: Kishan Patel \nEVENTS: Rupa Carpenter & Mohit Vyas" +
+                        "\nLEARNING: Sapna Sodha & Priyali Patel \nSPORTS: Hanna Patel & Hari Patel \nMEDIA: Kishan Patel",
+
+                // -- NHSF HUDDERSFIELD --
+               "PRESIDENT: Seetal Mistry \nTREASURER: Rahul Hirani \nEVENTS: Natasha Patel \nLEARNING: Nilam Patel" +
+                       "\nSPORTS: Priyesh Patel \nADVISORY: Roshni Mistry"};
 
 
         chapters = new ArrayList<Chapter>();
