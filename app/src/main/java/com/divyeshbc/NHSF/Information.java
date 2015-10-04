@@ -23,4 +23,7 @@ public class Information {
     public String getSubtitle() {
         return subtitle;
     }
+
+
+
 }
