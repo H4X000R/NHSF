@@ -276,7 +276,9 @@ public class Tab2 extends Fragment {
                         "\nADVISORY: Bhavik Vara",
 
                 // -- NHSF LEEDS --
-                "PRESIDENT: \nVP: \nSECRETARY: \nTREASURER: \nEVENTS: \nSEWA: \nLEARNING: \nSPORTS: ",
+                "PRESIDENT: Priya Shah \nVP: Kanaka Kulkarni \nSECRETARY: Aviral Sethi \nTREASURER: Sejal Mistry \nEVENTS: Jaskaran Dutta, Jainam Tolia & Rishi Thakerar" +
+                        "\nPUBLICITY: Rhea Bhandari \nSEWA: Mayur Parmar & Purvi Makwana \nLEARNING: Jeet Parmar \nSPORTS: Akshay Mistry \nSPONSORSHIP: Anurika Nehra" +
+                        "\nINTERSOCIETY REP: Jeet Parmar",
 
                 // -- NHSF LEICESTER --
                 "PRESIDENT: Hitesh Mankani \nVP: Sahil Kotecha & Sinthu Harini Uthayashankar \nSECRETARY: Henal Patel \nTREASURER: Savi Chaplot" +
