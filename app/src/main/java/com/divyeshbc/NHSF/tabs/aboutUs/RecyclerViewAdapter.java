@@ -1,6 +1,7 @@
 package com.divyeshbc.NHSF.tabs.aboutUs;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +23,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private LayoutInflater inflater;
 
     //Variable for the on click Listener
-    //private ClickListener clickListener;
+    private ClickListener clickListener;
 
     //Defining an array list of type information. This will be the data set for the recycler view. .emptyList() will
     //take care of the null pointer exception
@@ -65,15 +66,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     }
 
-    /*
-
     //Setting up a click listener which lets me set up an object that implements the interface
     public void setClickListener(ClickListener clickListener){
 
         //Initialising the clickListener
         this.clickListener=clickListener;
     }
-    */
 
     @Override
     public int getItemCount() {
@@ -81,7 +79,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return data.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder{ //implements View.OnClickListener {
+    class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener { //implements View.OnClickListener {
 
         TextView title;
         TextView subTitle;
@@ -90,14 +88,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             super(itemView);
 
             //Setting an on Click Listener inside the ViewHolder
-            //itemView.setOnClickListener(this);
+            itemView.setOnClickListener(this);
 
             //Here setting the id of the textview in the recycler view holder to be the list view from the custom_row xml
             title = (TextView) itemView.findViewById(R.id.listText);
             subTitle = (TextView) itemView.findViewById(R.id.subTitle);
         }
 
-        /*
         @Override
         public void onClick(View v) {
 
@@ -107,16 +104,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             if(clickListener != null)
             {
                 //Trigger the appropriate call. getPosition will get the latest position of the item clicked by the user
-                clickListener.itemClicked(v, getPosition());
+                clickListener.itemClicked(v, getAdapterPosition());
             }
 
         }
-        */
+
     }
-        /*
+
         //Here, inside the adapter have made an interface. This interface is implemented in the Tab1 class Fragment.
         public interface ClickListener {
             void itemClicked(View view, int position);
         }
-        */
+
 }

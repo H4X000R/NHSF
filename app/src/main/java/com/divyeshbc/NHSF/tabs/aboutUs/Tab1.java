@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * Created by DivyeshBC on 25/05/15.
  */
-public class Tab1 extends Fragment {
+public class Tab1 extends Fragment implements RecyclerViewAdapter.ClickListener{
 
     private RecyclerView mRecyclerView;
 
@@ -44,7 +44,7 @@ public class Tab1 extends Fragment {
 
         //Here passing in the click listener into the Adapter. 'this' signifies that it is the fragment that handles the click listener.
         //This is possible as the on Click Listener interface is being implemented.
-        //adapter.setClickListener(this);
+        adapter.setClickListener(this);
 
         //Setting the adapter
         mRecyclerView.setAdapter(adapter);
@@ -96,14 +96,9 @@ public class Tab1 extends Fragment {
         return data;
     }
 
-    /*
-    //Because the click listener interface is being implemented, here it needs to be overridden
+    //Because the click listener is being implemented, here it needs to be overridden
     @Override
     public void itemClicked(View view, int position) {
 
-        //Now starting the Activity to open the pdf document
-        startActivity(new Intent(getActivity(), Introduction.class));
-
     }
-    */
 }
