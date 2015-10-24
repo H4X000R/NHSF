@@ -33,7 +33,11 @@
         </activity>
         <activity
             android:name=".tabs.aboutUs.Introduction"
-            android:label="@string/Introduction">
+            android:label="@string/Introduction"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.divyeshbc.NHSF.MainActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW" />
 
