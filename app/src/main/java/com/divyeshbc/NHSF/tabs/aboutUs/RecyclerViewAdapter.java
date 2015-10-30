@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.divyeshbc.NHSF.Information;
 import com.divyeshbc.NHSF.R;
@@ -98,8 +99,24 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         @Override
         public void onClick(View v) {
 
+            Intent intent = null;
+
+            switch (getAdapterPosition()){
+                case 0:
+                    intent =  new Intent(context, Introduction.class);
+                    break;
+
+                case 1:
+                    intent = new Intent(context, National_Committee.class);
+                    break;
+                default:
+                    Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
+                    break;
+            }
+
             //In order for an activity to begin, a context needs to be passed in
-            context.startActivity(new Intent(context, Introduction.class));
+            //context.startActivity(new Intent(context, Introduction.class));
+            context.startActivity(intent);
             //If the method is not called (Error handling to avoid NULL POINTER EXCEPTION ERROR)
             if(clickListener != null)
             {

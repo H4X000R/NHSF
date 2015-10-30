@@ -76,7 +76,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
         public TextView chapterDetails;
         public TextView chapterZone;
         public ImageView iconView;
-        public ImageView mImageView;
+        //public ImageView mImageView;
 
         public Chapter details;
 
