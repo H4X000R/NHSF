@@ -1,11 +1,13 @@
 package com.divyeshbc.NHSF.tabs.aboutUs;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.divyeshbc.NHSF.R;
 import com.divyeshbc.NHSF.SubInformation;
@@ -18,6 +20,7 @@ import java.util.List;
  */
 public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<RecyclerViewAdapterNationalCommiitee.MyViewHolder> {
 
+    private Context context;
     private LayoutInflater inflater;
 
     //Variable for the on click Listener
@@ -26,8 +29,9 @@ public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<R
     List<SubInformation> data = Collections.emptyList();
 
     //Passing in the array list argument
-    public RecyclerViewAdapterNationalCommiitee(Context context, List<SubInformation> data){
+    public RecyclerViewAdapterNationalCommiitee(Context context, List<SubInformation> data) {
 
+        this.context = context;
         inflater = LayoutInflater.from(context);
 
         //Setting the array list data to the argument passed in
@@ -57,10 +61,10 @@ public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<R
     }
 
     //Setting up a click listener which lets me set up an object that implements the interface
-    public void setClickListener(ClickListener clickListener){
+    public void setClickListener(ClickListener clickListener) {
 
         //Initialising the clickListener
-        this.clickListener=clickListener;
+        this.clickListener = clickListener;
     }
 
     @Override
@@ -83,7 +87,33 @@ public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<R
         @Override
         public void onClick(View v) {
 
+            Intent intent = null;
+
+            switch (getAdapterPosition()) {
+                case 0:
+                    Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
+                    break;
+                    //intent = new Intent(context, AdminTeam.class);
+                    //break;
+
+                case 1:
+                    Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
+                    break;
+                default:
+                    break;
+            }
+
+            //In order for an activity to begin, a context needs to be passed in
+            //context.startActivity(new Intent(context, Introduction.class));
+            context.startActivity(intent);
+            //If the method is not called (Error handling to avoid NULL POINTER EXCEPTION ERROR)
+            if (clickListener != null) {
+                //Trigger the appropriate call. getPosition will get the latest position of the item clicked by the user
+                clickListener.itemClicked(v, getAdapterPosition());
+            }
+
         }
+
     }
 
     //Here, inside the adapter have made an interface. This interface is implemented in the Tab1 class Fragment.
@@ -91,3 +121,4 @@ public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<R
         void itemClicked(View view, int position);
     }
 }
+

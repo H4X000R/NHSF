@@ -107,7 +107,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     break;
 
                 case 1:
-                    intent = new Intent(context, National_Committee.class);
+                    intent = new Intent(context, NationalCommittee.class);
                     break;
                 default:
                     Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
