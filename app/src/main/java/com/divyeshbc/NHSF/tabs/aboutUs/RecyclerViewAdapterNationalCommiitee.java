@@ -23,6 +23,8 @@ public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<R
     private Context context;
     private LayoutInflater inflater;
 
+    //private RecyclerViewAdapterAdminTeam ra;
+
     //Variable for the on click Listener
     private ClickListener clickListener;
 
@@ -52,14 +54,46 @@ public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<R
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
 
         //This will get the current position of the Information object from the Information array
         SubInformation current = data.get(position);
 
         holder.title.setText(current.getTitle());
-    }
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = null;
+
+                switch (position) {
+                    case 0:
+                        //Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
+                        //break;
+                        intent = new Intent(context, AdminTeamActivity.class);
+                        //intent.putExtra("JSON Admin", ra.getItemCount());
+                        break;
+
+                    case 1:
+                        Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
+                        break;
+                    default:
+                        break;
+
+                }
+
+                //In order for an activity to begin, a context needs to be passed in
+                //context.startActivity(new Intent(context, Introduction.class));
+                context.startActivity(intent);
+                //If the method is not called (Error handling to avoid NULL POINTER EXCEPTION ERROR)
+                //Trigger the appropriate call. getPosition will get the latest position of the item clicked by the user
+                if (clickListener != null) {
+                    clickListener.itemClicked(v, position);
+                }
+            }
+        });
+    }
     //Setting up a click listener which lets me set up an object that implements the interface
     public void setClickListener(ClickListener clickListener) {
 
@@ -72,7 +106,7 @@ public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<R
         return data.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView title;
 
@@ -83,37 +117,6 @@ public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<R
             title = (TextView) itemView.
                     findViewById(R.id.listText);
         }
-
-        @Override
-        public void onClick(View v) {
-
-            Intent intent = null;
-
-            switch (getAdapterPosition()) {
-                case 0:
-                    Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
-                    break;
-                    //intent = new Intent(context, AdminTeam.class);
-                    //break;
-
-                case 1:
-                    Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
-                    break;
-                default:
-                    break;
-            }
-
-            //In order for an activity to begin, a context needs to be passed in
-            //context.startActivity(new Intent(context, Introduction.class));
-            context.startActivity(intent);
-            //If the method is not called (Error handling to avoid NULL POINTER EXCEPTION ERROR)
-            if (clickListener != null) {
-                //Trigger the appropriate call. getPosition will get the latest position of the item clicked by the user
-                clickListener.itemClicked(v, getAdapterPosition());
-            }
-
-        }
-
     }
 
     //Here, inside the adapter have made an interface. This interface is implemented in the Tab1 class Fragment.

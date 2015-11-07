@@ -21,6 +21,8 @@ public class RecyclerViewAdapterAdminTeam extends RecyclerView.Adapter<RecyclerV
 
     private LayoutInflater inflater;
 
+    private AdminTeamActivity activity;
+
     //Variable for the on click Listener
     //private ClickListener clickListener;
 
@@ -30,21 +32,22 @@ public class RecyclerViewAdapterAdminTeam extends RecyclerView.Adapter<RecyclerV
 
 
     //Passing in the array list argument
-    public RecyclerViewAdapterAdminTeam(Context context, List<JSONAdminItem> data){
+    public RecyclerViewAdapterAdminTeam(AdminTeamActivity activity, Context context, List<JSONAdminItem> data){
 
-        this.data = data;
         this.mContext = context;
+        this.activity = activity;
+
         inflater = LayoutInflater.from(context);
 
         //Setting the array list data to the argument passed in
-        //this.data = data;
+        this.data = data;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //Inflating the row and getting the root of view of the custom row natcom (Linear Layout)
-        View view = inflater.inflate(R.layout.custom_row, parent, false);
+        View view = inflater.inflate(R.layout.custom_row_admin, parent, false);
 
         //Passing the root view through as an argument
         MyViewHolder holder = new MyViewHolder(view);
@@ -76,9 +79,9 @@ public class RecyclerViewAdapterAdminTeam extends RecyclerView.Adapter<RecyclerV
 
     @Override
     public int getItemCount() {
-        return data.size();
+        //return data.size();
 
-        //return (null != data ? data.size() : 0);
+        return (null != data ? data.size() : 0);
     }
 
     public interface ClickListener {

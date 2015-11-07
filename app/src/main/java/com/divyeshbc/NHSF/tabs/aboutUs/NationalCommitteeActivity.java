@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * Created by DivyeshBC on 27/10/15.
  */
-public class NationalCommittee extends BaseActivity implements RecyclerViewAdapterNationalCommiitee.ClickListener {
+public class NationalCommitteeActivity extends BaseActivity implements RecyclerViewAdapterNationalCommiitee.ClickListener {
 
     private RecyclerView mRecyclerView;
 

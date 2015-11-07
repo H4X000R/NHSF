@@ -16,7 +16,7 @@ import static java.lang.String.format;
  * Created by DivyeshBC on 21/06/15.
  */
 
-public class Introduction extends BaseActivity implements OnPageChangeListener {
+public class IntroductionActivity extends BaseActivity implements OnPageChangeListener {
 
     private PDFView mPDFView;
 

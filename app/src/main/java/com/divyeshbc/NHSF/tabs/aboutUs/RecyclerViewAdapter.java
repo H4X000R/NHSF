@@ -103,11 +103,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             switch (getAdapterPosition()){
                 case 0:
-                    intent =  new Intent(context, Introduction.class);
+                    intent =  new Intent(context, IntroductionActivity.class);
                     break;
 
                 case 1:
-                    intent = new Intent(context, NationalCommittee.class);
+                    intent = new Intent(context, NationalCommitteeActivity.class);
                     break;
                 default:
                     Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
@@ -115,7 +115,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             }
 
             //In order for an activity to begin, a context needs to be passed in
-            //context.startActivity(new Intent(context, Introduction.class));
+            //context.startActivity(new Intent(context, IntroductionActivity.class));
             context.startActivity(intent);
             //If the method is not called (Error handling to avoid NULL POINTER EXCEPTION ERROR)
             if(clickListener != null)

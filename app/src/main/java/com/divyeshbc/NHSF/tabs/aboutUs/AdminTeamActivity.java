@@ -27,7 +27,7 @@ import java.util.List;
 /**
  * Created by DivyeshBC on 31/10/15.
  */
-public class AdminTeam extends BaseActivity implements RecyclerViewAdapterAdminTeam.ClickListener{
+public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapterAdminTeam.ClickListener{
 
     private RecyclerView mRecyclerView;
 
@@ -36,7 +36,9 @@ public class AdminTeam extends BaseActivity implements RecyclerViewAdapterAdminT
 
     private List<JSONAdminItem> AdminTeamList;
 
-    //private static final int ITEM_COUNT = 5;
+    private AdminTeamActivity activity;
+
+    String jsonString = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +52,13 @@ public class AdminTeam extends BaseActivity implements RecyclerViewAdapterAdminT
         mRecyclerView = (RecyclerView) findViewById(R.id.adminteam_recycler_view);
 
         //Adding item decoration. Recycler view divider
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL_LIST));
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
+
+        //Initialising the adapter - Passing in the activity and the parsed Admin Team List
+        adapter = new RecyclerViewAdapterAdminTeam(activity, this, AdminTeamList);
+
+        //Setting the adapter
+        mRecyclerView.setAdapter(adapter);
 
         //Setting the Layout
         //mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -82,7 +90,8 @@ public class AdminTeam extends BaseActivity implements RecyclerViewAdapterAdminT
                     while ((line = r.readLine()) != null) {
                         response.append(line);
                     }
-                    parseResult(response.toString());
+                    jsonString = response.toString();
+                    parseResult();
                     result = 1; // Successful
                 } else {
                     result = 0; //"Failed to fetch data!";
@@ -96,36 +105,44 @@ public class AdminTeam extends BaseActivity implements RecyclerViewAdapterAdminT
         @Override
         protected void onPostExecute(Integer result) {
 
+            super.onPostExecute(result);
+
+            //adapter.getItemCount();
+
             if (result == 1) {
+                //Intent intent = getIntent();
+                //intent.getSerializableExtra("JSON Admin");
                 //Initialising the adapter - Passing in the activity and the parsed Admin Team List
-                adapter = new RecyclerViewAdapterAdminTeam(AdminTeam.this, AdminTeamList);
+                adapter = new RecyclerViewAdapterAdminTeam(activity, AdminTeamActivity.this, AdminTeamList);
                 //Setting the adapter
                 mRecyclerView.setAdapter(adapter);
             } else {
-                Toast.makeText(AdminTeam.this, "Failed to fetch data!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AdminTeamActivity.this, "Failed to fetch data!", Toast.LENGTH_SHORT).show();
             }
         }
+
     }
 
     //This method will parse the RAW data downloaded from the server
-    private void parseResult(String result) {
+    private void parseResult() {
+
         try {
-            //Converting into a JSON Object
-            JSONObject response = new JSONObject(result);
-            //Now converting this JSON Object into and a JSON Array
-            JSONArray AdminArrays = response.optJSONArray("Admin Arrays");
+
+            JSONArray AdminArrays = new JSONArray(jsonString);
             AdminTeamList = new ArrayList<>();
 
-            //String[] AdminRole = {};
-
             for (int i = 0; i < AdminArrays.length(); i++) {
-                JSONObject AdminArray = AdminArrays.optJSONObject(i);
+                JSONObject AdminArrayObject = AdminArrays.getJSONObject(i);
                 JSONAdminItem item = new JSONAdminItem();
-                item.setAdminRole(AdminArray.optString("Admin Role"));
-                item.setName(AdminArray.optString("Name"));
+                item.setAdminRole(AdminArrayObject.getString("AdminRole"));
+                item.setName(AdminArrayObject.getString("Name"));
 
-                AdminTeamList.add(item);
+                this.AdminTeamList.add(item);
+
+                Log.e("Admin Role", AdminArrayObject.getString("AdminRole"));
+                Log.e("Name", AdminArrayObject.getString("Name"));
             }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }

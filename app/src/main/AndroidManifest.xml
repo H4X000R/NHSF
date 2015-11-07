@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".tabs.aboutUs.Introduction"
+            android:name=".tabs.aboutUs.IntroductionActivity"
             android:label="@string/Introduction"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -61,23 +61,21 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".tabs.aboutUs.NationalCommittee"
+            android:name=".tabs.aboutUs.NationalCommitteeActivity"
             android:label="@string/title_activity_natcom"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.divyeshbc.NHSF.MainActivity" />
         </activity>
-
         <activity
-            android:name=".tabs.aboutUs.AdminTeam"
+            android:name=".tabs.aboutUs.AdminTeamActivity"
             android:label="@string/title_activity_adminteam"
-            android:parentActivityName=".tabs.aboutUs.NationalCommittee" >
+            android:parentActivityName=".tabs.aboutUs.NationalCommitteeActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.divyeshbc.NHSF.tabs.aboutUs.NationalCommittee" />
+                android:value=".tabs.aboutUs.NationalCommitteeActivity" />
         </activity>
 
         <!-- Configuring Parse -->
