@@ -77,6 +77,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".tabs.aboutUs.NationalCommitteeActivity" />
         </activity>
+        <activity
+            android:name=".tabs.aboutUs.TeamCoordinatorsActivity"
+            android:label="@string/title_activity_tc"
+            android:parentActivityName=".tabs.aboutUs.NationalCommitteeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.aboutUs.NationalCommitteeActivity" />
+        </activity>
 
         <!-- Configuring Parse -->
         <service android:name="com.parse.PushService" />

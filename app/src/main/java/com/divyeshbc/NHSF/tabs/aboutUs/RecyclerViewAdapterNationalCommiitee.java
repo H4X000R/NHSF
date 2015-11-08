@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.divyeshbc.NHSF.R;
 import com.divyeshbc.NHSF.SubInformation;
@@ -69,22 +68,17 @@ public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<R
 
                 switch (position) {
                     case 0:
-                        //Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
-                        //break;
                         intent = new Intent(context, AdminTeamActivity.class);
-                        //intent.putExtra("JSON Admin", ra.getItemCount());
                         break;
 
                     case 1:
-                        Toast.makeText(v.getContext(), "Default Case", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(context, TeamCoordinatorsActivity.class);
                         break;
                     default:
                         break;
-
                 }
 
                 //In order for an activity to begin, a context needs to be passed in
-                //context.startActivity(new Intent(context, Introduction.class));
                 context.startActivity(intent);
                 //If the method is not called (Error handling to avoid NULL POINTER EXCEPTION ERROR)
                 //Trigger the appropriate call. getPosition will get the latest position of the item clicked by the user

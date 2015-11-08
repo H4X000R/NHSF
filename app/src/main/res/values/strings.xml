@@ -4,7 +4,7 @@
     <string name="Introduction">Introduction</string>
     <string name="title_activity_natcom">National Committee</string>
     <string name="title_activity_adminteam">Admin Team</string>
-
+    <string name="title_activity_tc">Team Coordinators</string>
 
     <string-array name="tabs">
         <item>ABOUT US</item>

@@ -8,28 +8,28 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.divyeshbc.NHSF.JSONAdminItem;
+import com.divyeshbc.NHSF.JSONTCItem;
 import com.divyeshbc.NHSF.R;
 
 import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by DivyeshBC on 31/10/15.
+ * Created by DivyeshBC on 07/11/15.
  */
-public class RecyclerViewAdapterAdminTeam extends RecyclerView.Adapter<RecyclerViewAdapterAdminTeam.MyViewHolder> {
+public class RecyclerViewAdapterTC extends RecyclerView.Adapter<RecyclerViewAdapterTC.MyViewHolder> {
 
     private LayoutInflater inflater;
 
-    private AdminTeamActivity activity;
+    private TeamCoordinatorsActivity activity;
 
-    private List<JSONAdminItem> data = Collections.emptyList();
+    private List<JSONTCItem> data = Collections.emptyList();
 
     private Context mContext;
 
 
     //Passing in the array list argument
-    public RecyclerViewAdapterAdminTeam(AdminTeamActivity activity, Context context, List<JSONAdminItem> data){
+    public RecyclerViewAdapterTC(TeamCoordinatorsActivity activity, Context context, List<JSONTCItem> data){
 
         this.mContext = context;
         this.activity = activity;
@@ -44,7 +44,7 @@ public class RecyclerViewAdapterAdminTeam extends RecyclerView.Adapter<RecyclerV
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //Inflating the row and getting the root of view of the custom row natcom (Linear Layout)
-        View view = inflater.inflate(R.layout.custom_row_admin, parent, false);
+        View view = inflater.inflate(R.layout.custom_row_tc, parent, false);
 
         //Passing the root view through as an argument
         MyViewHolder holder = new MyViewHolder(view);
@@ -57,12 +57,12 @@ public class RecyclerViewAdapterAdminTeam extends RecyclerView.Adapter<RecyclerV
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
         //This will get the current position of the JSONAdminItem object from the array
-        JSONAdminItem adminItem = data.get(position);
+        JSONTCItem tcItem = data.get(position);
 
         //Setting the title to be the Admin Role (converting from JSON)
-        holder.title.setText(Html.fromHtml(adminItem.getAdminRole()));
+        holder.title.setText(Html.fromHtml(tcItem.getTCRole()));
         //Setting the subtitle to be the Name (converting from JSON)
-        holder.subTitle.setText(Html.fromHtml(adminItem.getName()));
+        holder.subTitle.setText(Html.fromHtml(tcItem.getName()));
     }
 
     @Override

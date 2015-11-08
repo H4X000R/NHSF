@@ -9,7 +9,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.divyeshbc.NHSF.BaseActivity;
-import com.divyeshbc.NHSF.JSONAdminItem;
+import com.divyeshbc.NHSF.JSONTCItem;
 import com.divyeshbc.NHSF.R;
 import com.divyeshbc.NHSF.tabs.DividerItemDecoration;
 
@@ -25,37 +25,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by DivyeshBC on 31/10/15.
+ * Created by DivyeshBC on 07/11/15.
  */
-public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapterAdminTeam.ClickListener{
+public class TeamCoordinatorsActivity extends BaseActivity implements RecyclerViewAdapterTC.ClickListener{
 
     private RecyclerView mRecyclerView;
 
     //Creating an instance of the adapter object
-    private RecyclerViewAdapterAdminTeam adapter;
+    private RecyclerViewAdapterTC adapter;
 
-    private List<JSONAdminItem> AdminTeamList;
+    private List<JSONTCItem> TCTeamList;
 
-    private AdminTeamActivity activity;
+    private TeamCoordinatorsActivity activity;
 
     private String jsonString = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admin_team);
+        setContentView(R.layout.natcom_tc);
 
         //Calling Activate Toolbar method (with the Back button enabled)
         activateToolbarWithHomeEnabled();
 
         //Instantiating the recycler view as defined in admin_team
-        mRecyclerView = (RecyclerView) findViewById(R.id.adminteam_recycler_view);
+        mRecyclerView = (RecyclerView) findViewById(R.id.natcomtc_recycler_view);
 
         //Adding item decoration. Recycler view divider
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
 
         //Initialising the adapter - Passing in the activity and the parsed Admin Team List
-        adapter = new RecyclerViewAdapterAdminTeam(activity, this, AdminTeamList);
+        adapter = new RecyclerViewAdapterTC(activity, this, TCTeamList);
 
         //Setting the adapter
         mRecyclerView.setAdapter(adapter);
@@ -67,7 +67,7 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
         //Downloading data from below url (Universal Resource Locator) to obtain data from the Admin database
-        final String url = "http://dbchudasama.webfactional.com/jsonscriptAdmin.php";
+        final String url = "http://dbchudasama.webfactional.com/jsonscriptTeamCoordinators.php";
         new AsyncHTTPTask().execute(url);
     }
 
@@ -107,17 +107,13 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
 
             super.onPostExecute(result);
 
-            //adapter.getItemCount();
-
             if (result == 1) {
-                //Intent intent = getIntent();
-                //intent.getSerializableExtra("JSON Admin");
                 //Initialising the adapter - Passing in the activity and the parsed Admin Team List
-                adapter = new RecyclerViewAdapterAdminTeam(activity, AdminTeamActivity.this, AdminTeamList);
+                adapter = new RecyclerViewAdapterTC(activity, TeamCoordinatorsActivity.this, TCTeamList);
                 //Setting the adapter
                 mRecyclerView.setAdapter(adapter);
             } else {
-                Toast.makeText(AdminTeamActivity.this, "Failed to fetch data!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TeamCoordinatorsActivity.this, "Failed to fetch data!", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -127,23 +123,25 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
 
         try {
 
-            JSONArray AdminArrays = new JSONArray(jsonString);
-            AdminTeamList = new ArrayList<>();
+            JSONArray TCArrays = new JSONArray(jsonString);
+            TCTeamList = new ArrayList<>();
 
-            for (int i = 0; i < AdminArrays.length(); i++) {
-                JSONObject AdminArrayObject = AdminArrays.getJSONObject(i);
-                JSONAdminItem item = new JSONAdminItem();
-                item.setAdminRole(AdminArrayObject.getString("AdminRole"));
-                item.setName(AdminArrayObject.getString("Name"));
+            for (int i = 0; i < TCArrays.length(); i++) {
+                JSONObject TCArrayObject = TCArrays.getJSONObject(i);
+                JSONTCItem item = new JSONTCItem();
+                item.setTCRole(TCArrayObject.getString("Team"));
+                item.setName(TCArrayObject.getString("TCName"));
 
-                this.AdminTeamList.add(item);
+                this.TCTeamList.add(item);
 
-                Log.e("Admin Role", AdminArrayObject.getString("AdminRole"));
-                Log.e("Name", AdminArrayObject.getString("Name"));
+                Log.e("Team", TCArrayObject.getString("Team"));
+                Log.e("TC Name", TCArrayObject.getString("TCName"));
             }
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
+
 }
+
