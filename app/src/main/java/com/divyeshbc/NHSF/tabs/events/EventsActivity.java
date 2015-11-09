@@ -1,4 +1,4 @@
-package com.divyeshbc.NHSF.tabs.aboutUs;
+package com.divyeshbc.NHSF.tabs.events;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -24,37 +24,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by DivyeshBC on 31/10/15.
+ * Created by DivyeshBC on 09/11/15.
  */
-public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapterAdminTeam.ClickListener{
+public class EventsActivity extends BaseActivity implements RecyclerViewAdapterEvents.ClickListener {
 
     private RecyclerView mRecyclerView;
 
     //Creating an instance of the adapter object
-    private RecyclerViewAdapterAdminTeam adapter;
+    private RecyclerViewAdapterEvents adapter;
 
-    private List<JSONAdminItem> AdminTeamList;
+    private List<JSONEventsItem> EventsList;
 
-    private AdminTeamActivity activity;
+    private EventsActivity activity;
 
     private String jsonString = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admin_team);
+        setContentView(R.layout.tab_3);
 
         //Calling Activate Toolbar method (with the Back button enabled)
         activateToolbarWithHomeEnabled();
 
         //Instantiating the recycler view as defined in admin_team
-        mRecyclerView = (RecyclerView) findViewById(R.id.adminteam_recycler_view);
+        //mRecyclerView = (RecyclerView) findViewById(R.id.events_recycler_view);
 
         //Adding item decoration. Recycler view divider
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
 
-        //Initialising the adapter - Passing in the activity and the parsed Admin Team List
-        adapter = new RecyclerViewAdapterAdminTeam(activity, this, AdminTeamList);
+        //Initialising the adapter - Passing in the activity and the parsed Events List
+        adapter = new RecyclerViewAdapterEvents(this, EventsList);
 
         //Setting the adapter
         mRecyclerView.setAdapter(adapter);
@@ -66,7 +66,7 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
         //Downloading data from below url (Universal Resource Locator) to obtain data from the Admin database
-        final String url = "http://dbchudasama.webfactional.com/jsonscriptAdmin.php";
+        final String url = "http://dbchudasama.webfactional.com/jsonscript.php";
         new AsyncHTTPTask().execute(url);
     }
 
@@ -112,11 +112,11 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
                 //Intent intent = getIntent();
                 //intent.getSerializableExtra("JSON Admin");
                 //Initialising the adapter - Passing in the activity and the parsed Admin Team List
-                adapter = new RecyclerViewAdapterAdminTeam(activity, AdminTeamActivity.this, AdminTeamList);
+                adapter = new RecyclerViewAdapterEvents(EventsActivity.this, EventsList);
                 //Setting the adapter
                 mRecyclerView.setAdapter(adapter);
             } else {
-                Toast.makeText(AdminTeamActivity.this, "Failed to fetch data!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EventsActivity.this, "Failed to fetch data!", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -127,22 +127,21 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
         try {
 
             JSONArray AdminArrays = new JSONArray(jsonString);
-            AdminTeamList = new ArrayList<>();
+            EventsList = new ArrayList<>();
 
             for (int i = 0; i < AdminArrays.length(); i++) {
                 JSONObject AdminArrayObject = AdminArrays.getJSONObject(i);
-                JSONAdminItem item = new JSONAdminItem();
-                item.setAdminRole(AdminArrayObject.getString("AdminRole"));
-                item.setName(AdminArrayObject.getString("Name"));
+                JSONEventsItem item = new JSONEventsItem();
+                item.setEventName(AdminArrayObject.getString("eventName"));
 
-                this.AdminTeamList.add(item);
+                this.EventsList.add(item);
 
-                Log.e("Admin Role", AdminArrayObject.getString("AdminRole"));
-                Log.e("Name", AdminArrayObject.getString("Name"));
+                Log.e("Event Name", AdminArrayObject.getString("eventName"));
             }
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
+
 }

@@ -1,9 +1,13 @@
 package com.divyeshbc.NHSF.tabs.aboutUs;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.divyeshbc.NHSF.BaseActivity;
@@ -64,6 +68,48 @@ public class NationalCommitteeActivity extends BaseActivity implements RecyclerV
 
 }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_email, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_email) {
+
+            //Invoking new intent to allow user to send email
+            Intent emailIntent = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
+
+            //Setting an array up for the recipient
+            String emailRecipient[] = {"info@nhsf.org.uk"};
+
+            //Allowing the user to select with what application they would like to send the email
+            //startActivity(Intent.createChooser(emailIntent, "Send your email via:"));
+
+            //Here providing the email address to which the email is being sent
+            emailIntent.putExtra(Intent.EXTRA_EMAIL, emailRecipient);
+
+            //Prompt email clients only
+            emailIntent.setType("message/rfc822");
+
+            //Navigate to the above intent
+            startActivity(Intent.createChooser(emailIntent, "Choose an email client:"));
+
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 
     //Creating an array list of information objects that can be passed into the recycler view
     public static List<SubInformation> getData() {
@@ -72,19 +118,9 @@ public class NationalCommitteeActivity extends BaseActivity implements RecyclerV
 
         //String array of text for the recycler view
         String[] text = {"Admin Team", "Team Coordinators"};
-        //String[] subText = {"What is NHSF?", "Admin Team and Team Coordinators"};
 
         //For loop to go through entire length of the menu string
-        //for(int i=0; i<menu.length; i++) {
-
         for(int i=0; i<ITEM_COUNT; i++){
-
-
-            //Information current = new Information();
-            //Information subCurrent = new Information();
-
-            //current.title = text[i];
-            //subCurrent.subtitle = subText[i];
 
             data.add(new SubInformation(text[i]));
 

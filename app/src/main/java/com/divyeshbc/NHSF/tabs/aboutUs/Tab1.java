@@ -54,16 +54,6 @@ public class Tab1 extends Fragment implements RecyclerViewAdapter.ClickListener{
 
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        /*
-        //Adding the item click listener - Passing in the active Recycler View
-        mRecyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this,
-                mRecyclerView, new RecyclerItemClickListener.OnItemClickListener() {
-            @Override
-            public View onItemClick(View view, int position) {
-
-                //Adding intent to allow the Long Click to navigate to the Photo Details Class
-                Intent intent = new Intent(MainActivity.this, IntroductionActivity.class);
-        */
         return layout;
     }
 

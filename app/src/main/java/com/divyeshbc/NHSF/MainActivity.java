@@ -9,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.divyeshbc.NHSF.tabs.SlidingTabLayout;
-import com.divyeshbc.NHSF.tabs.Tab3;
+import com.divyeshbc.NHSF.tabs.events.Tab3;
 import com.divyeshbc.NHSF.tabs.aboutUs.Tab1;
 import com.divyeshbc.NHSF.tabs.campus.Tab2;
 import com.divyeshbc.NHSF.tabs.learning.Tab4;
@@ -136,45 +136,11 @@ public class MainActivity extends BaseActivity {
                 Tab5 tab5 = new Tab5();
                 return tab5;
             }
-
-
-
-            /*
-            //Initialising Fragment
-            //Passing in the position so that position of the fragment is returned
-            MyFragment myFragment = MyFragment.getInstance(position);
-
-            return myFragment;
-            */
         }
 
 
         @Override
         public CharSequence getPageTitle(int position) {
-
-            /*
-
-            //Constructing drawable object from the icon position
-            Drawable drawable = getResources().getDrawable(icons[position]);
-
-            //Defining the bounds for each icon as this is not automatically calculated
-            drawable.setBounds(0, 0, 90, 90);
-
-            //Passing icons as drawable objects into the imageSpan. This means it can be placed amongst the text
-            ImageSpan imageSpan = new ImageSpan(drawable);
-
-            //Spannable strings allows us to embed images with text (attach/detach images)
-            SpannableString spannableString = new SpannableString(" ");
-
-            //Here setting the span of the icons amongst the scroll bar. Using the array of icons, starting at position 0,
-            //till the end, SPAN_EXCLUSIVE_EXCLUSIVE will ensure only the images in the range are included, nothing more,
-            //nothing less
-            spannableString.setSpan(imageSpan, 0, spannableString.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-
-            //Return the spannable string with icons embedded
-            return spannableString;
-
-/           */
 
             //Return the text of the position clicked and display this as the title for the tab
             return tabs[position];

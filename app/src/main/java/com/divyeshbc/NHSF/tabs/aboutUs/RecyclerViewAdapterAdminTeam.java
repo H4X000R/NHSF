@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.divyeshbc.NHSF.JSONAdminItem;
 import com.divyeshbc.NHSF.R;
 
 import java.util.Collections;
@@ -43,7 +42,7 @@ public class RecyclerViewAdapterAdminTeam extends RecyclerView.Adapter<RecyclerV
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        //Inflating the row and getting the root of view of the custom row natcom (Linear Layout)
+        //Inflating the row and getting the root of view of the custom row admin (Linear Layout)
         View view = inflater.inflate(R.layout.custom_row_admin, parent, false);
 
         //Passing the root view through as an argument

@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.divyeshbc.NHSF.JSONTCItem;
 import com.divyeshbc.NHSF.R;
 
 import java.util.Collections;

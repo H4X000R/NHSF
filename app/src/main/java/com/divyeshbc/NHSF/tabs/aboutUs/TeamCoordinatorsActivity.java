@@ -9,7 +9,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.divyeshbc.NHSF.BaseActivity;
-import com.divyeshbc.NHSF.JSONTCItem;
 import com.divyeshbc.NHSF.R;
 import com.divyeshbc.NHSF.tabs.DividerItemDecoration;
 

@@ -1,4 +1,4 @@
-package com.divyeshbc.NHSF;
+package com.divyeshbc.NHSF.tabs.aboutUs;
 
 /**
  * Created by DivyeshBC on 07/11/15.

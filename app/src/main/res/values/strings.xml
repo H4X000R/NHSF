@@ -5,6 +5,7 @@
     <string name="title_activity_natcom">National Committee</string>
     <string name="title_activity_adminteam">Admin Team</string>
     <string name="title_activity_tc">Team Coordinators</string>
+    <string name="action_email">Email</string>
 
     <string-array name="tabs">
         <item>ABOUT US</item>
