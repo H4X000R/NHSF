@@ -6,6 +6,15 @@
     <string name="title_activity_adminteam">Admin Team</string>
     <string name="title_activity_tc">Team Coordinators</string>
     <string name="action_email">Email</string>
+    <string name="title_activity_chapterImage">Chapter Image</string>
+    <string name="title_activity_mustKnowMantras">Must Know Mantras</string>
+    <string name="title_activity_mustRead">Must Read</string>
+    <string name="title_activity_bhagavadGita">Bhagavad Gita</string>
+    <string name="title_activity_whatishinduism">What is Hinduism</string>
+    <string name="title_activity_questions">14 Questions</string>
+    <string name="title_activity_hinduBasics">Hindu Basics</string>
+    <string name="title_activty_realQuestions">Real Questions</string>
+    <string name="title_activity_hinduismPrimerTopic">Hinduism - A Primer Topic</string>
 
     <string-array name="tabs">
         <item>ABOUT US</item>

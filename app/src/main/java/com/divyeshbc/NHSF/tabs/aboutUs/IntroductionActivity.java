@@ -37,12 +37,6 @@ public class IntroductionActivity extends BaseActivity implements OnPageChangeLi
         mPDFView = (PDFView) findViewById(R.id.introduction_pdf);
 
         display(SAMPLE_FILE, true);
-
-
-                //.showMinimap(false)
-                //.enableSwipe(true)
-                //.onLoad((OnLoadCompleteListener) this)
-
     }
 
     private void display(String assetFileName, boolean jumpToFirstPage) {
@@ -88,16 +82,4 @@ public class IntroductionActivity extends BaseActivity implements OnPageChangeLi
         setTitle(format("%s %s / %s", pdfName, page, pageCount));
 
     }
-
-    /*
-    @Override
-    public void onBackPressed() {
-
-        display(SAMPLE_FILE, true);
-    }
-    */
-
-    //private boolean displaying(String fileName) {
-        //return fileName.equals(pdfName);
-    //}
 }

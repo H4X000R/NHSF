@@ -106,11 +106,7 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
 
             super.onPostExecute(result);
 
-            //adapter.getItemCount();
-
             if (result == 1) {
-                //Intent intent = getIntent();
-                //intent.getSerializableExtra("JSON Admin");
                 //Initialising the adapter - Passing in the activity and the parsed Admin Team List
                 adapter = new RecyclerViewAdapterAdminTeam(activity, AdminTeamActivity.this, AdminTeamList);
                 //Setting the adapter

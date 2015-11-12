@@ -90,6 +90,82 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".tabs.aboutUs.NationalCommitteeActivity" />
         </activity>
+        <activity
+            android:name=".tabs.campus.ChapterImageZoomActivity"
+            android:label="@string/title_activity_chapterImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.MustKnowMantrasActivity"
+                  android:label="@string/title_activity_mustKnowMantras">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.MustReadActivity"
+                  android:label="@string/title_activity_mustRead">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.learning.BhagavadGitaActivity"
+            android:label="@string/title_activity_bhagavadGita"
+            android:parentActivityName=".tabs.learning.MustReadActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.MustReadActivity" />
+        </activity>
+        <activity
+            android:name=".tabs.learning.WhatIsHinduismActivity"
+            android:label="@string/title_activity_whatishinduism"
+            android:parentActivityName=".tabs.learning.MustReadActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.MustReadActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.QuestionsActivity"
+            android:label="@string/title_activity_questions"
+            android:parentActivityName=".tabs.learning.WhatIsHinduismActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhatIsHinduismActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.HinduBasicsActivity"
+            android:label="@string/title_activity_hinduBasics"
+            android:parentActivityName=".tabs.learning.WhatIsHinduismActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhatIsHinduismActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.RealQuestionsActivity"
+            android:label="@string/title_activity_hinduBasics"
+            android:parentActivityName=".tabs.learning.WhatIsHinduismActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhatIsHinduismActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.HinduismPrimerTopicActivity"
+            android:label="@string/title_activity_hinduBasics"
+            android:parentActivityName=".tabs.learning.WhatIsHinduismActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhatIsHinduismActivity"/>
+        </activity>
 
         <!-- Configuring Parse -->
         <service android:name="com.parse.PushService" />

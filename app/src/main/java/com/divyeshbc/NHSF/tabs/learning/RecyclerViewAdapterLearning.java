@@ -1,6 +1,7 @@
 package com.divyeshbc.NHSF.tabs.learning;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,12 @@ import java.util.List;
  */
 public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerViewAdapterLearning.MyViewHolder> {
 
+    private Context context;
+    //private LayoutInflater inflater;
+
+    //Variable for the on click Listener
+    private ClickListener clickListener;
+
     private LayoutInflater inflater;
 
     //Defining an array list of type information. This will be the data set for the recycler view. .emptyList() will
@@ -27,9 +34,9 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
     //Context context;
 
     //Passing in the array list argument
-    public RecyclerViewAdapterLearning(Context context, List<Information> data){
+    public RecyclerViewAdapterLearning(Context context, List<Information> data) {
 
-        //this.context = context;
+        this.context = context;
         inflater = LayoutInflater.from(context);
 
         //Setting the array list data to the argument passed in
@@ -44,7 +51,7 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
         View view = inflater.inflate(R.layout.custom_row_learning, parent, false);
 
         //View itemLayoutView = LayoutInflater.from(parent.getContext()).inflate(
-                //R.layout.custom_row_learning, null);
+        //R.layout.custom_row_learning, null);
 
         //Passing the root view through as an argument
         MyViewHolder holder = new MyViewHolder(view);
@@ -54,23 +61,53 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
 
         //This will get the current position of the Information object from the Information array
         Information current = dataSet.get(position);
-        //Information subCurrent = data.get(position);
-
-        /*
-        Picasso.with(context)
-                .load(current.getThumbnail())
-                .resize(500,500)
-                .into(holder.imageView);
-        */
 
         //Setting the text in the row to be the custom_row text
         holder.title.setText(current.getTitle());
         holder.subTitle.setText(current.getSubtitle());
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = null;
+
+                switch (position) {
+                    case 0:
+                        //Intent to Must Know Mantras PDF
+                        intent = new Intent(context, MustKnowMantrasActivity.class);
+                        break;
+
+                    case 1:
+                        //Intent to the Must Read Activity (RecyclerView)
+                        intent = new Intent(context, MustReadActivity.class);
+                        break;
+
+                    default:
+                        break;
+                }
+
+                //In order for an activity to begin, a context needs to be passed in
+                context.startActivity(intent);
+                //If the method is not called (Error handling to avoid NULL POINTER EXCEPTION ERROR)
+                if(clickListener != null)
+                {
+                    //Trigger the appropriate call. getPosition will get the latest position of the item clicked by the user
+                    clickListener.itemClicked(v, position);
+                }
+            }
+        });
+    }
+
+    //Setting up a click listener which lets me set up an object that implements the interface
+    public void setClickListener(ClickListener clickListener){
+
+        //Initialising the clickListener
+        this.clickListener=clickListener;
     }
 
     @Override
@@ -93,8 +130,11 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
                     findViewById(R.id.listText);
             subTitle = (TextView) itemView.
                     findViewById(R.id.subTitle);
-            //imageView = (ImageView) itemView.
-                    //findViewById(R.id.imageView);
         }
+    }
+
+    //Here, inside the adapter have made an interface. This interface is implemented in the Tab1 class Fragment.
+    public interface ClickListener {
+        void itemClicked(View view, int position);
     }
 }

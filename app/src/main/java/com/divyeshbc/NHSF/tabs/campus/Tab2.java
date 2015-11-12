@@ -60,7 +60,7 @@ public class Tab2 extends Fragment {
                 "NHSF KCL", "NHSF Keele", "NHSF Kent", "NHSF Kingston", "NHSF Leeds", "NHSF Leicester", "NHSF Liverpool", "NHSF Loughborough",
                 "NHSF LSBU", "NHSF LSE", "NHSF Manchester", "NHSF Medway", "NHSF Northampton", "NHSF Northumbria", "NHSF Nottingham",
                 "NHSF NTU", "NHSF Plymouth", "NHSF Portsmouth", "NHSF QMUL", "NHSF Reading", "NHSF RHUL", "NHSF Roehampton", "NHSF SGUL",
-                "NHSF Sheffield", "NHSF SOAS", "NHSF Southampton", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster", "NHSF York"};
+                "NHSF Sheffield", "NHSF SOAS", "NHSF Southampton", "NHSF Swansea", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster", "NHSF York"};
 
         final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_bradford, R.drawable.nhsf_brighton,
                              R.drawable.nhsf_bristol, R.drawable.nhsf_brunel, R.drawable.nhsf_bucks_new_uni, R.drawable.nhsf_city, R.drawable.nhsf_coventry,
@@ -69,8 +69,8 @@ public class Tab2 extends Fragment {
                              R.drawable.nhsf_leeds, R.drawable.nhsf_leicester, R.drawable.nhsf_liverpool, R.drawable.nhsf_loughborough, R.drawable.nhsf_lsbu, R.drawable.nhsf_lse,
                              R.drawable.nhsf_manchester, R.drawable.nhsf_medway, R.drawable.nhsf_northampton, R.drawable.nhsf_northumbria, R.drawable.nhsf_nottingham,
                              R.drawable.nhsf_ntu, R.drawable.nhsf_plymouth, R.drawable.nhsf_portsmouth, R.drawable.nhsf_qmul, R.drawable.nhsf_reading, R.drawable.nhsf_rhul,
-                             R.drawable.nhsf_roehampton, R.drawable.nhsf_sgul, R.drawable.nhsf_sheffield, R.drawable.nhsf_soas, R.drawable.nhsf_southampton, R.drawable.nhsf_uea,
-                             R.drawable.nhsf_uwe, R.drawable.nhsf_warwick, R.drawable.nhsf_westminster, R.drawable.nhsf_york};
+                             R.drawable.nhsf_roehampton, R.drawable.nhsf_sgul, R.drawable.nhsf_sheffield, R.drawable.nhsf_soas, R.drawable.nhsf_southampton, R.drawable.nhsf_swansea,
+                             R.drawable.nhsf_uea, R.drawable.nhsf_uwe, R.drawable.nhsf_warwick, R.drawable.nhsf_westminster, R.drawable.nhsf_york};
 
         final String[] zones = {
                 //NHSF Aston
@@ -161,6 +161,8 @@ public class Tab2 extends Fragment {
                 "London Zone - Coordinator: Ritesh Thakrar",
                 //NHSF SOUTHAMPTON
                 "South Zone - Coordinator: Reva Shah",
+                //NHSF SWANSEA
+                "South Zone - Coordinator: Reva Shah",
                 //NHSF UEA
                 "South Zone - Coordinator: Reva Shah",
                 //NHSF UWE
@@ -199,9 +201,9 @@ public class Tab2 extends Fragment {
                         "\nLEARNING: Radhika Chaudhury \nSPORTS: Kirujan Ravichandran & Sagiram Surendirarasa",
 
                 //-- NHSF BRIGHTON --
-                "PRESIDENT: Chintan Patel \nVP: Shreena Patel \nSECRETARIES: Roshni Patel & Suhani Ghiya \nTREASURER: Nity Kapoor" +
-                        "\nEVENTS: Amisha Patel & Duckshini Sivalingam \nPR: Bhavisha Patel \nSEWA: Ramya Shanthikumar " +
-                        "\nSPORTS: Yogesh Karunavannam & Krishan Patel \nMEDIA: Divya Lakhani",
+                "PRESIDENT: Yogesh Karunavannan \nVP: Shreena Patel \nSECRETARIES: Roshni Patel & Suhani Ghiya \nTREASURER: Nity Kapoor" +
+                        "\nEVENTS: Amisha Patel & Duckshini Sivalingam \nPR: Bhavisha Patel \nSEWA: Ramya Shanthikumar \nLEARNING: Chintan Patel" +
+                        "\nSPORTS: Krishan Patel \nMEDIA: Divya Lakhani",
 
                 //-- NHSF BRISTOL --
                 "PRESIDENT: Nihir Shah \nVP: Jagrati Chopra \nSECRETARY: Siddhant Shah \nTREASURER: Shria Radia" +
@@ -267,8 +269,8 @@ public class Tab2 extends Fragment {
                         "\nSPORTS: Aman Grover & Revyath Varanthan \nADVISORY: Kusum Nathawat",
 
                 // -- NHSF KENT --
-                "PRESIDENT: Kunal Patel \nSECRETARY: Meera Daya \nTREASURUER: Trina Mistry \nSEWA: Anokhi Desai \nLEARNING: Shree Iyengar \nSPORTS: Karnan Narendrakumar" +
-                        "\nMARKETING: Viknesh Prabhakar \nSOCIAL: Pari Shah",
+                "PRESIDENT: Kunal Patel \nSECRETARY: Meera Daya \nTREASURUER: Trina Mistry \nSEWA: Anokhi Desai \nLEARNING: Abi Nadarajah \nSPORTS: Rahul Dayalani" +
+                        "\nMARKETING: Viknesh Prabhakar \nSOCIAL: Lakchitha Kananathapillai & Pari Shah \nLOGISTICS: Karnan Narendrakumar",
 
                 // -- NHSF KINGSTON --
                 "PRESIDENT: Janak Dattani \nVP: Dhanik Parmar \nSECRETARY: Disha Patel \nTREASURER: Vichruti Hkumar \nEVENTS: Anisha Ruparelia & Abhishek Gautami" +
@@ -305,7 +307,8 @@ public class Tab2 extends Fragment {
                         "\nLEARNING: Krupa Thakkar & Hirendra Patel \nSPORTS: Talisha Patel \nPERFORMING ARTS: Sonam Kotecha & Priyanka Patel",
 
                 // -- NHSF MEDWAY --
-                "PRESIDENT: \nVP: \nSECRETARY: \nTREASURER: \nSEWA: \nPR:",
+                "PRESIDENT: Mayur Patel \nVP: Kash Mehta \nTREASURER: Preksha \nPR: Shavinder & Pradeepan \nLEARNING: Nidhi & Deesha Bhudia" +
+                "\nEVENTS: Kash Mehta",
 
                 // -- NHSF NORTHAMPTON --
                 "PRESIDENT: Anna Chandrasehar \nSECRETARY: Saejal Odedra \nTREASURER: Neelam Chhabhadiya \nEVENTS: Feroz Shanmughanthan \nLEARNING: Bhakti Joshi" +
@@ -328,9 +331,9 @@ public class Tab2 extends Fragment {
                 "PRESIDENT: Pooja",
 
                 // -- NSHF PORTSMOUTH --
-                "PRESIDENTS: Ashna Sejpal & Jay Amin \nVP: Chiraag Sanghani \nSECRETARY: Bina Choudury \nTREASURER: Ankit Nayee \nPR: Divya Popat" +
-                        "\nEVENTS: Sarina Kholsa, Namita Shenolikar & Kamal Patel \nSEWA: Jay Sharma & Jillna Gada \nSPORTS: Ajay Upadyaya" +
-                        "\nDHARMA: Khushal Shah, Roopa Baiby & Shil Patel \nSUPPORT: Monil Patel",
+                "PRESIDENTS: Ashna Sejpal & Jay Amin \nVP: Chiraag Sanghani \nSECRETARY: Bina Choudury \nTREASURER: Ankit Nayee & Jay Sharma \nPR: Nisha KApur" +
+                        "\nEVENTS: Sarina Kholsa, Namita Shenolikar Shil Patel, Vimal Patel & Devika Sharma \nSEWA: Harshiv Nayee, Natasha Gukhool, Hitesh Patel, Manish Seth & Priyia Ravi" +
+                        "\nSPORTS: Ajay Upadyaya & Kamal Patel \nDHARMA: Khushal Shah, Tejal Mandalia, Alysha Gupta & Bhavisha Kataria \nSUPPORT: Monil Patel",
 
                 // -- NHSF QMUL --
                 "PRESIDENT: Chandan Varsani \nVP: Archana Sasitharan \nTREASURER: Shubhra Jain \nPR: Pareen Chhaganlal & Serena Patel \nEVENTS: Serena Desai," +
@@ -355,23 +358,26 @@ public class Tab2 extends Fragment {
                         "\nMEDIA: Poorani Kuganesan \nDIVIA COORDINATOR: Eesha Tripathi & Siddharth Praveen \nADVISROY: Bejaya Chowdury",
 
                 // -- NHSF SHEFFIELD --
-                "PRESIDENT: Hina Sharma \nVP: Krishna Tejura & Vaidehi Tembhekar \nSECRETARY: Reesha Siniara \nTREASURER: Anuj Savani \nPR: Tanya Datta & " +
-                        "Nikita Pankhania \nEVENTS: Aneesa Bhardwa & Anamil Kochar \nSEWA:  \nLEARNING: " +
-                        "\nSPORTS: Zaib Hilal & Anish Patel \nPERFORMING ARTS: Tanya Datta & Nikita Bharat",
+                "PRESIDENT: Hina Sharma \nVP: Krishna Tejura & Vaidehi Tembhekar \nSECRETARY: Reesha Siniara \nTREASURER: Anuj Savani \nPR: Nicole Chahal & " +
+                        "Nikita Pankhania \nEVENTS: Aneesa Bhardwa & Anamil Kochar \nSEWA: Saakshi Barman & Tejal Mistry \nLEARNING: Dania Lakshmi" +
+                        "\nSPORTS: Akash Madhu & Ayesha Girach \nPERFORMING ARTS: Tanya Datta & Nikita Bharat",
 
                 // -- NHSF SOAS --
                 "PRESIDENT: \nVP: \nSECRETARY \nTREASURER",
 
                 // -- NHSF SOUTHAMPTON --
-                "PRESIDENT: Jay Dave \nVP: Vikram Palli \nSECRETARY: Sajeenth Thevabalasingam \nTREASURER: Animesh Sahay \nEVETNS: Tara Ludra, Sonam Thanki" +
+                "PRESIDENT: Jay Dave \nVP: Vikram Palli \nSECRETARY: Sajeenth Thevabalasingam & Yue Huang \nTREASURER: Animesh Sahay \nEVETNS: Tara Ludra, Sonam Thanki" +
                         "& Sahil Thakrar \nSEWA: Roshni Desai, Hemna Santilale & Jesal Patel \nLEARNING: Roshni Desai, Hemna Santilale & Jesal Patel" +
-                        "\nSPORTS: Saajan Soma, Suraj Vadukul, ALisha Sharma & Nikesh Patel \nSPONSORSHIP: Ravi Jayanti & Aravinthan Andy Vijaykumar" +
-                        "\nIT: Sivaruby Kangarathinam, Asmie Vanajaraj & Methusha Sakthipakan \nDANCE: Karishma Patel",
+                        "\nSPORTS: Suraj Vadukul, Alisha Sharma & Nikesh Patel \nSPONSORSHIP: Ravi Jayanti & Aravinthan Andy Vijaykumar" +
+                        "\nIT: Sivaruby Kangarathinam, Asmie Vanajaraj & Methusha Sakthipakan \nDANCE: Karishma Patel \nHEALTH: Darshan Patel",
+
+                // -- NHSF SWANSEA --
+                "PRESIDENT: Karan Dossa, \nLEARNING: Krishan Karadia",
 
                 // -- NHSF UEA --
                 "PRESIDENT: Punit Naran \nSECRETARY: Jaymini Chohan \nTREASURER: Urvashi Ragobur \nSEWA: Punit Naran \nLEARNING: Kishan Jethwa" +
                         "\nSPORTS: Rahul Mehta & Hinal Shah \nDIVERSITY: Abinayah Jayanthan & Prina Kakad \nAARTI COORDINATOR: Trisha Dhaliah" +
-                        "\nSOCIAL: Prabin Mohanty \nGENERAL COMMITTEE MEMBERS: Nischay Kakkar, Riti Sharma & Sandhya Rai",
+                        "\nSOCIAL: Prabin Mohanty \nGENERAL COMMITTEE MEMBERS: Nischay Kakkar, Riti Sharma & Sandhya Rai \nHEALTH: Prabin Mohanty",
 
                 // -- NHSF UWE --
                 "PRESIDENTS: Janki Seth & Roshnie Mahani \nSECRETARY: Prachi Patel \nTREASURER: Kasturi Sothiraj \nEVENTS: Prashant Shukla & Pirruntha Siva " +
