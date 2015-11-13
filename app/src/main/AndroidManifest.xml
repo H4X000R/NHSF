@@ -370,6 +370,66 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".tabs.campus.NHSFManchesterImageActivity"
+            android:label="@string/title_activity_NHSFManchesterImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFMedwayImageActivity"
+            android:label="@string/title_activity_NHSFMedwayImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFNorthamptonImageActivity"
+            android:label="@string/title_activity_NHSFNorthamptonImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFNorthumbriaImageActivity"
+            android:label="@string/title_activity_NHSFNorthumbriaImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFNottinghamImageActivity"
+            android:label="@string/title_activity_NHSFNottinghamImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFNTUImageActivity"
+            android:label="@string/title_activity_NHSFNTUImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
 
 
