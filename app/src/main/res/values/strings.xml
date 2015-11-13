@@ -15,6 +15,12 @@
     <string name="title_activity_hinduBasics">Hindu Basics</string>
     <string name="title_activty_realQuestions">Real Questions</string>
     <string name="title_activity_hinduismPrimerTopic">Hinduism - A Primer Topic</string>
+    <string name="title_activity_whyDoWe">Why Do We?</string>
+    <string name="title_activity_lotus">Lotus</string>
+    <string name="title_activity_pradakshina">Pradakshina</string>
+    <string name="title_activity_fast">Why do we fast?</string>
+    <string name="title_activity_trees">Trees and Plants</string>
+    <string name="title_ativity_bell">Bell in a temple</string>
 
     <string-array name="tabs">
         <item>ABOUT US</item>

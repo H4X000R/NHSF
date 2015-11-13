@@ -166,6 +166,54 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".tabs.learning.WhatIsHinduismActivity"/>
         </activity>
+        <activity
+            android:name=".tabs.learning.WhyDoWeActivity"
+            android:label="@string/title_activity_whyDoWe"
+            android:parentActivityName=".tabs.learning.MustReadActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.MustReadActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.LotusActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.PradakshinaActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.FastActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.TreesPlantsActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.BellActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
 
         <!-- Configuring Parse -->
         <service android:name="com.parse.PushService" />
