@@ -540,9 +540,56 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".tabs.campus.NHSFUEAImageActivity"
+            android:label="@string/title_activity_NHSFUEAImage">
 
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFUWEImageActivity"
+            android:label="@string/title_activity_NHSFUWEImage">
 
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFWarwickImageActivity"
+            android:label="@string/title_activity_NHSFWarwickImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFWestminsterImageActivity"
+            android:label="@string/title_activity_NHSFWestminsterImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFYorkImageActivity"
+            android:label="@string/title_activity_NHSFYorkImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
 
 

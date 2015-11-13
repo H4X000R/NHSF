@@ -306,27 +306,27 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
 
                     case 45:
                         //Intent to NHSF UEA Image
-
+                        intent = new Intent(context, NHSFUEAImageActivity.class);
                         break;
 
                     case 46:
                         //Intent to NHSF UWE Image
-
+                        intent = new Intent(context, NHSFUWEImageActivity.class);
                         break;
 
                     case 47:
                         //Intent to NHSF Warwick Image
-
+                        intent = new Intent(context, NHSFWarwickImageActivity.class);
                         break;
 
                     case 48:
                         //Intent to NHSF Westminster Image
-
+                        intent = new Intent(context, NHSFWestminsterImageActivity.class);
                         break;
 
                     case 49:
                         //Intent to NHSF York Image
-
+                        intent = new Intent(context, NHSFYorkImageActivity.class);
                         break;
 
                     default:
