@@ -230,6 +230,146 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".tabs.campus.NHSFHertfordshireImageActivity"
+            android:label="@string/title_activity_NHSFHertfordshireImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFHuddersfieldImageActivity"
+            android:label="@string/title_activity_NHSFHuddersfieldImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFHullImageActivity"
+            android:label="@string/title_activity_NHSFHullImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name=".tabs.campus.NHSFImperialImageActivity"
+        android:label="@string/title_activity_NHSFImperialImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name=".tabs.campus.NHSFKCLImageActivity"
+        android:label="@string/title_activity_NHSFKCLImage">
+
+        <intent-filter>
+            <action android:name="android.intent.action.ACTION_VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".tabs.campus.NHSFKeeleImageActivity"
+            android:label="@string/title_activity_NHSFKeeleImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFKentImageActivity"
+            android:label="@string/title_activity_NHSFKentImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFKingstonImageActivity"
+            android:label="@string/title_activity_NHSFKingstonImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLeedsImageActivity"
+            android:label="@string/title_activity_NHSFLeedsImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLeicesterImageActivity"
+            android:label="@string/title_activity_NHSFLeicesterImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLiverpoolImageActivity"
+            android:label="@string/title_activity_NHSFLiverpoolImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLoughboroughImageActivity"
+            android:label="@string/title_activity_NHSFLoughboroughImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLSBUImageActivity"
+            android:label="@string/title_activity_NHSFLSBUImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLSEImageActivity"
+            android:label="@string/title_activity_NHSFLSEImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
 
 

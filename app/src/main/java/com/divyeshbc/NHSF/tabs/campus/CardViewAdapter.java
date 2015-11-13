@@ -151,175 +151,180 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
 
                     case 14:
                         //Intent to NHSF Hertfordshire Image
-
+                        intent = new Intent(context, NHSFHertfordshireImageActivity.class);
                         break;
 
                     case 15:
                         //Intent to NHSF Huddersfield Image
-
+                        intent = new Intent(context, NHSFHuddersfieldImageActivity.class);
                         break;
 
                     case 16:
                         //Intent to NHSF Hull Image
-
+                        intent = new Intent(context, NHSFHullImageActivity.class);
                         break;
 
                     case 17:
                         //Intent to NHSF Imperial Image
-
+                        intent = new Intent(context, NHSFImperialImageActivity.class);
                         break;
 
                     case 18:
                         //Intent to NHSF KCL Image
-
+                        intent = new Intent(context, NHSFKCLImageActivity.class);
                         break;
 
                     case 19:
                         //Intent to NHSF Keele Image
-
+                        intent = new Intent(context, NHSFKeeleImageActivity.class);
                         break;
 
                     case 20:
-                        //Intent to NHSF Kingston Image
-
+                        //Intent to NHSF Kent Image
+                        intent = new Intent(context, NHSFKentImageActivity.class);
                         break;
 
                     case 21:
-                        //Intent to NHSF Leeds Image
-
+                        //Intent to NHSF Kingston Image
+                        intent = new Intent(context, NHSFKingstonImageActivity.class);
                         break;
 
                     case 22:
-                        //Intent to NHSF Leicester Image
-
+                        //Intent to NHSF Leeds Image
+                        intent = new Intent(context, NHSFLeedsImageActivity.class);
                         break;
 
                     case 23:
-                        //Intent to NHSF Liverpool Image
-
+                        //Intent to NHSF Leicester Image
+                        intent = new Intent(context, NHSFLeicesterImageActivity.class);
                         break;
 
                     case 24:
-                        //Intent to NHSF Loughborough Image
-
+                        //Intent to NHSF Liverpool Image
+                        intent = new Intent(context, NHSFLiverpoolImageActivity.class);
                         break;
 
                     case 25:
-                        //Intent to NHSF LSBU Image
-
+                        //Intent to NHSF Loughborough Image
+                        intent = new Intent(context, NHSFLoughboroughImageActivity.class);
                         break;
 
                     case 26:
-                        //Intent to NHSF LSE Image
-
+                        //Intent to NHSF LSBU Image
+                        intent = new Intent(context, NHSFLSBUImageActivity.class);
                         break;
 
                     case 27:
+                        //Intent to NHSF LSE Image
+                        intent = new Intent(context, NHSFLSEImageActivity.class);
+                        break;
+
+                    case 28:
                         //Intent to NHSF Manchester Image
 
                         break;
 
-                    case 28:
+                    case 29:
                         //Intent to NHSF Medway Image
 
                         break;
 
-                    case 29:
+                    case 30:
                         //Intent to NHSF Northampton Image
 
                         break;
 
-                    case 30:
+                    case 31:
                         //Intent to NHSF Northumbria Image
 
                         break;
 
-                    case 31:
+                    case 32:
                         //Intent to NHSF Nottingham Image
 
                         break;
 
-                    case 32:
+                    case 33:
                         //Intent to NHSF NTU Image
 
                         break;
 
-                    case 33:
+                    case 34:
                         //Intent to NHSF Plymouth Image
 
                         break;
 
-                    case 34:
+                    case 35:
                         //Intent to Portsmouth Image
 
                         break;
 
-                    case 35:
+                    case 36:
                         //Intent to NHSF QMUL Image
 
                         break;
 
-                    case 36:
+                    case 37:
                         //Intent to NHSF Reading Image
 
                         break;
 
-                    case 37:
+                    case 38:
                         //Intent to NHSF RHUL Image
 
                         break;
 
-                    case 38:
+                    case 39:
                         //Intent to NHSF Roehampton Image
 
                         break;
 
-                    case 39:
+                    case 40:
                         //Intent to NHSF SGUL Image
 
                         break;
 
-                    case 40:
+                    case 41:
                         //Intent to NHSF Sheffield Image
 
                         break;
 
-                    case 41:
+                    case 42:
                         //Intent to NHSF SOAS Image
 
                         break;
 
-                    case 42:
+                    case 43:
                         //Intent to NHSF Southampton Image
 
                         break;
 
-                    case 43:
+                    case 44:
                         //Intent to NHSF Swansea Image
 
                         break;
 
-                    case 44:
+                    case 45:
                         //Intent to NHSF UEA Image
 
                         break;
 
-                    case 45:
+                    case 46:
                         //Intent to NHSF UWE Image
 
                         break;
 
-                    case 46:
+                    case 47:
                         //Intent to NHSF Warwick Image
 
                         break;
 
-                    case 47:
+                    case 48:
                         //Intent to NHSF Westminster Image
 
                         break;
 
-                    case 48:
+                    case 49:
                         //Intent to NHSF York Image
 
                         break;
