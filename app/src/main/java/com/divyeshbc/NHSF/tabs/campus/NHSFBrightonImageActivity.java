@@ -1,36 +1,24 @@
 package com.divyeshbc.NHSF.tabs.campus;
 
-import android.content.Context;
-import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.divyeshbc.NHSF.BaseActivity;
-import com.divyeshbc.NHSF.Chapter;
 import com.divyeshbc.NHSF.R;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
 
 /**
- * Created by DivyeshBC on 10/11/15.
+ * Created by DivyeshBC on 13/11/15.
  */
-public class ChapterImageZoomActivity extends BaseActivity implements CardViewAdapter.Clicklistener{
+public class NHSFBrightonImageActivity extends BaseActivity implements CardViewAdapter.Clicklistener {
 
     private ImageView mImageView;
 
     private PhotoViewAttacher mPhotoViewAttacher;
-
-    private Context mContext;
-
-    private Chapter cImage;
-
-    private ChapterImageHolder CIH;
-
-    private CardView mCardView ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,13 +28,9 @@ public class ChapterImageZoomActivity extends BaseActivity implements CardViewAd
 
         activateToolBar();
 
-        Intent intent = getIntent();
-
-        //mImageView = (ImageView) intent.getSerializableExtra(CHAPTER_IMAGE);
-
         mImageView = (ImageView) findViewById(R.id.chapterImageView);
 
-        Drawable bitmap = getResources().getDrawable(R.drawable.nhsf_aston);
+        Drawable bitmap = getResources().getDrawable(R.drawable.nhsf_brighton);
         mImageView.setImageDrawable(bitmap);
 
         //Attach a PhotoViewAttacher, which takes care of all of the zooming functionality
@@ -76,8 +60,4 @@ public class ChapterImageZoomActivity extends BaseActivity implements CardViewAd
 
         return super.onOptionsItemSelected(item);
     }
-
-
-
 }
-

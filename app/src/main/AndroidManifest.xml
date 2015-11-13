@@ -91,8 +91,8 @@
                 android:value=".tabs.aboutUs.NationalCommitteeActivity" />
         </activity>
         <activity
-            android:name=".tabs.campus.ChapterImageZoomActivity"
-            android:label="@string/title_activity_chapterImage">
+            android:name=".tabs.campus.NHSFAstonImageActivity"
+            android:label="@string/title_activity_NHSFAstonImage">
 
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW" />
@@ -100,6 +100,140 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBCUImageActivity"
+            android:label="@string/title_activity_NHSFBCUImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBirminghamImageActivity"
+            android:label="@string/title_activity_NHSFBirminghamImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBPPImageActivity"
+            android:label="@string/title_activity_NHSFBPPImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBradfordImageActivity"
+            android:label="@string/title_activity_NHSFBradfordImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBrightonImageActivity"
+            android:label="@string/title_activity_NHSFBrightonImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBristolImageActivity"
+            android:label="@string/title_activity_NHSFBristolImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBrunelImageActivity"
+            android:label="@string/title_activity_NHSFBrunelImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBucksImageActivity"
+            android:label="@string/title_activity_NHSFBucksNewUniImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFCityImageActivity"
+            android:label="@string/title_activity_NHSFCityImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFCoventryImageActivity"
+            android:label="@string/title_activity_NHSFCoventryImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFDMUImageActivity"
+            android:label="@string/title_activity_NHSFDMUImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFExeterImageActivity"
+            android:label="@string/title_activity_NHSFExeterImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFGreenwichImageActivity"
+            android:label="@string/title_activity_NHSFGreenwichImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
         <activity android:name=".tabs.learning.MustKnowMantrasActivity"
                   android:label="@string/title_activity_mustKnowMantras">
 
