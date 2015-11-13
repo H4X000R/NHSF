@@ -251,57 +251,57 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
 
                     case 34:
                         //Intent to NHSF Plymouth Image
-
+                        intent = new Intent(context, NHSFPlymouthImageActivity.class);
                         break;
 
                     case 35:
                         //Intent to Portsmouth Image
-
+                        intent = new Intent(context, NHSFPortsmouthImageActivity.class);
                         break;
 
                     case 36:
                         //Intent to NHSF QMUL Image
-
+                        intent = new Intent(context, NHSFQMULImageActivity.class);
                         break;
 
                     case 37:
                         //Intent to NHSF Reading Image
-
+                        intent = new Intent(context, NHSFReadingImageActivity.class);
                         break;
 
                     case 38:
                         //Intent to NHSF RHUL Image
-
+                        intent = new Intent(context, NHSFRHULImageActivity.class);
                         break;
 
                     case 39:
                         //Intent to NHSF Roehampton Image
-
+                        intent = new Intent(context, NHSFRoehamptonImageActivity.class);
                         break;
 
                     case 40:
                         //Intent to NHSF SGUL Image
-
+                        intent = new Intent(context, NHSFSGULImageActivity.class);
                         break;
 
                     case 41:
                         //Intent to NHSF Sheffield Image
-
+                        intent = new Intent(context, NHSFSheffieldImageActivity.class);
                         break;
 
                     case 42:
                         //Intent to NHSF SOAS Image
-
+                        intent = new Intent(context, NHSFSOASImageActivity.class);
                         break;
 
                     case 43:
                         //Intent to NHSF Southampton Image
-
+                        intent = new Intent(context, NHSFSouthamptonImageActivity.class);
                         break;
 
                     case 44:
                         //Intent to NHSF Swansea Image
-
+                        intent = new Intent(context, NHSFSwanseaImageActivity.class);
                         break;
 
                     case 45:

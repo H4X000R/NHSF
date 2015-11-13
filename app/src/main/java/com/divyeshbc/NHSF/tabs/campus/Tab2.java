@@ -372,7 +372,7 @@ public class Tab2 extends Fragment {
                         "\nIT: Sivaruby Kangarathinam, Asmie Vanajaraj & Methusha Sakthipakan \nDANCE: Karishma Patel \nHEALTH: Darshan Patel",
 
                 // -- NHSF SWANSEA --
-                "PRESIDENT: Karan Dossa, \nLEARNING: Krishan Karadia",
+                "PRESIDENT: Karan Dossa \nLEARNING: Krishan Karadia",
 
                 // -- NHSF UEA --
                 "PRESIDENT: Punit Naran \nSECRETARY: Jaymini Chohan \nTREASURER: Urvashi Ragobur \nSEWA: Punit Naran \nLEARNING: Kishan Jethwa" +

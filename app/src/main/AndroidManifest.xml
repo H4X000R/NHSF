@@ -430,6 +430,118 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".tabs.campus.NHSFPlymouthImageActivity"
+            android:label="@string/title_activity_NHSFPlymouthImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFPortsmouthImageActivity"
+            android:label="@string/title_activity_NHSFPortsmouthImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFQMULImageActivity"
+            android:label="@string/title_activity_NHSFQMULImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFReadingImageActivity"
+            android:label="@string/title_activity_NHSFReadingImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFRHULImageActivity"
+            android:label="@string/title_activity_NHSFRHULImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFRoehamptonImageActivity"
+            android:label="@string/title_activity_NHSFRoehamptonImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSGULImageActivity"
+            android:label="@string/title_activity_NHSFSGULImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSheffieldImageActivity"
+            android:label="@string/title_activity_NHSFSheffieldImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSOASImageActivity"
+            android:label="@string/title_activity_NHSFSOASImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSouthamptonImageActivity"
+            android:label="@string/title_activity_NHSFSouthamptonImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSwanseaImageActivity"
+            android:label="@string/title_activity_NHSFSwanseaImage">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
 
 
 
