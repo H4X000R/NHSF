@@ -1,5 +1,6 @@
 package com.divyeshbc.NHSF;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,9 +10,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.divyeshbc.NHSF.tabs.SlidingTabLayout;
-import com.divyeshbc.NHSF.tabs.events.Tab3;
 import com.divyeshbc.NHSF.tabs.aboutUs.Tab1;
 import com.divyeshbc.NHSF.tabs.campus.Tab2;
+import com.divyeshbc.NHSF.tabs.events.Tab3;
 import com.divyeshbc.NHSF.tabs.learning.Tab4;
 import com.divyeshbc.NHSF.tabs.sewa.Tab5;
 import com.parse.ParseAnalytics;
@@ -28,6 +29,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         // To track statistics around application
         ParseAnalytics.trackAppOpened(getIntent());
