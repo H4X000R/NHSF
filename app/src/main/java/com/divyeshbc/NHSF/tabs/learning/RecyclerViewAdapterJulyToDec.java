@@ -15,9 +15,9 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by DivyeshBC on 16/06/15.
+ * Created by DivyeshBC on 14/11/15.
  */
-public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerViewAdapterLearning.MyViewHolder> {
+public class RecyclerViewAdapterJulyToDec extends RecyclerView.Adapter<RecyclerViewAdapterJulyToDec.MyViewHolder> {
 
     private Context context;
     //private LayoutInflater inflater;
@@ -34,7 +34,7 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
     //Context context;
 
     //Passing in the array list argument
-    public RecyclerViewAdapterLearning(Context context, List<Information> data) {
+    public RecyclerViewAdapterJulyToDec(Context context, List<Information> data) {
 
         this.context = context;
         inflater = LayoutInflater.from(context);
@@ -78,18 +78,38 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
 
                 switch (position) {
                     case 0:
-                        //Intent to Must Know Mantras PDF
-                        intent = new Intent(context, MustKnowMantrasActivity.class);
+                        //Intent to Guru Purnima PDF
+                        intent = new Intent(context, GuruPurnimaActivity.class);
                         break;
 
                     case 1:
-                        //Intent to the Must Read Activity (RecyclerView)
-                        intent = new Intent(context, MustReadActivity.class);
+                        //Intent to the Raksha Bandhan PDF
+                        intent = new Intent(context, RakshaBandhanActivity.class);
                         break;
 
                     case 2:
-                        //Intent to the Festivals Activity (RecyclerView)
-                        intent = new Intent(context, FestivalsActivity.class);
+                        //Intent to the Janmashtami PDF
+                        intent = new Intent(context, JanmashtamiActivity.class);
+                        break;
+
+                    case 3:
+                        //Intent to the Ganesh Chaturthi PDF
+
+                        break;
+
+                    case 4:
+                        //Intent to the Navratri PDF
+
+                        break;
+
+                    case 5:
+                        //Intent to Vijaya Dashmi/Dusshera PDF
+
+                        break;
+
+                    case 6:
+                        //Intent to Diwali PDF
+
                         break;
 
                     default:

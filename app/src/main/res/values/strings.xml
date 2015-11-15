@@ -70,6 +70,21 @@
     <string name="title_activity_fast">Why do we fast?</string>
     <string name="title_activity_trees">Trees and Plants</string>
     <string name="title_ativity_bell">Bell in a temple</string>
+    <string name="title_activity_festivals">Festivals</string>
+    <string name="title_activity_janToJune">Jan to June</string>
+    <string name="title_activity_julyToDec">July to December</string>
+    <string name="title_activity_makarSankranti">Makar Sankranti</string>
+    <string name="title_activity_mahaShivratri">MahaShivratri</string>
+    <string name="title_activity_holi">Holi</string>
+    <string name="title_activity_ramnavmi">Ramnavmi</string>
+    <string name="title_activity_hanumanJayanti">Hanuman Jayanti</string>
+    <string name="title_activity_guruPurnima">Guru Purnima</string>
+    <string name="title_activity_rakshaBandhan">Raksha Bandhan</string>
+    <string name="title_activity_janmashtami">Janmashtami</string>
+    <string name="title_activity_ganeshChaturthi">Ganesh Chaturthi</string>
+    <string name="title_activity_navratri">Navratri</string>
+    <string name="title_activity_dusshera">Dusshera</string>
+    <string name="title_activity_diwali">Diwali</string>
 
     <string-array name="tabs">
         <item>ABOUT US</item>

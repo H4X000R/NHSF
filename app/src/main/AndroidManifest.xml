@@ -707,6 +707,109 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".tabs.learning.WhyDoWeActivity"/>
         </activity>
+        <activity android:name=".tabs.learning.FestivalsActivity"
+                  android:label="@string/title_activity_festivals">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.JanToJuneActivity"
+                  android:label="@string/title_activity_janToJune">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.MakarSankrantiActivity"
+                  android:label="@string/title_activity_makarSankranti">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.MahashivratriActivity"
+                  android:label="@string/title_activity_mahaShivratri">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.HoliActivity"
+                  android:label="@string/title_activity_holi">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.RamnavmiActivity"
+                  android:label="@string/title_activity_ramnavmi">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.HanumanJayantiActivity"
+                  android:label="@string/title_activity_hanumanJayanti">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.GuruPurnimaActivity"
+                  android:label="@string/title_activity_guruPurnima">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.RakshaBandhanActivity"
+                  android:label="@string/title_activity_rakshaBandhan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.JanmashtamiActivity"
+                  android:label="@string/title_activity_janmashtami">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name=".tabs.learning.JulyToDecActivity"
+                  android:label="@string/title_activity_julyToDec">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
         <!-- Configuring Parse -->
         <service android:name="com.parse.PushService" />

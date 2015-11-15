@@ -8,16 +8,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.divyeshbc.NHSF.Information;
 import com.divyeshbc.NHSF.R;
+import com.divyeshbc.NHSF.SubInformation;
 
 import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by DivyeshBC on 16/06/15.
+ * Created by DivyeshBC on 14/11/15.
  */
-public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerViewAdapterLearning.MyViewHolder> {
+public class RecyclerViewAdapterFestivals extends RecyclerView.Adapter<RecyclerViewAdapterFestivals.MyViewHolder> {
 
     private Context context;
     //private LayoutInflater inflater;
@@ -29,12 +29,12 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
 
     //Defining an array list of type information. This will be the data set for the recycler view. .emptyList() will
     //take care of the null pointer exception
-    List<Information> dataSet = Collections.emptyList();
+    List<SubInformation> dataSet = Collections.emptyList();
 
     //Context context;
 
     //Passing in the array list argument
-    public RecyclerViewAdapterLearning(Context context, List<Information> data) {
+    public RecyclerViewAdapterFestivals(Context context, List<SubInformation> data) {
 
         this.context = context;
         inflater = LayoutInflater.from(context);
@@ -48,7 +48,7 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //Inflating the row and getting the root of view of the custom row (Linear Layout)
-        View view = inflater.inflate(R.layout.custom_row_learning, parent, false);
+        View view = inflater.inflate(R.layout.custom_row_natcom, parent, false);
 
         //View itemLayoutView = LayoutInflater.from(parent.getContext()).inflate(
         //R.layout.custom_row_learning, null);
@@ -63,12 +63,11 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
 
-        //This will get the current position of the Information object from the Information array
-        Information current = dataSet.get(position);
+        //This will get the current position of the SubInformation object from the SubInformation array
+        SubInformation current = dataSet.get(position);
 
         //Setting the text in the row to be the custom_row text
         holder.title.setText(current.getTitle());
-        holder.subTitle.setText(current.getSubtitle());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,18 +77,13 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
 
                 switch (position) {
                     case 0:
-                        //Intent to Must Know Mantras PDF
-                        intent = new Intent(context, MustKnowMantrasActivity.class);
+                        //Intent to Jan - June Festivals Activity (RecyclerView)
+                        intent = new Intent(context, JanToJuneActivity.class);
                         break;
 
                     case 1:
-                        //Intent to the Must Read Activity (RecyclerView)
-                        intent = new Intent(context, MustReadActivity.class);
-                        break;
-
-                    case 2:
-                        //Intent to the Festivals Activity (RecyclerView)
-                        intent = new Intent(context, FestivalsActivity.class);
+                        //Intent to the July - December Activity (RecyclerView)
+                        intent = new Intent(context, JulyToDecActivity.class);
                         break;
 
                     default:
@@ -124,8 +118,6 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
     class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView title;
-        TextView subTitle;
-        //ImageView imageView;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -133,8 +125,6 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
             //Here setting the id of the textview in the recycler view holder to be the list view from the custom_row xml
             title = (TextView) itemView.
                     findViewById(R.id.listText);
-            subTitle = (TextView) itemView.
-                    findViewById(R.id.subTitle);
         }
     }
 
