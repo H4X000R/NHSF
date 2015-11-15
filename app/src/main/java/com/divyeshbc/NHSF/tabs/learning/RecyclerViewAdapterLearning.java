@@ -92,6 +92,16 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
                         intent = new Intent(context, FestivalsActivity.class);
                         break;
 
+                    case 3:
+                        //Intent to HUM Magazine Activity (WebView)
+
+                        break;
+
+                    case 4:
+                        //Intent to Important Dates Activity (RecyclerView)
+                        intent = new Intent(context, ImportantDatesActivity.class);
+                        break;
+
                     default:
                         break;
                 }

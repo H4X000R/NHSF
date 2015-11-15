@@ -842,6 +842,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.learning.ImportantDatesActivity"
+                  android:label="@string/title_activity_importantDates">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
 
         <activity android:name=".tabs.sewa.SewaBankActivity"
                   android:label="@string/title_activity_sewaBank">
