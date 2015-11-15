@@ -770,6 +770,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.learning.JulyToDecActivity"
+                  android:label="@string/title_activity_julyToDec">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".tabs.learning.GuruPurnimaActivity"
                   android:label="@string/title_activity_guruPurnima">
 
@@ -797,11 +806,35 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.learning.GaneshChaturthiActivity"
+                  android:label="@string/title_activity_ganeshChaturthi">
 
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.NavratriActivity"
+                  android:label="@string/title_activity_navratri">
 
-        <activity android:name=".tabs.learning.JulyToDecActivity"
-                  android:label="@string/title_activity_julyToDec">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.DussheraActivity"
+                  android:label="@string/title_activity_dusshera">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.learning.DiwaliActivity"
+                  android:label="@string/title_activity_diwali">
 
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW" />

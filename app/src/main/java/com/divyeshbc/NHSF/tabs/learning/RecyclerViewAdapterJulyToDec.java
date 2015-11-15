@@ -94,22 +94,22 @@ public class RecyclerViewAdapterJulyToDec extends RecyclerView.Adapter<RecyclerV
 
                     case 3:
                         //Intent to the Ganesh Chaturthi PDF
-
+                        intent = new Intent(context, GaneshChaturthiActivity.class);
                         break;
 
                     case 4:
                         //Intent to the Navratri PDF
-
+                        intent = new Intent(context, NavratriActivity.class);
                         break;
 
                     case 5:
                         //Intent to Vijaya Dashmi/Dusshera PDF
-
+                        intent = new Intent(context, DussheraActivity.class);
                         break;
 
                     case 6:
                         //Intent to Diwali PDF
-
+                        intent = new Intent(context, DiwaliActivity.class);
                         break;
 
                     default:
