@@ -16,7 +16,6 @@ import static java.lang.String.format;
  */
 public class DiwaliActivity extends BaseActivity implements OnPageChangeListener {
 
-
     private PDFView mPDFView;
 
     public static final String SAMPLE_FILE = "Diwali.pdf";

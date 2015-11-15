@@ -843,6 +843,33 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".tabs.sewa.SewaBankActivity"
+                  android:label="@string/title_activity_sewaBank">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.sewa.NationalCharityActivity"
+                  android:label="@string/title_activity_nationalCharity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.sewa.SewaGuideActivity"
+                  android:label="@string/title_activity_sewaGuide">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <!-- Configuring Parse -->
         <service android:name="com.parse.PushService" />

@@ -86,6 +86,10 @@
     <string name="title_activity_dusshera">Dusshera</string>
     <string name="title_activity_diwali">Diwali</string>
 
+    <string name="title_activity_sewaBank">Idea Bank</string>
+    <string name="title_activity_nationalCharity">National Charity</string>
+    <string name="title_activity_sewaGuide">Sewa Uni Guide</string>
+
     <string-array name="tabs">
         <item>ABOUT US</item>
         <item>CAMPUS</item>
