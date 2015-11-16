@@ -43,7 +43,7 @@ public class RecyclerViewAdapterImportantDates extends RecyclerView.Adapter<Recy
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //Inflating the row and getting the root of view of the custom row admin (Linear Layout)
-        View view = inflater.inflate(R.layout.custom_row_learning, parent, false);
+        View view = inflater.inflate(R.layout.custom_row_important_dates, parent, false);
 
         //Passing the root view through as an argument
         MyViewHolder holder = new MyViewHolder(view);

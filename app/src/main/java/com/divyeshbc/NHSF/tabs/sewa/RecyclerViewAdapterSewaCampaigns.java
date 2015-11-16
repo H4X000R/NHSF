@@ -15,29 +15,33 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by DivyeshBC on 17/06/15.
+ * Created by DivyeshBC on 16/11/15.
  */
-public class RecyclerViewAdapterSewa extends RecyclerView.Adapter<RecyclerViewAdapterSewa.MyViewHolder> {
+public class RecyclerViewAdapterSewaCampaigns extends RecyclerView.Adapter<RecyclerViewAdapterSewaCampaigns.MyViewHolder> {
 
     private Context context;
-
-    private LayoutInflater inflater;
+    //private LayoutInflater inflater;
 
     //Variable for the on click Listener
     private ClickListener clickListener;
 
+    private LayoutInflater inflater;
+
     //Defining an array list of type information. This will be the data set for the recycler view. .emptyList() will
     //take care of the null pointer exception
-    List<Information> data = Collections.emptyList();
+    List<Information> dataSet = Collections.emptyList();
+
+    //Context context;
 
     //Passing in the array list argument
-    public RecyclerViewAdapterSewa(Context context, List<Information> data){
+    public RecyclerViewAdapterSewaCampaigns(Context context, List<Information> data) {
 
         this.context = context;
         inflater = LayoutInflater.from(context);
 
         //Setting the array list data to the argument passed in
-        this.data = data;
+        this.dataSet = data;
+        //dataSet = data;
     }
 
     @Override
@@ -45,6 +49,9 @@ public class RecyclerViewAdapterSewa extends RecyclerView.Adapter<RecyclerViewAd
 
         //Inflating the row and getting the root of view of the custom row (Linear Layout)
         View view = inflater.inflate(R.layout.custom_row_sewa, parent, false);
+
+        //View itemLayoutView = LayoutInflater.from(parent.getContext()).inflate(
+        //R.layout.custom_row_learning, null);
 
         //Passing the root view through as an argument
         MyViewHolder holder = new MyViewHolder(view);
@@ -57,8 +64,7 @@ public class RecyclerViewAdapterSewa extends RecyclerView.Adapter<RecyclerViewAd
     public void onBindViewHolder(MyViewHolder holder, final int position) {
 
         //This will get the current position of the Information object from the Information array
-        Information current = data.get(position);
-        //Information subCurrent = data.get(position);
+        Information current = dataSet.get(position);
 
         //Setting the text in the row to be the custom_row text
         holder.title.setText(current.getTitle());
@@ -72,33 +78,23 @@ public class RecyclerViewAdapterSewa extends RecyclerView.Adapter<RecyclerViewAd
 
                 switch (position) {
                     case 0:
-                        //Intent to Sewa Campaigns Activity (RecyclerView)
-                        intent = new Intent(context, SewaCampaignsActivity.class);
+                        //Intent to What is Sewa Day PDF
+                        intent = new Intent(context, SewaDayActivity.class);
                         break;
 
                     case 1:
-                        //Intent to the Sewa Bank PDF
-                        intent = new Intent(context, SewaBankActivity.class);
+                        //Intent to National Donation Day PDF
+                        intent = new Intent(context, NationalDonationDayActivity.class);
                         break;
 
                     case 2:
-                        //Intent to the Sewa Inspiration Activity (RecyclerView)
-
+                        //Intent to the Help The Homeless PDF
+                        intent = new Intent(context, HelpTheHomelessActivity.class);
                         break;
 
                     case 3:
-                        //Intent to the Events On A Plate Activity
-
-                        break;
-
-                    case 4:
-                        //Intent to the National Charity PDF
-                        intent = new Intent(context, NationalCharityActivity.class);
-                        break;
-
-                    case 5:
-                        //Intent to the Sewa University Guide PDF
-                        intent = new Intent(context, SewaGuideActivity.class);
+                        //Intent to Sewa Week PDF
+                        intent = new Intent(context, SewaWeekActivity.class);
                         break;
 
                     default:
@@ -127,20 +123,23 @@ public class RecyclerViewAdapterSewa extends RecyclerView.Adapter<RecyclerViewAd
     @Override
     public int getItemCount() {
         //Returning the size of the data held in the information array
-        return data.size();
+        return dataSet.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView title;
         TextView subTitle;
+        //ImageView imageView;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
             //Here setting the id of the textview in the recycler view holder to be the list view from the custom_row xml
-            title = (TextView) itemView.findViewById(R.id.listText);
-            subTitle = (TextView) itemView.findViewById(R.id.subTitle);
+            title = (TextView) itemView.
+                    findViewById(R.id.listText);
+            subTitle = (TextView) itemView.
+                    findViewById(R.id.subTitle);
         }
     }
 

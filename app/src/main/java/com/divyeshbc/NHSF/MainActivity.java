@@ -97,7 +97,7 @@ public class MainActivity extends BaseActivity {
 
         /*
         //Setting up integer array of icons
-        int icons[] = {R.drawable.about_us, R.drawable.campus, R.drawable.events, R.drawable.learning, R.drawable.sewa};
+        int icons[] = {R.drawable.about_us, R.drawable.campus, R.drawable.events, R.drawable.learning, R.drawable.sewa_campaigns};
 
         //Defined from strings.xml
         String[] tabText = getResources().getStringArray(R.array.tabs);

@@ -851,6 +851,51 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.sewa.SewaCampaignsActivity"
+                  android:label="@string/title_activity_sewaCampaigns">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.sewa.SewaDayActivity"
+                  android:label="@string/title_activity_sewaDay">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.sewa.NationalDonationDayActivity"
+                  android:label="@string/title_activity_NDD">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.sewa.HelpTheHomelessActivity"
+                  android:label="@string/title_activity_helpHomeless">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.sewa.SewaWeekActivity"
+                  android:label="@string/title_activity_sewaWeek">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
 
 
