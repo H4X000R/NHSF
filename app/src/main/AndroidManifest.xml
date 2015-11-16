@@ -842,6 +842,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.learning.HUMActivity"
+                  android:label="@string/title_activity_hum">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".tabs.learning.ImportantDatesActivity"
                   android:label="@string/title_activity_importantDates">
 

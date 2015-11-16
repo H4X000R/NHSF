@@ -94,7 +94,7 @@ public class RecyclerViewAdapterLearning extends RecyclerView.Adapter<RecyclerVi
 
                     case 3:
                         //Intent to HUM Magazine Activity (WebView)
-
+                        intent = new Intent(context, HUMActivity.class);
                         break;
 
                     case 4:
