@@ -1,6 +1,7 @@
 package com.divyeshbc.NHSF.tabs.aboutUs;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -36,6 +37,9 @@ public class NationalCommitteeActivity extends BaseActivity implements RecyclerV
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.national_committee);
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //final View layout = inflater.inflate(R.layout.national_committee, container, false);
 

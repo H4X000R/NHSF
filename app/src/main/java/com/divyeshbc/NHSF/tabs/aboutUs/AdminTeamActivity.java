@@ -1,5 +1,6 @@
 package com.divyeshbc.NHSF.tabs.aboutUs;
 
+import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -43,6 +44,9 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_team);
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Calling Activate Toolbar method (with the Back button enabled)
         activateToolbarWithHomeEnabled();

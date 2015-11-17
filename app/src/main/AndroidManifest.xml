@@ -870,34 +870,44 @@
             </intent-filter>
         </activity>
         <activity android:name=".tabs.sewa.SewaDayActivity"
-                  android:label="@string/title_activity_sewaDay">
-
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+                  android:label="@string/title_activity_sewaDay"
+                  android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaCampaignsActivity"/>
         </activity>
         <activity android:name=".tabs.sewa.NationalDonationDayActivity"
-                  android:label="@string/title_activity_NDD">
-
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+                  android:label="@string/title_activity_NDD"
+                  android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaCampaignsActivity"/>
         </activity>
         <activity android:name=".tabs.sewa.HelpTheHomelessActivity"
-                  android:label="@string/title_activity_helpHomeless">
-
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+                  android:label="@string/title_activity_helpHomeless"
+                  android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaCampaignsActivity"/>
         </activity>
         <activity android:name=".tabs.sewa.SewaWeekActivity"
-                  android:label="@string/title_activity_sewaWeek">
+                  android:label="@string/title_activity_sewaWeek"
+                  android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaCampaignsActivity"/>
+        </activity>
+        <activity android:name=".tabs.sewa.SewaBankActivity"
+                  android:label="@string/title_activity_sewaBank"
+                  android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.sewa.SewaInspirationActivity"
+                  android:label="@string/title_activity_sewaInspiration">
 
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW" />
@@ -905,11 +915,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.sewa.SewaQuotesActivity"
+                  android:label="@string/title_activity_sewaQuotes"
+                  android:parentActivityName=".tabs.sewa.SewaInspirationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaInspirationActivity"/>
+        </activity>
 
 
 
-        <activity android:name=".tabs.sewa.SewaBankActivity"
-                  android:label="@string/title_activity_sewaBank">
+        <activity android:name=".tabs.sewa.EventsOnAPlateActivity"
+                  android:label="@string/title_activity_eventsPlate">
 
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW" />

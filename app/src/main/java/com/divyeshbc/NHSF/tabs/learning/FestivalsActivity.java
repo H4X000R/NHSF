@@ -1,5 +1,6 @@
 package com.divyeshbc.NHSF.tabs.learning;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -34,6 +35,9 @@ public class FestivalsActivity extends BaseActivity implements RecyclerViewAdapt
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.festivals);
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Calling Activate Toolbar method (with the Back button enabled)
         activateToolBar();

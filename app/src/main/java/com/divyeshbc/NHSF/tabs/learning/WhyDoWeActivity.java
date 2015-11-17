@@ -1,5 +1,6 @@
 package com.divyeshbc.NHSF.tabs.learning;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -37,6 +38,9 @@ public class WhyDoWeActivity extends BaseActivity implements RecyclerViewAdapter
 
         //Calling Activate Toolbar method (with the Back button enabled)
         activateToolbarWithHomeEnabled();
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Instantiating the recycler view as defined in national_committee
         mRecyclerView=(RecyclerView) findViewById(R.id.whyDoWe_recycler_view);

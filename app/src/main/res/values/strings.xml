@@ -93,6 +93,9 @@
     <string name="title_activity_helpHomeless">Help The Homeless</string>
     <string name="title_activity_sewaWeek">Sewa Week</string>
     <string name="title_activity_sewaBank">Idea Bank</string>
+    <string name="title_activity_sewaInspiration">Sewa Inspiration</string>
+    <string name="title_activity_sewaQuotes">Sewa Quotes</string>
+    <string name="title_activity_eventsPlate">Events On A Plate</string>
     <string name="title_activity_nationalCharity">National Charity</string>
     <string name="title_activity_sewaGuide">Sewa Uni Guide</string>
 

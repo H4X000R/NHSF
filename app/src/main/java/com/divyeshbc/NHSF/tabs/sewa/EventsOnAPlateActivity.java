@@ -1,67 +1,69 @@
-package com.divyeshbc.NHSF.tabs.campus;
+package com.divyeshbc.NHSF.tabs.sewa;
 
 import android.content.pm.ActivityInfo;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.divyeshbc.NHSF.BaseActivity;
 import com.divyeshbc.NHSF.R;
 
-import uk.co.senab.photoview.PhotoViewAttacher;
-
 /**
- * Created by DivyeshBC on 13/11/15.
+ * Created by DivyeshBC on 17/11/15.
  */
-public class NHSFWarwickImageActivity extends BaseActivity implements CardViewAdapter.Clicklistener {
+public class EventsOnAPlateActivity extends BaseActivity {
 
-    private ImageView mImageView;
+    private WebView mWebView;
 
-    private PhotoViewAttacher mPhotoViewAttacher;
+    String url =  "https://drive.google.com/folderview?id=0BzyMQbHGDsGbdVFaQ04zTy1KVGs&usp=sharing&tid=0BzyMQbHGDsGbMmZSMFdpeDFuNkU";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chapter_image_zoom);
-
-        activateToolBar();
+        setContentView(R.layout.hum_magazine);
 
         //Setting the orientation to Portrait Only
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        mImageView = (ImageView) findViewById(R.id.chapterImageView);
+        //Instantiating the webView as defined in hum_magazines
+        mWebView = (WebView) findViewById(R.id.webView);
+        mWebView.setWebViewClient(new MyBrowser());
+        mWebView.getSettings().setJavaScriptEnabled(true);
+        mWebView.loadUrl(url);
 
-        Drawable bitmap = getResources().getDrawable(R.drawable.nhsf_warwick);
-        mImageView.setImageDrawable(bitmap);
+    }
 
-        //Attach a PhotoViewAttacher, which takes care of all of the zooming functionality
-        mPhotoViewAttacher = new PhotoViewAttacher(mImageView);
+    private class MyBrowser extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
+            view.loadUrl(url);
+            return true;
+        }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.intro_pdf_details, menu);
+        //getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
+
         //int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
         //if (id == R.id.action_settings) {
         //return true;
         //}
-
         return super.onOptionsItemSelected(item);
     }
 }

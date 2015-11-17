@@ -1,5 +1,6 @@
 package com.divyeshbc.NHSF.tabs.learning;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,6 +34,9 @@ public class GaneshChaturthiActivity extends BaseActivity implements OnPageChang
         setContentView(R.layout.what_is_nhsf);
         //Enabling the Home 'Back Arrow'
         activateToolbarWithHomeEnabled();
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         mPDFView = (PDFView) findViewById(R.id.introduction_pdf);
 

@@ -1,5 +1,6 @@
 package com.divyeshbc.NHSF.tabs.campus;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
@@ -27,6 +28,9 @@ public class NHSFRoehamptonImageActivity extends BaseActivity implements CardVie
         setContentView(R.layout.chapter_image_zoom);
 
         activateToolBar();
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         mImageView = (ImageView) findViewById(R.id.chapterImageView);
 

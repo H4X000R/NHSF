@@ -1,5 +1,6 @@
 package com.divyeshbc.NHSF.tabs.learning;
 
+import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -46,6 +47,9 @@ public class ImportantDatesActivity extends BaseActivity implements RecyclerView
 
         //Calling Activate Toolbar method
         activateToolBar();
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Instantiating the recycler view as defined in admin_team
         mRecyclerView = (RecyclerView) findViewById(R.id.importantDates_recycler_view);

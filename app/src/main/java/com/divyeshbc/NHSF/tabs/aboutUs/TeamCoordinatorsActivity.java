@@ -1,5 +1,6 @@
 package com.divyeshbc.NHSF.tabs.aboutUs;
 
+import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -46,6 +47,9 @@ public class TeamCoordinatorsActivity extends BaseActivity implements RecyclerVi
 
         //Calling Activate Toolbar method (with the Back button enabled)
         activateToolbarWithHomeEnabled();
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Instantiating the recycler view as defined in admin_team
         mRecyclerView = (RecyclerView) findViewById(R.id.natcomtc_recycler_view);

@@ -1,4 +1,4 @@
-package com.divyeshbc.NHSF.tabs.aboutUs;
+package com.divyeshbc.NHSF.tabs.sewa;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -12,20 +12,19 @@ import com.joanzapata.pdfview.listener.OnPageChangeListener;
 
 import static java.lang.String.format;
 
-
 /**
- * Created by DivyeshBC on 21/06/15.
+ * Created by DivyeshBC on 17/11/15.
  */
-
-public class IntroductionActivity extends BaseActivity implements OnPageChangeListener {
+public class SewaQuotesActivity extends BaseActivity implements OnPageChangeListener {
 
     private PDFView mPDFView;
 
-    public static final String SAMPLE_FILE = "Introduction.pdf";
+    public static final String SAMPLE_FILE = "Sewa Quotes.pdf";
 
     String pdfName = SAMPLE_FILE;
 
     Integer pageNumber = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +61,6 @@ public class IntroductionActivity extends BaseActivity implements OnPageChangeLi
         return true;
     }
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -72,18 +70,15 @@ public class IntroductionActivity extends BaseActivity implements OnPageChangeLi
 
         //noinspection SimplifiableIfStatement
         //if (id == R.id.action_settings) {
-            //return true;
+        //return true;
         //}
 
         return super.onOptionsItemSelected(item);
     }
 
-
     @Override
     public void onPageChanged(int page, int pageCount) {
-
         pageNumber = page;
         setTitle(format("%s %s / %s", pdfName, page, pageCount));
-
     }
 }
