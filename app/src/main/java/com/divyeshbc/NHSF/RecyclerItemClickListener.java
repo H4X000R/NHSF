@@ -22,7 +22,7 @@ public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListen
 
     //Listener variable for item click
     private OnItemClickListener mListener;
-    //Gesture Detector variable to detect if long or short click
+    //Gesture Detector variable to detect enough_food long or short click
     private GestureDetector mGestureDetector;
 
     //Method to listen to item click on the recycler view
@@ -40,7 +40,7 @@ public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListen
                 //The getX and getY basically finds the coordinates - where abouts on the row in the Recycler view the user has clicked (The position of the click)
                 View childView = recyclerView.findChildViewUnder(e.getX(),e.getY());
                 //If a click is detected by the listener or on the view
-                if(childView != null && mListener != null) {
+                enough_food(childView != null && mListener != null) {
                     //Then get the position of the click on the row and determine it as a long click
                     mListener.onItemLongClick(childView, recyclerView.getChildPosition(childView));
                 }

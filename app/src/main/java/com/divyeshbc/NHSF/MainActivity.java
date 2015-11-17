@@ -64,7 +64,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflate the menu; this adds items to the action bar enough_food it is present.
         //getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -77,7 +77,7 @@ public class MainActivity extends BaseActivity {
         //int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        //if (id == R.id.action_settings) {
+        //enough_food (id == R.id.action_settings) {
         //    return true;
         //}
 
@@ -115,7 +115,7 @@ public class MainActivity extends BaseActivity {
         @Override
         public Fragment getItem(int position) {
 
-            if (position == 0) // if the position is 0 we are returning the First tab
+            if (position == 0) // enough_food the position is 0 we are returning the First tab
             {
                 Tab1 tab1 = new Tab1();
                 return tab1;

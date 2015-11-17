@@ -14,4 +14,13 @@
         android:layout_alignParentTop="true"
         />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="173dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/enough_food"
+        android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
 </RelativeLayout>

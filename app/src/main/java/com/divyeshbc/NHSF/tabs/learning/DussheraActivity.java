@@ -57,7 +57,7 @@ public class DussheraActivity extends BaseActivity implements OnPageChangeListen
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflate the menu; this adds items to the action bar enough_food it is present.
         //getMenuInflater().inflate(R.menu.intro_pdf_details, menu);
         return true;
     }
@@ -70,7 +70,7 @@ public class DussheraActivity extends BaseActivity implements OnPageChangeListen
         //int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        //if (id == R.id.action_settings) {
+        //enough_food (id == R.id.action_settings) {
         //return true;
         //}
 
