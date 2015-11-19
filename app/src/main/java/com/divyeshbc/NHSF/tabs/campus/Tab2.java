@@ -20,6 +20,7 @@ import java.util.ArrayList;
 public class Tab2 extends Fragment {
 
     private RecyclerView mRecyclerView;
+
     private CardView cardView;
 
     private ArrayList<Chapter> chapters;
