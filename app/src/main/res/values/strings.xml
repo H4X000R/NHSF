@@ -94,6 +94,15 @@
     <string name="title_activity_sewaWeek">Sewa Week</string>
     <string name="title_activity_sewaBank">Idea Bank</string>
     <string name="title_activity_sewaInspiration">Sewa Inspiration</string>
+    <string name="title_activity_sewaVideos">"Sewa Videos</string>
+    <string name="title_activity_waterChanges">Water Changes Everything</string>
+    <string name="title_activity_enoughFood">Enough Food For Everyone</string>
+    <string name="title_activity_shareMyDabba">Share My Dabba</string>
+    <string name="title_activity_makeTheHomeless">Make The Homeless</string>
+    <string name="title_activity_shareCareJoy">Share...Care...Joy</string>
+    <string name="title_activity_indiasPoor">India\'s Poor</string>
+    <string name="title_activity_rachelBeckwith">Rachel Beckwith\'s Last Wish</string>
+    <string name="title_activity_trulySelfless">A Truly Selfless Being</string>
     <string name="title_activity_sewaQuotes">Sewa Quotes</string>
     <string name="title_activity_eventsPlate">Events On A Plate</string>
     <string name="title_activity_nationalCharity">National Charity</string>

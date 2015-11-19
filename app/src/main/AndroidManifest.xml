@@ -915,6 +915,69 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.sewa.SewaVideosActivity"
+                  android:label="@string/title_activity_sewaVideos"
+                  android:parentActivityName=".tabs.sewa.SewaInspirationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaInspirationActivity"/>
+        </activity>
+        <activity android:name=".tabs.sewa.WaterChangesEverythingActivity"
+                  android:label="@string/title_activity_waterChanges"
+                  android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity android:name=".tabs.sewa.EnoughFoodActivity"
+                  android:label="@string/title_activity_enoughFood"
+                  android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity android:name=".tabs.sewa.ShareMyDabbaActivity"
+                  android:label="@string/title_activity_shareMyDabba"
+                  android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity android:name=".tabs.sewa.MakeTheHomelessActivity"
+                  android:label="@string/title_activity_makeTheHomeless"
+                  android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity android:name=".tabs.sewa.ShareCareJoyActivity"
+                  android:label="@string/title_activity_shareCareJoy"
+                  android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity android:name=".tabs.sewa.IndiasPoorActivity"
+                  android:label="@string/title_activity_indiasPoor"
+                  android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity android:name=".tabs.sewa.RachelBeckwithActivity"
+                  android:label="@string/title_activity_rachelBeckwith"
+                  android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity android:name=".tabs.sewa.ATrulySelflessBeingActivity"
+                  android:label="@string/title_activity_trulySelfless"
+                  android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
         <activity android:name=".tabs.sewa.SewaQuotesActivity"
                   android:label="@string/title_activity_sewaQuotes"
                   android:parentActivityName=".tabs.sewa.SewaInspirationActivity">
