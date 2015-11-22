@@ -46,7 +46,7 @@ public class RecyclerViewAdapterEvents extends RecyclerView.Adapter<RecyclerView
     public RecyclerViewAdapterEvents.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //Inflating the row and getting the root of view of the custom row (Linear Layout)
-        View view = inflater.inflate(R.layout.custom_row, parent, false);
+        View view = inflater.inflate(R.layout.custom_row_natcom, parent, false);
 
         //Passing the root view through as an argument
         MyViewHolder holder = new MyViewHolder(view);
