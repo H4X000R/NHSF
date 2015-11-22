@@ -1,9 +1,11 @@
 package com.divyeshbc.NHSF.tabs.events;
 
+import java.io.Serializable;
+
 /**
  * Created by DivyeshBC on 09/11/15.
  */
-public class JSONEventsItem {
+public class JSONEventsItem implements Serializable {
 
     private String EventName;
     private String EventID;

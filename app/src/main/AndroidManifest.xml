@@ -590,9 +590,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.events.EventsActivity"
+                  android:label="@string/title_activity_eventDetails">
 
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
 
-
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".tabs.learning.MustKnowMantrasActivity"
                   android:label="@string/title_activity_mustKnowMantras">
 
@@ -985,9 +991,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".tabs.sewa.SewaInspirationActivity"/>
         </activity>
-
-
-
         <activity android:name=".tabs.sewa.EventsOnAPlateActivity"
                   android:label="@string/title_activity_eventsPlate">
 

@@ -53,7 +53,7 @@
             android:layout_below="@+id/chapterZone"
             android:padding="8dp"
             android:text="description"
-            android:textColor="#666"
+            android:textColor="@color/md_orange_700"
             android:textSize="14dp"/>
 
     </RelativeLayout>

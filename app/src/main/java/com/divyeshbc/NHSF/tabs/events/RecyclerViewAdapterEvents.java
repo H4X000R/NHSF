@@ -1,6 +1,7 @@
 package com.divyeshbc.NHSF.tabs.events;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -20,7 +21,8 @@ public class RecyclerViewAdapterEvents extends RecyclerView.Adapter<RecyclerView
 
     private LayoutInflater inflater;
 
-    //private EventsActivity activity;
+    //String returning all EVENT Object properties
+    public static final String EVENT_TRANSFER = "EVENT_TRANSFER";
 
     private List<JSONEventsItem> data = Collections.emptyList();
 
@@ -56,7 +58,7 @@ public class RecyclerViewAdapterEvents extends RecyclerView.Adapter<RecyclerView
     }
 
     @Override
-    public void onBindViewHolder(RecyclerViewAdapterEvents.MyViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerViewAdapterEvents.MyViewHolder holder, final int position) {
 
         //This will get the current position of the JSONEventItem object from the array
         JSONEventsItem eventsItem = data.get(position);
@@ -64,16 +66,32 @@ public class RecyclerViewAdapterEvents extends RecyclerView.Adapter<RecyclerView
         //Setting the event name to the name of the event retrieved from the Database (converting from JSON)
         holder.eventName.setText(Html.fromHtml(eventsItem.getEventName()));
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Intent to EventsActivity
+                Intent intent = new Intent(mContext, EventsActivity.class);
+
+                //Along with the Event Title also trnasfer the additional event details that will display based on the
+                //position of the event in the cell
+                intent.putExtra(EVENT_TRANSFER, getEvent(position));
+
+                //Navigate to the intent
+                mContext.startActivity(intent);
+            }
+
+            });
+    }
+
+    public void setClickListener(ClickListener clicklistener) {
+        this.clickListener = clicklistener;
     }
 
     @Override
     public int getItemCount() {
 
         return (null != data ? data.size() : 0);
-    }
-
-    public void setClickListener(ClickListener clicklistener) {
-        this.clickListener = clicklistener;
     }
 
     public interface ClickListener {
@@ -90,5 +108,11 @@ public class RecyclerViewAdapterEvents extends RecyclerView.Adapter<RecyclerView
             eventName = (TextView) itemView.
                     findViewById(R.id.listText);
         }
+    }
+
+    //Getting the Event Item position
+    public JSONEventsItem getEvent(int position) {
+        //If the data list is null then return null, otherwise return the position of the event in the list
+        return (null != data ? data.get(position) : null);
     }
 }

@@ -137,10 +137,16 @@ public class Tab3 extends Fragment implements RecyclerViewAdapterEvents.ClickLis
                 JSONObject AdminArrayObject = AdminArrays.getJSONObject(i);
                 JSONEventsItem item = new JSONEventsItem();
                 item.setEventName(AdminArrayObject.getString("eventName"));
+                item.setEventDate(AdminArrayObject.getString("eventDate"));
+                item.setEventTime(AdminArrayObject.getString("eventTime"));
+                item.setEventLocation(AdminArrayObject.getString("eventLocation"));
 
                 this.EventsList.add(item);
 
                 Log.e("Event Name", AdminArrayObject.getString("eventName"));
+                Log.e("Event Date", AdminArrayObject.getString("eventDate"));
+                Log.e("Event Time", AdminArrayObject.getString("eventTime"));
+                Log.e("Event Location", AdminArrayObject.getString("eventLocation"));
             }
 
         } catch (JSONException e) {
