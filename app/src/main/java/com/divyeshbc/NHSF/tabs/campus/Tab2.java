@@ -61,7 +61,7 @@ public class Tab2 extends Fragment {
                 "NHSF KCL", "NHSF Keele", "NHSF Kent", "NHSF Kingston", "NHSF Leeds", "NHSF Leicester", "NHSF Liverpool", "NHSF Loughborough",
                 "NHSF LSBU", "NHSF LSE", "NHSF Manchester", "NHSF Medway", "NHSF Northampton", "NHSF Northumbria", "NHSF Nottingham",
                 "NHSF NTU", "NHSF Plymouth", "NHSF Portsmouth", "NHSF QMUL", "NHSF Reading", "NHSF RHUL", "NHSF Roehampton", "NHSF SGUL",
-                "NHSF Sheffield", "NHSF SOAS", "NHSF Southampton", "NHSF Swansea", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster", "NHSF York"};
+                "NHSF Sheffield", "NHSF Southampton", "NHSF Swansea", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster", "NHSF York"};
 
         final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_bradford, R.drawable.nhsf_brighton,
                              R.drawable.nhsf_bristol, R.drawable.nhsf_brunel, R.drawable.nhsf_bucks_new_uni, R.drawable.nhsf_city, R.drawable.nhsf_coventry,
@@ -70,7 +70,7 @@ public class Tab2 extends Fragment {
                              R.drawable.nhsf_leeds, R.drawable.nhsf_leicester, R.drawable.nhsf_liverpool, R.drawable.nhsf_loughborough, R.drawable.nhsf_lsbu, R.drawable.nhsf_lse,
                              R.drawable.nhsf_manchester, R.drawable.nhsf_medway, R.drawable.nhsf_northampton, R.drawable.nhsf_northumbria, R.drawable.nhsf_nottingham,
                              R.drawable.nhsf_ntu, R.drawable.nhsf_plymouth, R.drawable.nhsf_portsmouth, R.drawable.nhsf_qmul, R.drawable.nhsf_reading, R.drawable.nhsf_rhul,
-                             R.drawable.nhsf_roehampton, R.drawable.nhsf_sgul, R.drawable.nhsf_sheffield, R.drawable.nhsf_soas, R.drawable.nhsf_southampton, R.drawable.nhsf_swansea,
+                             R.drawable.nhsf_roehampton, R.drawable.nhsf_sgul, R.drawable.nhsf_sheffield, R.drawable.nhsf_southampton, R.drawable.nhsf_swansea,
                              R.drawable.nhsf_uea, R.drawable.nhsf_uwe, R.drawable.nhsf_warwick, R.drawable.nhsf_westminster, R.drawable.nhsf_york};
 
         final String[] zones = {
@@ -158,8 +158,6 @@ public class Tab2 extends Fragment {
                 "London Zone - Coordinator: Ritesh Thakrar",
                 //NHSF SHEFFIELD
                 "North Zone - Coordinator: Nakul Rajani",
-                //NHSF SOAS
-                "London Zone - Coordinator: Ritesh Thakrar",
                 //NHSF SOUTHAMPTON
                 "South Zone - Coordinator: Reva Shah",
                 //NHSF SWANSEA
@@ -362,9 +360,6 @@ public class Tab2 extends Fragment {
                 "PRESIDENT: Hina Sharma \nVP: Krishna Tejura & Vaidehi Tembhekar \nSECRETARY: Reesha Siniara \nTREASURER: Anuj Savani \nPR: Nicole Chahal & " +
                         "Nikita Pankhania \nEVENTS: Aneesa Bhardwa & Anamil Kochar \nSEWA: Saakshi Barman & Tejal Mistry \nLEARNING: Dania Lakshmi" +
                         "\nSPORTS: Akash Madhu & Ayesha Girach \nPERFORMING ARTS: Tanya Datta & Nikita Bharat",
-
-                // -- NHSF SOAS --
-                "PRESIDENT: \nVP: \nSECRETARY \nTREASURER",
 
                 // -- NHSF SOUTHAMPTON --
                 "PRESIDENT: Jay Dave \nVP: Vikram Palli \nSECRETARY: Sajeenth Thevabalasingam & Yue Huang \nTREASURER: Animesh Sahay \nEVETNS: Tara Ludra, Sonam Thanki" +

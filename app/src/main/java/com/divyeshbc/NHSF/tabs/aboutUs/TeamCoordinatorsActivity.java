@@ -116,7 +116,7 @@ public class TeamCoordinatorsActivity extends BaseActivity implements RecyclerVi
                 //Setting the adapter
                 mRecyclerView.setAdapter(adapter);
             } else {
-                Toast.makeText(TeamCoordinatorsActivity.this, "Failed to fetch data!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TeamCoordinatorsActivity.this, "Failed to fetch TC data. No Internet!", Toast.LENGTH_SHORT).show();
             }
         }
     }

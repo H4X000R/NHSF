@@ -13,7 +13,7 @@
     <!-- Always show the email icon on the National Committee toolbar -->
     <item
         android:id="@+id/action_email"
-        android:icon="@android:drawable/ic_dialog_email"
+        android:src="@drawable/ic_mail_black"
         android:title="@string/action_email"
         android:orderInCategory="1"
         app:showAsAction="always"/>

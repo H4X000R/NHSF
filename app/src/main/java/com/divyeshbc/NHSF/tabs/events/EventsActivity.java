@@ -1,6 +1,7 @@
 package com.divyeshbc.NHSF.tabs.events;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,6 +25,9 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
 
         //Enabling the toolbar
         activateToolBar();
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Retrieving current intent NOT CREATING a new one
         Intent intent = getIntent();

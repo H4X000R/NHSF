@@ -120,7 +120,7 @@ public class Tab3 extends Fragment implements RecyclerViewAdapterEvents.ClickLis
                 //Setting the adapter
                 mRecyclerView.setAdapter(adapter);
             } else {
-                Toast.makeText(getActivity(), "Failed to fetch data!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Failed to fetch Events. No Internet!", Toast.LENGTH_SHORT).show();
             }
         }
     }
