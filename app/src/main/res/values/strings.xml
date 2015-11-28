@@ -57,6 +57,7 @@
     <string name="title_activity_NHSFWestminsterImage">NHSF Westminster</string>
     <string name="title_activity_NHSFYorkImage">NHSF York</string>
     <string name="title_activity_eventDetails">Event Details</string>
+    <string name="title_activity_mapDirections">Get Directions</string>
     <string name="title_activity_mustKnowMantras">Must Know Mantras</string>
     <string name="title_activity_mustRead">Must Read</string>
     <string name="title_activity_bhagavadGita">Bhagavad Gita</string>
@@ -116,6 +117,7 @@
         <item>LEARNING</item>
         <item>SEWA</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
     <!--
     <string name="title_activity_splash">SplashActivity</string>
 

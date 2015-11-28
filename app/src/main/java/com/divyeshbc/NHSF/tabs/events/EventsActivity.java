@@ -64,7 +64,7 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar enough_food it is present.
-        //getMenuInflater().inflate(R.menu.intro_pdf_details, menu);
+        getMenuInflater().inflate(R.menu.menu_events, menu);
         return true;
     }
 
@@ -73,12 +73,16 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        //int id = item.getItemId();
+        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        //enough_food (id == R.id.action_settings) {
-        //return true;
-        //}
+        if (id == R.id.action_map) {
+
+            Intent mapIntent = new Intent(this, MapsActivity.class);
+
+            startActivity(mapIntent);
+
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

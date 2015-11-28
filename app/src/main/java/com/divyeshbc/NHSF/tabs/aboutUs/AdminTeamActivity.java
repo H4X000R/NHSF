@@ -116,7 +116,7 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
                 //Setting the adapter
                 mRecyclerView.setAdapter(adapter);
             } else {
-                Toast.makeText(AdminTeamActivity.this, "Failed to fetch Admin Team data. No Internet!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AdminTeamActivity.this, "Failed to fetch Admin Team. No Internet!", Toast.LENGTH_SHORT).show();
             }
         }
     }
