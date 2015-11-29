@@ -92,12 +92,6 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
             mapIntent.setPackage("com.google.android.apps.maps");
             startActivity(mapIntent);
 
-            /*
-            Intent mapIntent = new Intent(this, MapsActivity.class);
-
-            startActivity(mapIntent);
-            */
-
             return true;
         }
 
