@@ -49,8 +49,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
-        android:ems="10"
+        android:ems="15"
         android:id="@+id/editText"
+        android:hint="@string/placeholder_text"
+        android:textColorHint="@color/md_blue_grey_200"
         android:clickable="false"
         android:layout_below="@+id/eventLocation" android:layout_centerHorizontal="true"/>
 

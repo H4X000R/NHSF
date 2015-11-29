@@ -2,13 +2,14 @@ package com.divyeshbc.NHSF.tabs.events;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.divyeshbc.NHSF.BaseActivity;
-import com.divyeshbc.NHSF.MapsActivity;
 import com.divyeshbc.NHSF.R;
 
 /**
@@ -18,6 +19,8 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
 
     //String returning all EVENT Object properties
     public static final String EVENT_TRANSFER = "EVENT_TRANSFER";
+
+    EditText postcode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,9 +81,22 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
 
         if (id == R.id.action_map) {
 
+            //Setting the postcode variable to the editText view in eventDetails
+            postcode = (EditText) findViewById(R.id.editText);
+
+            //Getting the entered postcode
+            String location = postcode.getText().toString();
+
+            Uri gmmIntentUri = Uri.parse("google.navigation:q="+location);
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);
+
+            /*
             Intent mapIntent = new Intent(this, MapsActivity.class);
 
             startActivity(mapIntent);
+            */
 
             return true;
         }
