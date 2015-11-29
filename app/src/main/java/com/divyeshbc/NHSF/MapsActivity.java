@@ -1,9 +1,8 @@
-package com.divyeshbc.NHSF.tabs.events;
+package com.divyeshbc.NHSF;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
-import com.divyeshbc.NHSF.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

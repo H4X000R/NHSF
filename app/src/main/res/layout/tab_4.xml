@@ -20,6 +20,7 @@
         android:layout_alignBottom="@id/learning_recycler_view"
         android:layout_marginTop="284dp"
         android:layout_below="@+id/toolbar"
-        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"/>
 
 </RelativeLayout>
