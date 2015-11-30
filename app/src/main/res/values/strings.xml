@@ -58,7 +58,7 @@
     <string name="title_activity_NHSFYorkImage">NHSF York</string>
     <string name="title_activity_eventDetails">Event Details</string>
     <string name="title_activity_mapDirections">Get Directions</string>
-    <string name="placeholder_text">Please Enter Postcode of Location...</string>
+    <string name="placeholder_text">Please Enter Postcode of Destination...</string>
     <string name="title_activity_mustKnowMantras">Must Know Mantras</string>
     <string name="title_activity_mustRead">Must Read</string>
     <string name="title_activity_bhagavadGita">Bhagavad Gita</string>
