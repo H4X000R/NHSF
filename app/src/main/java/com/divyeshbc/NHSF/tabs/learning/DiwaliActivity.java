@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import com.divyeshbc.NHSF.BaseActivity;
 import com.divyeshbc.NHSF.R;
 import com.joanzapata.pdfview.PDFView;
+import com.joanzapata.pdfview.listener.OnLoadCompleteListener;
 import com.joanzapata.pdfview.listener.OnPageChangeListener;
 
 import static java.lang.String.format;
@@ -50,6 +51,16 @@ public class DiwaliActivity extends BaseActivity implements OnPageChangeListener
                 //.pages(0, 2, 1, 3, 3, 3)
                 .defaultPage(pageNumber)
                 .onPageChange(this)
+                .onLoad(new OnLoadCompleteListener() {
+                    @Override
+                    public void loadComplete(int nbPages) {
+                        float pageWidth = mPDFView.getOptimalPageWidth();
+                        float viewWidth = mPDFView.getWidth();
+                        mPDFView.zoomTo(viewWidth / pageWidth);
+                        mPDFView.loadPages();
+                    }
+                })
+
                 .load();
     }
 

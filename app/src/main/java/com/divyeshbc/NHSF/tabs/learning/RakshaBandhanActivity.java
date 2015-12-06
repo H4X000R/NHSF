@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import com.divyeshbc.NHSF.BaseActivity;
 import com.divyeshbc.NHSF.R;
 import com.joanzapata.pdfview.PDFView;
+import com.joanzapata.pdfview.listener.OnLoadCompleteListener;
 import com.joanzapata.pdfview.listener.OnPageChangeListener;
 
 import static java.lang.String.format;
@@ -15,7 +16,7 @@ import static java.lang.String.format;
 /**
  * Created by DivyeshBC on 15/11/15.
  */
-public class RakshaBandhanActivity extends BaseActivity implements OnPageChangeListener {
+public class RakshaBandhanActivity extends BaseActivity implements OnPageChangeListener, OnLoadCompleteListener {
 
     private PDFView mPDFView;
 
@@ -49,6 +50,7 @@ public class RakshaBandhanActivity extends BaseActivity implements OnPageChangeL
         mPDFView.fromAsset(assetFileName)
                 //.pages(0, 2, 1, 3, 3, 3)
                 .defaultPage(pageNumber)
+                .onLoad(this)
                 .onPageChange(this)
                 .load();
     }
@@ -80,5 +82,10 @@ public class RakshaBandhanActivity extends BaseActivity implements OnPageChangeL
     public void onPageChanged(int page, int pageCount) {
         pageNumber = page;
         setTitle(format("%s %s / %s", pdfName, page, pageCount));
+    }
+
+    @Override
+    public void loadComplete(int nbPages) {
+
     }
 }

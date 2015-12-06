@@ -32,7 +32,7 @@ public class SewaGuideActivity extends BaseActivity implements OnPageChangeListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.what_is_nhsf);
         //Enabling the Home 'Back Arrow'
-        activateToolbarWithHomeEnabled();
+        activateToolBar();
 
         //Setting the orientation to Portrait Only
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

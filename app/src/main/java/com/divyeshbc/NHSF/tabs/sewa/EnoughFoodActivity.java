@@ -28,7 +28,6 @@ public class EnoughFoodActivity extends BaseActivity {
         mWebView.setWebViewClient(new MyBrowser());
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.loadUrl(url);
-
     }
 
     private class MyBrowser extends WebViewClient {

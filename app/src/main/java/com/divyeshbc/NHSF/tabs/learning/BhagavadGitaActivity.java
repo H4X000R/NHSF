@@ -4,6 +4,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 import com.divyeshbc.NHSF.BaseActivity;
 import com.divyeshbc.NHSF.R;
@@ -19,11 +20,15 @@ public class BhagavadGitaActivity extends BaseActivity implements OnPageChangeLi
 
     private PDFView mPDFView;
 
+    private WebView mWebView;
+
     public static final String SAMPLE_FILE = "Bhagavad Gita.pdf";
 
     String pdfName = SAMPLE_FILE;
 
     Integer pageNumber = 1;
+
+    //String pdfURL = "https://drive.google.com/open?id=0B9N_W4Tvxh5pUTFELUFKSjRpYTg";
 
 
     @Override
@@ -31,8 +36,18 @@ public class BhagavadGitaActivity extends BaseActivity implements OnPageChangeLi
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.what_is_nhsf);
+        //setContentView(R.layout.hum_magazine);
+
         //Enabling the Home 'Back Arrow'
         activateToolbarWithHomeEnabled();
+
+        //Instantiating the webView as defined in hum_magazines
+        //mWebView = (WebView) findViewById(R.id.webView);
+
+        //mWebView.setWebViewClient(new MyBrowser());
+        //mWebView.getSettings().setJavaScriptEnabled(true);
+        //mWebView.getSettings().setPluginState(WebSettings.PluginState.ON);
+        //mWebView.loadUrl(url);
 
         //Setting the orientation to Portrait Only
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -40,7 +55,27 @@ public class BhagavadGitaActivity extends BaseActivity implements OnPageChangeLi
         mPDFView = (PDFView) findViewById(R.id.introduction_pdf);
 
         display(SAMPLE_FILE, true);
+
+        //---you need this to prevent the webview from
+        // launching another browser when a url
+        // redirection occurs---
+        //mWebView.setWebViewClient(new Callback());
+
+        //String pdfURL = "https://www.dropbox.com/home/NHSF%20App%20Android%20Learning?preview=Bhagavad+Gita.pdf";
+        //mWebView.loadUrl(
+                //"http://docs.google.com/gview?embedded=true&url=" + pdfURL);
     }
+
+    /*
+    private class MyBrowser extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+
+            view.loadUrl(url);
+            return true;
+        }
+    }
+    */
 
     private void display(String assetFileName, boolean jumpToFirstPage) {
         if (jumpToFirstPage) pageNumber = 1;
@@ -51,8 +86,19 @@ public class BhagavadGitaActivity extends BaseActivity implements OnPageChangeLi
                 .defaultPage(pageNumber)
                 .onPageChange(this)
                 .load();
+
     }
 
+    /*
+    private class Callback extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(
+                WebView view, String url) {
+            view.loadUrl(url);
+            return(true);
+        }
+    }
+    */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

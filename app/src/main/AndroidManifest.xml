@@ -692,48 +692,43 @@
         </activity>
         <activity
             android:name=".tabs.learning.MakarSankrantiActivity"
-            android:label="@string/title_activity_makarSankranti">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_makarSankranti"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.MahashivratriActivity"
-            android:label="@string/title_activity_mahaShivratri">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_mahaShivratri"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.HoliActivity"
-            android:label="@string/title_activity_holi">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_holi"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.RamnavmiActivity"
-            android:label="@string/title_activity_ramnavmi">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_ramnavmi"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.HanumanJayantiActivity"
-            android:label="@string/title_activity_hanumanJayanti">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_hanumanJayanti"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.JulyToDecActivity"
@@ -746,66 +741,59 @@
         </activity>
         <activity
             android:name=".tabs.learning.GuruPurnimaActivity"
-            android:label="@string/title_activity_guruPurnima">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_guruPurnima"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.RakshaBandhanActivity"
-            android:label="@string/title_activity_rakshaBandhan">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_rakshaBandhan"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.JanmashtamiActivity"
-            android:label="@string/title_activity_janmashtami">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_janmashtami"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.GaneshChaturthiActivity"
-            android:label="@string/title_activity_ganeshChaturthi">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_ganeshChaturthi"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.NavratriActivity"
-            android:label="@string/title_activity_navratri">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_navratri"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.DussheraActivity"
-            android:label="@string/title_activity_dusshera">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_dusshera"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.DiwaliActivity"
-            android:label="@string/title_activity_diwali">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+            android:label="@string/title_activity_diwali"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
         </activity>
         <activity
             android:name=".tabs.learning.HUMActivity"
