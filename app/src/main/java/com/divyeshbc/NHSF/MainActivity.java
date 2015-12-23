@@ -1,10 +1,12 @@
 package com.divyeshbc.NHSF;
 
 import android.content.pm.ActivityInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,6 +26,8 @@ public class MainActivity extends BaseActivity {
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
 
+    //Creating a new object of notification builder
+    NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,8 @@ public class MainActivity extends BaseActivity {
 
         // inform the Parse Cloud that it is ready for notifications
         ParseInstallation.getCurrentInstallation().saveInBackground();
+
+        notificationBuilder.setSmallIcon(getNotificationIcon(notificationBuilder));
 
         //Calling Activate Toolbar method
         activateToolBar();
@@ -153,6 +159,24 @@ public class MainActivity extends BaseActivity {
         @Override
         public int getCount() {
             return 5;
+        }
+    }
+
+    //This method will determine the user's operating system and based on this will set the app notification icon accordingly
+    private int getNotificationIcon(NotificationCompat.Builder notificationBuilder) {
+
+        //If the OS version is greater than or equal to lollipop
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            int color = 0xFFD66F;
+            //Set the background colour of the app icon to orange
+            notificationBuilder.setColor(color);
+            //Use the transparent icon (As per Google Design Guidelines for Icons for Lollipop and above)
+            return R.mipmap.nhsf_app_icon_transparent;
+
+        } else {
+            //Else use the standard colour icon
+            return R.mipmap.nhsf_app_logo_androidx144;
         }
     }
 }
