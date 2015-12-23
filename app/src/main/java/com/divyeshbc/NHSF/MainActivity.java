@@ -26,9 +26,6 @@ public class MainActivity extends BaseActivity {
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
 
-    //Creating a new object of notification builder
-    NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +39,9 @@ public class MainActivity extends BaseActivity {
 
         // inform the Parse Cloud that it is ready for notifications
         ParseInstallation.getCurrentInstallation().saveInBackground();
+
+        //Creating a new object of notification builder
+        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);
 
         notificationBuilder.setSmallIcon(getNotificationIcon(notificationBuilder));
 
@@ -121,30 +121,25 @@ public class MainActivity extends BaseActivity {
         @Override
         public Fragment getItem(int position) {
 
-            if (position == 0) // enough_food the position is 0 we are returning the First tab
+            if (position == 0) // Based on the position is we are returning the relevant tab
             {
-                Tab1 tab1 = new Tab1();
-                return tab1;
+                return new Tab1();
 
             } else if (position == 1)
             {
-                Tab2 tab2 = new Tab2();
-                return tab2;
+                return new Tab2();
 
             } else if (position == 2)
             {
-                Tab3 tab3 = new Tab3();
-                return tab3;
+                return new Tab3();
 
             } else if (position == 3)
             {
-                Tab4 tab4 = new Tab4();
-                return tab4;
+                return new Tab4();
 
             } else
             {
-                Tab5 tab5 = new Tab5();
-                return tab5;
+                return new Tab5();
             }
         }
 
