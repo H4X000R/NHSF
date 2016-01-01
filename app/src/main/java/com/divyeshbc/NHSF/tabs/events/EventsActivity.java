@@ -58,7 +58,13 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
             setContentView(R.layout.event_details);
             activateToolBar();
 
-            //Log.e("Fetching Postcode", "Postocode is");
+            //Linking the event location text view from the event_details view
+            TextView eventPostcode = (TextView) findViewById(R.id.eventPostcode);
+
+            //Getting the event location
+            eventPostcode.setText("Postcode: " + event.getEventPostcode());
+
+            //Log.e("Fetching Postcode", "Postcode is");
             //Log.e("Post code not Blank", "Event Detail selected");
         }
 
