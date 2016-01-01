@@ -73,7 +73,7 @@ public class RecyclerViewAdapterEvents extends RecyclerView.Adapter<RecyclerView
                 //Intent to EventsActivity
                 Intent intent = new Intent(mContext, EventsActivity.class);
 
-                //Along with the Event Title also trnasfer the additional event details that will display based on the
+                //Along with the Event Title also transfer the additional event details that will display based on the
                 //position of the event in the cell
                 intent.putExtra(EVENT_TRANSFER, getEvent(position));
 

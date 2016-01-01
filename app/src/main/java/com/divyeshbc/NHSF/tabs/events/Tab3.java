@@ -140,6 +140,7 @@ public class Tab3 extends Fragment implements RecyclerViewAdapterEvents.ClickLis
                 item.setEventDate(AdminArrayObject.getString("eventDate"));
                 item.setEventTime(AdminArrayObject.getString("eventTime"));
                 item.setEventLocation(AdminArrayObject.getString("eventLocation"));
+                item.setEventPostcode(AdminArrayObject.getString("eventPostcode"));
 
                 this.EventsList.add(item);
 
@@ -147,6 +148,7 @@ public class Tab3 extends Fragment implements RecyclerViewAdapterEvents.ClickLis
                 Log.e("Event Date", AdminArrayObject.getString("eventDate"));
                 Log.e("Event Time", AdminArrayObject.getString("eventTime"));
                 Log.e("Event Location", AdminArrayObject.getString("eventLocation"));
+                Log.e("Event Postcode", AdminArrayObject.getString("eventPostcode"));
             }
 
         } catch (JSONException e) {

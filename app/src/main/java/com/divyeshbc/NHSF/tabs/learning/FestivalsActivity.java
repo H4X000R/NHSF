@@ -36,6 +36,10 @@ public class FestivalsActivity extends BaseActivity implements RecyclerViewAdapt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.festivals);
 
+        //This line of code will set the View to full screen without any trimming
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+
         //This line will forcefully hide the bottom navigation bar on devices that have them
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
 

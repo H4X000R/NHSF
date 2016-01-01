@@ -7,6 +7,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import com.divyeshbc.NHSF.BaseActivity;
@@ -47,6 +48,9 @@ public class AdminTeamActivity extends BaseActivity implements RecyclerViewAdapt
 
         //Setting the orientation to Portrait Only
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        //This line will forcefully hide the bottom navigation bar on devices that have them
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
 
         //Calling Activate Toolbar method (with the Back button enabled)
         activateToolbarWithHomeEnabled();

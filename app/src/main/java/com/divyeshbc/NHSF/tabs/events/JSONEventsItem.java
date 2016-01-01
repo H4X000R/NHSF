@@ -12,6 +12,7 @@ public class JSONEventsItem implements Serializable {
     private String EventDate;
     private String EventTime;
     private String EventLocation;
+    private String EventPostcode;
 
     public String getEventName() {
         return EventName;
@@ -52,4 +53,8 @@ public class JSONEventsItem implements Serializable {
     public void setEventLocation(String EventLocation) {
         this.EventLocation = EventLocation;
     }
+
+    public String getEventPostcode() { return EventPostcode; }
+
+    public void setEventPostcode(String EventPostcode) { this.EventPostcode = EventPostcode; }
 }

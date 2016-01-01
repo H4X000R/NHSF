@@ -21,23 +21,54 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
     public static final String EVENT_TRANSFER = "EVENT_TRANSFER";
 
     EditText postcode;
+    String location;
+    JSONEventsItem event;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.event_details);
-
-        //Enabling the toolbar
-        activateToolBar();
-
-        //Setting the orientation to Portrait Only
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Retrieving current intent NOT CREATING a new one
         Intent intent = getIntent();
 
         //Returning the event object that is passed from the Tab3 activity
-        JSONEventsItem event = (JSONEventsItem) intent.getSerializableExtra(EVENT_TRANSFER);
+        event = (JSONEventsItem) intent.getSerializableExtra(EVENT_TRANSFER);
+
+        //Here checking to see if the postcode field for the location is empty
+        if (event.getEventPostcode().isEmpty()) {
+
+            //Log.e("Fetching Postcode", "Postocode is");
+
+            //If it is empty then set the view to event_details2 (with option to enter postcode)
+            setContentView(R.layout.event_details2);
+            activateToolBar();
+
+            //Linking the event postcode text view from the event_details view
+            postcode = (EditText) findViewById(R.id.editText);
+
+            //Getting the above typed postcode as the event postcode
+            postcode.getText().toString();
+
+            //Log.e("Postcode Blank", "Event Details 2");
+        }
+
+        else {
+
+            //Else if postcode is not blank then set to the event_details (no option for post code entry direct 'get directions)
+            setContentView(R.layout.event_details);
+            activateToolBar();
+
+            //Log.e("Fetching Postcode", "Postocode is");
+            //Log.e("Post code not Blank", "Event Detail selected");
+        }
+
+        //setContentView(R.layout.event_details);
+
+        //Enabling the toolbar
+        //activateToolBar();
+
+        //Setting the orientation to Portrait Only
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //Linking the event title text view from the event_details view
         TextView eventTitle = (TextView) findViewById(R.id.eventName);
@@ -62,7 +93,6 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
 
         //Getting the event location
         eventLocation.setText(event.getEventLocation());
-
     }
 
     @Override
@@ -81,11 +111,19 @@ public class EventsActivity extends BaseActivity implements RecyclerViewAdapterE
 
         if (id == R.id.action_map) {
 
-            //Setting the postcode variable to the editText view in eventDetails
-            postcode = (EditText) findViewById(R.id.editText);
+            if (event.getEventPostcode().isEmpty()) {
+                //Setting the postcode variable to the editText view in eventDetails
+                postcode = (EditText) findViewById(R.id.editText);
 
-            //Getting the entered postcode
-            String location = postcode.getText().toString();
+                //Getting the entered postcode
+                location = postcode.getText().toString();
+
+            }
+            else {
+
+                //Setting the location to the address postcode
+                 location = event.getEventPostcode();
+            }
 
             Uri gmmIntentUri = Uri.parse("google.navigation:q="+location);
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
