@@ -55,4 +55,10 @@
               android:textColor="@color/md_green_500"
               android:textSize="18dp"/>
 
+    <ImageView android:layout_width="match_parent" android:layout_height="270dp"
+               android:layout_below="@+id/eventPostcode"
+               android:src="@drawable/about_us_image"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentLeft="true"/>
+
 </RelativeLayout>
