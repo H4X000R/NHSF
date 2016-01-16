@@ -12,17 +12,18 @@
         android:id="@+id/hinduismSimple_recycler_view"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="165dp"
         android:layout_below="@+id/toolbar"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" android:layout_above="@+id/imageView"/>
+        android:layout_alignParentStart="true"
+        android:fitsSystemWindows="true"/>
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="392dp"
+        android:layout_height="390dp"
         android:id="@+id/imageView"
         android:src="@drawable/questions_booklet_image"
-        android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" android:scaleType="centerCrop"/>
+        android:layout_below="@id/hinduismSimple_recycler_view"
+        android:scaleType="centerCrop"/>
 
 </RelativeLayout>

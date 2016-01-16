@@ -32,6 +32,8 @@ public class BaseActivity extends ActionBarActivity {
 
         mToolbar.getMenu().clear();
 
+        //Logic for setting the colour of the status bar
+        //If the Android OS on the phone is Android Lollipop
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -40,6 +42,7 @@ public class BaseActivity extends ActionBarActivity {
             getWindow().setStatusBarColor(getResources().getColor(R.color.baseSecondaryBackgroundColour));
 
         } else {
+            //Set Status bar colour to Black
             getWindow().setStatusBarColor(getResources().getColor(R.color.md_black_1000));
         }
 

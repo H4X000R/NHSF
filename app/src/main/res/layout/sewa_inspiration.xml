@@ -13,18 +13,18 @@
         android:id="@+id/sewaInpspiration_recycler_view"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:layout_below="@+id/toolbar"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        android:fitsSystemWindows="true"/>
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="476dp"
         android:id="@+id/imageView"
         android:src="@drawable/gandhi"
-        android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" android:scaleType="fitXY"/>
+        android:layout_below="@+id/sewaInpspiration_recycler_view"
+        android:scaleType="fitXY"/>
 
 </RelativeLayout>
