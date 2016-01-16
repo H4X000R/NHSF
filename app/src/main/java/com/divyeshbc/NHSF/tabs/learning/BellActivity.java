@@ -46,6 +46,8 @@ public class BellActivity extends BaseActivity implements OnPageChangeListener {
         if (jumpToFirstPage) pageNumber = 1;
         setTitle(pdfName = assetFileName);
 
+
+
         mPDFView.fromAsset(assetFileName)
                 //.pages(0, 2, 1, 3, 3, 3)
                 .defaultPage(pageNumber)

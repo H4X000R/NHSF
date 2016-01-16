@@ -163,6 +163,9 @@ public class MainActivity extends BaseActivity {
         //If the OS version is greater than or equal to lollipop
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
+            //Set Status bar colour to Orange
+            getWindow().setStatusBarColor(getResources().getColor(R.color.basePrimaryBackgroundColour));
+
             int color = 0xFFD66F;
             //Set the background colour of the app icon to orange
             notificationBuilder.setColor(color);
