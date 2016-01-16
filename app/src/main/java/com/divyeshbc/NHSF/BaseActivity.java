@@ -1,7 +1,9 @@
 package com.divyeshbc.NHSF;
 
+import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.WindowManager;
 
 /**
  * Created by DivyeshBC on 25/05/15.
@@ -29,6 +31,17 @@ public class BaseActivity extends ActionBarActivity {
         }
 
         mToolbar.getMenu().clear();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            //Set Status bar colour to Orange
+            getWindow().setStatusBarColor(getResources().getColor(R.color.baseSecondaryBackgroundColour));
+
+        } else {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.md_black_1000));
+        }
 
         //Return the created Toolbar
         return mToolbar;

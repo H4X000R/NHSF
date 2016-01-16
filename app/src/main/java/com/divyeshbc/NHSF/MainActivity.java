@@ -6,10 +6,11 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.NotificationCompat;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 import com.divyeshbc.NHSF.tabs.SlidingTabLayout;
 import com.divyeshbc.NHSF.tabs.aboutUs.Tab1;
@@ -44,6 +45,17 @@ public class MainActivity extends BaseActivity {
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);
 
         notificationBuilder.setSmallIcon(getNotificationIcon(notificationBuilder));
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            //Set Status bar colour to Orange
+            getWindow().setStatusBarColor(getResources().getColor(R.color.baseSecondaryBackgroundColour));
+
+        } else {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.md_black_1000));
+        }
 
         //Calling Activate Toolbar method
         activateToolBar();
@@ -95,7 +107,7 @@ public class MainActivity extends BaseActivity {
 
         String[] tabs;
 
-        public  MyPagerAdapter(FragmentManager fm) {
+        public MyPagerAdapter(FragmentManager fm) {
             super(fm);
 
             //Initialising the strings array of the tabs
@@ -125,20 +137,16 @@ public class MainActivity extends BaseActivity {
             {
                 return new Tab1();
 
-            } else if (position == 1)
-            {
+            } else if (position == 1) {
                 return new Tab2();
 
-            } else if (position == 2)
-            {
+            } else if (position == 2) {
                 return new Tab3();
 
-            } else if (position == 3)
-            {
+            } else if (position == 3) {
                 return new Tab4();
 
-            } else
-            {
+            } else {
                 return new Tab5();
             }
         }
@@ -157,14 +165,12 @@ public class MainActivity extends BaseActivity {
         }
     }
 
+
     //This method will determine the user's operating system and based on this will set the app notification icon accordingly
     private int getNotificationIcon(NotificationCompat.Builder notificationBuilder) {
 
         //If the OS version is greater than or equal to lollipop
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-
-            //Set Status bar colour to Orange
-            getWindow().setStatusBarColor(getResources().getColor(R.color.basePrimaryBackgroundColour));
 
             int color = 0xFFD66F;
             //Set the background colour of the app icon to orange
@@ -176,6 +182,8 @@ public class MainActivity extends BaseActivity {
             //Else use the standard colour icon
             return R.mipmap.nhsf_app_logo_androidx144;
         }
+
     }
 }
+
 
