@@ -41,10 +41,13 @@ public class BaseActivity extends ActionBarActivity {
             //Set Status bar colour to Orange
             getWindow().setStatusBarColor(getResources().getColor(R.color.baseSecondaryBackgroundColour));
 
-        } else {
+        }
+        /*
+        else {
             //Set Status bar colour to Black
             getWindow().setStatusBarColor(getResources().getColor(R.color.md_black_1000));
         }
+        */
 
         //Return the created Toolbar
         return mToolbar;

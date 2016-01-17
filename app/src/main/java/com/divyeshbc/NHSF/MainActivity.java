@@ -53,9 +53,12 @@ public class MainActivity extends BaseActivity {
             //Set Status bar colour to Orange
             getWindow().setStatusBarColor(getResources().getColor(R.color.baseSecondaryBackgroundColour));
 
-        } else {
+        }
+        /*
+        else {
             getWindow().setStatusBarColor(getResources().getColor(R.color.md_black_1000));
         }
+        */
 
         //Calling Activate Toolbar method
         activateToolBar();

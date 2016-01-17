@@ -58,10 +58,26 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
 
         final Chapter chapter = dataSet.get(i);
 
+        /*
+        //Logic for pre-loading an image into the memory cache to be loaded from
+        Picasso.with(context).load(chapter.getThumbnail()).fetch(new Callback() {
+            @Override
+            public void onSuccess() {
+
+            }
+
+            @Override
+            public void onError() {
+
+            }
+        });
+        */
+
         Picasso.with(context)
                 .load(chapter.getThumbnail())
                 .resize(1300, 1300)
                 .into(viewHolder.iconView);
+                //.fetch();
         //mPhotoViewAttacher = new PhotoViewAttacher(viewHolder.iconView);
 
         viewHolder.chapterName.setText(chapter.getTitle());
