@@ -86,7 +86,7 @@ public class Tab2 extends Fragment {
                 "North Zone - Coordinator: Nakul Rajani",
                 //NHSF Brighton
                 "South Zone - Coordinator: Reva Shah",
-                //NHSF Bristol
+                //nhsf_bristol
                 "South Zone - Coordinator: Reva Shah",
                 //NHSF Brunel
                 "London Zone - Coordinator: Ritesh Thakrar",

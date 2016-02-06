@@ -126,7 +126,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
                         break;
 
                     case 6:
-                        //Intent to NHSF Bristol Image
+                        //Intent to nhsf_bristol Image
                         intent = new Intent(context, NHSFBristolImageActivity.class);
                         break;
 
