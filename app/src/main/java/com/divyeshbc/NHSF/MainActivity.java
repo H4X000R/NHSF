@@ -183,7 +183,7 @@ public class MainActivity extends BaseActivity {
 
         } else {
             //Else use the standard colour icon
-            return R.mipmap.nhsf_app_logo_androidx144;
+            return R.mipmap.nhsf_25th_app_logo_androidx144;
         }
 
     }
