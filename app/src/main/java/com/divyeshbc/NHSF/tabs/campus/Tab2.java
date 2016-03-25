@@ -174,7 +174,7 @@ public class Tab2 extends Fragment {
                 "North Zone - Coordinator: Nakul Rajani"
                 };
 
-
+        /*
         final String[] chapterCommittees = {
                 //--NHSF ASTON --
                 "PRESIDENT: Shailee Patel \nVP: Dhimant Mehta \nSECRETARIES: Raj Sivlal & Karishma Patel \nTREASURERS: Ajay Mistry & Akshay Nagda " +
@@ -390,6 +390,7 @@ public class Tab2 extends Fragment {
                 // -- NHSF YORK --
                 "PRESIDENT: \nSECRETARY: \nTREASURER:"
         };
+        */
 
 
         chapters = new ArrayList<Chapter>();
@@ -400,7 +401,7 @@ public class Tab2 extends Fragment {
             feed.setTitle(affiliatedChapters[i]);
             feed.setThumbnail(logos[i]);
             feed.setZone(zones[i]);
-            feed.setSubTitle(chapterCommittees[i]);
+            //feed.setSubTitle(chapterCommittees[i]);
             chapters.add(feed);
         }
     }
