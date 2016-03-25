@@ -179,7 +179,7 @@ public class MainActivity extends BaseActivity {
             //Set the background colour of the app icon to orange
             notificationBuilder.setColor(color);
             //Use the transparent icon (As per Google Design Guidelines for Icons for Lollipop and above)
-            return R.mipmap.nhsf_app_icon_transparent;
+            return R.mipmap.nhsf_twentyfifth_app_icon_transparent;
 
         } else {
             //Else use the standard colour icon
