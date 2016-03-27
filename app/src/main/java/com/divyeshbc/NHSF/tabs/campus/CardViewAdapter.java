@@ -83,7 +83,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
         viewHolder.chapterName.setText(chapter.getTitle());
         //viewHolder.iconView.setImageResource(fp.getThumbnail());
         viewHolder.chapterZone.setText(chapter.getZone());
-        //viewHolder.chapterDetails.setText(chapter.getSubTitle());
+        viewHolder.chapterDetails.setText(chapter.getSubTitle());
         viewHolder.details = chapter;
 
 
@@ -361,7 +361,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         public TextView chapterName;
-        //public TextView chapterDetails;
+        public TextView chapterDetails;
         public TextView chapterZone;
         public ImageView iconView;
         //public ImageView mImageView;
@@ -377,8 +377,8 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
                     .findViewById(R.id.iconId);
             chapterZone = (TextView) itemLayoutView
                     .findViewById(R.id.chapterZone);
-            //chapterDetails = (TextView) itemLayoutView
-                    //.findViewById(R.id.chapterDetails);
+            chapterDetails = (TextView) itemLayoutView
+                    .findViewById(R.id.chapterDetails);
         }
     }
 }

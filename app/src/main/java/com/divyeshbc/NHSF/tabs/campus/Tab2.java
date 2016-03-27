@@ -75,106 +75,106 @@ public class Tab2 extends Fragment {
 
         final String[] zones = {
                 //NHSF Aston
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF BCU
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF Birmingham
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF BPP
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Bradford
-                "North Zone - Coordinator: Nakul Rajani",
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF Brighton
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //nhsf_bristol
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF Brunel
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Bucks New Uni
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF City
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Coventry
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF DMU
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF Exeter
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF Greenwich
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Hertfordshire
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Huddersfield
-                "North Zone - Coordinator: Nakul Rajani",
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF Hull
-                "North Zone - Coordinator: Nakul Rajani",
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF Imperial
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF KCL
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Keele
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF Kent
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF Kingston
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Leeds
-                "North Zone - Coordinator: Nakul Rajani",
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF Leicester
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF Liverpool
-                "North Zone - Coordinator: Nakul Rajani",
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF Loughborough
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF LSBU
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF LSE
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF MANCHESTER
-                "North Zone - Coordinator: Nakul Rajani",
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF MEDWAY
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF NORTHAMPTON
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF NORTHUMBRIA
-                "North Zone - Coordinator: Nakul Rajani",
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF NOTTINGHAM
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF NTU
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF PLYMOUTH
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF PORTSMOUTH
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF QMUL
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF READING
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF RHUL
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF ROEHAMPTON
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF SGUL
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF SHEFFIELD
-                "North Zone - Coordinator: Nakul Rajani",
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF SOUTHAMPTON
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF SWANSEA
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF UEA
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF UWE
-                "South Zone - Coordinator: Reva Shah",
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF WARWICK
-                "Central Zone - Coordinator: Shivanee Ardeshana",
+                "Central Zone - Coordinator: TBC",
                 //NHSF WESTMINSTER
-                "London Zone - Coordinator: Ritesh Thakrar",
+                "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF YORK
-                "North Zone - Coordinator: Nakul Rajani"
+                "North Zone - Coordinator: Jay Badiani"
                 };
 
-        /*
+
         final String[] chapterCommittees = {
                 //--NHSF ASTON --
                 "PRESIDENT: Shailee Patel \nVP: Dhimant Mehta \nSECRETARIES: Raj Sivlal & Karishma Patel \nTREASURERS: Ajay Mistry & Akshay Nagda " +
@@ -390,7 +390,7 @@ public class Tab2 extends Fragment {
                 // -- NHSF YORK --
                 "PRESIDENT: \nSECRETARY: \nTREASURER:"
         };
-        */
+
 
 
         chapters = new ArrayList<Chapter>();
@@ -401,7 +401,7 @@ public class Tab2 extends Fragment {
             feed.setTitle(affiliatedChapters[i]);
             feed.setThumbnail(logos[i]);
             feed.setZone(zones[i]);
-            //feed.setSubTitle(chapterCommittees[i]);
+            feed.setSubTitle(chapterCommittees[i]);
             chapters.add(feed);
         }
     }
