@@ -18,13 +18,15 @@
         android:layout_below="@+id/toolbar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:fitsSystemWindows="true"/>
+        android:fitsSystemWindows="true" android:layout_alignParentBottom="true"/>
 
+    <!--
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="270dp"
         android:id="@+id/imageView"
         android:src="@drawable/about_us_image"
         android:layout_below="@+id/adminteam_recycler_view"/>
+        -->
 
 </RelativeLayout>

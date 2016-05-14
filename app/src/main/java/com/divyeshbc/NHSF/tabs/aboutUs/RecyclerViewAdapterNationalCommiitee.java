@@ -16,6 +16,11 @@ import java.util.List;
 
 /**
  * Created by DivyeshBC on 27/10/15.
+ *
+ * v3.0 - 14-MAY-2016 - This Adapter is no longer needed as this provides the options for two separate cells 'Admin Team'
+ *                      and 'Team Coordinators' in the table view for the user to select from. Now, both of these are
+ *                      incorporated into a single TableView which will display as soon as NationalCommittee cell is
+ *                      clicked in the Tab1 Activity.
  */
 public class RecyclerViewAdapterNationalCommiitee extends RecyclerView.Adapter<RecyclerViewAdapterNationalCommiitee.MyViewHolder> {
 
