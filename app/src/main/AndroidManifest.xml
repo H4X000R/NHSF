@@ -76,7 +76,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.divyeshbc.NHSF.MainActivity"/>
-
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_SEND"/>
 

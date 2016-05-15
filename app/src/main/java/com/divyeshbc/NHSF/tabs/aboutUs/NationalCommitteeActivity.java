@@ -1,8 +1,11 @@
 package com.divyeshbc.NHSF.tabs.aboutUs;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -29,7 +32,7 @@ import java.util.List;
  * Created by DivyeshBC on 27/10/15.
  *
  * v3.0 - 14-MAY-2016 - Removing Team Coordinator row from Table View as incorporating both Admin and TC into one Table View
- *
+ *                    - Adding in onClickListener for Floating Action Button
  */
 public class NationalCommitteeActivity extends BaseActivity implements RecyclerViewAdapterAdminTeam.ClickListener {
 
@@ -45,6 +48,8 @@ public class NationalCommitteeActivity extends BaseActivity implements RecyclerV
     private AdminTeamActivity activity;
 
     private String jsonString = "";
+
+    private FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +86,36 @@ public class NationalCommitteeActivity extends BaseActivity implements RecyclerV
         //Downloading data from below url (Universal Resource Locator) to obtain data from the Admin database
         final String url = "http://dbchudasama.webfactional.com/jsonscriptAdmin.php";
         new AsyncHTTPTask().execute(url);
+
+        //3.0 -- Here setting the onClickListener for the FAB
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Toast.makeText(NationalCommitteeActivity.this, "Failed to fetch Admin Team. No Internet!", Toast.LENGTH_SHORT).show();
+
+                //Invoking new intent to allow user to send email
+                Intent emailIntent = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
+
+                //Setting an array up for the recipient
+                String emailRecipient[] = {"info@nhsf.org.uk"};
+
+                //Allowing the user to select with what application they would like to send the email
+                //startActivity(Intent.createChooser(emailIntent, "Send your email via:"));
+
+                //Here providing the email address to which the email is being sent
+                emailIntent.putExtra(Intent.EXTRA_EMAIL, emailRecipient);
+
+                //Prompt email clients only
+                emailIntent.setType("message/rfc822");
+
+                //Navigate to the above intent
+                startActivity(Intent.createChooser(emailIntent, "Choose an email client:"));
+            }
+        });
+        //v3.0 --
     }
 
     public class AsyncHTTPTask extends AsyncTask<String, Void, Integer> {

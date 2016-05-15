@@ -1,6 +1,7 @@
 package com.divyeshbc.NHSF.tabs.aboutUs;
 
 import android.content.Context;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -78,6 +79,7 @@ public class RecyclerViewAdapterAdminTeam extends RecyclerView.Adapter<RecyclerV
 
         TextView title;
         TextView subTitle;
+        FloatingActionButton mFloatingActionButton;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -86,6 +88,7 @@ public class RecyclerViewAdapterAdminTeam extends RecyclerView.Adapter<RecyclerV
             title = (TextView) itemView.
                     findViewById(R.id.listText);
             subTitle = (TextView) itemView.findViewById(R.id.subTitle);
+            mFloatingActionButton = (FloatingActionButton) itemView.findViewById(R.id.fab);
         }
     }
 }
