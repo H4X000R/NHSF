@@ -33,7 +33,7 @@
         app:layout_anchor="@+id/adminteam_recycler_view"
         android:layout_gravity="bottom|end|right"
         app:backgroundTint="@color/md_orange_500"
-        android:src="@mipmap/ic_create_black_24dp"
+        android:src="@mipmap/ic_create_white_24dp"
         android:clickable="true"
         android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
         android:layout_marginBottom="20dp" android:layout_marginRight="20dp"/>
