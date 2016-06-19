@@ -18,8 +18,6 @@ import com.divyeshbc.NHSF.tabs.campus.Tab2;
 import com.divyeshbc.NHSF.tabs.events.Tab3;
 import com.divyeshbc.NHSF.tabs.learning.Tab4;
 import com.divyeshbc.NHSF.tabs.sewa.Tab5;
-import com.parse.ParseAnalytics;
-import com.parse.ParseInstallation;
 
 
 public class MainActivity extends BaseActivity {
@@ -36,10 +34,10 @@ public class MainActivity extends BaseActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         // To track statistics around application
-        ParseAnalytics.trackAppOpened(getIntent());
+        //ParseAnalytics.trackAppOpened(getIntent());
 
         // inform the Parse Cloud that it is ready for notifications
-        ParseInstallation.getCurrentInstallation().saveInBackground();
+        //ParseInstallation.getCurrentInstallation().saveInBackground();
 
         //Creating a new object of notification builder
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);

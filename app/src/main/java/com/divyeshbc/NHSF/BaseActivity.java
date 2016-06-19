@@ -1,12 +1,17 @@
 package com.divyeshbc.NHSF;
 
+import android.content.Intent;
 import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.WindowManager;
 
+import com.batch.android.Batch;
+
 /**
  * Created by DivyeshBC on 25/05/15.
+ *
+ * v3.0 - 19-Jun-2016 - Implementing Batch SDK Methods
  */
 //Creating a Base Activity class that can be used throughout the app consisting of shared activities
 public class BaseActivity extends ActionBarActivity {
@@ -65,5 +70,38 @@ public class BaseActivity extends ActionBarActivity {
         return mToolbar;
     }
 
+    //v3.0 --
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+
+        Batch.onStart(this);
+    }
+
+    @Override
+    protected void onStop()
+    {
+        Batch.onStop(this);
+
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        Batch.onDestroy(this);
+
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent)
+    {
+        Batch.onNewIntent(this, intent);
+
+        super.onNewIntent(intent);
+    }
+    //v3.0 --
 
 }
