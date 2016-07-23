@@ -282,7 +282,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
 
                     case 37:
                         //Intent to NHSF Reading Image
-                        intent = new Intent(context, NHSFReadingImageActivity.class);
+                        intent = new Intent(context, NHSFreadingImageActivity.class);
                         break;
 
                     case 38:

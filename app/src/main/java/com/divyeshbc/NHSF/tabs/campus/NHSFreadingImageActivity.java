@@ -15,7 +15,7 @@ import uk.co.senab.photoview.PhotoViewAttacher;
 /**
  * Created by DivyeshBC on 13/11/15.
  */
-public class NHSFReadingImageActivity extends BaseActivity implements CardViewAdapter.Clicklistener {
+public class NHSFreadingImageActivity extends BaseActivity implements CardViewAdapter.Clicklistener {
 
     private ImageView mImageView;
 
