@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/eventName"
+              android:layout_below="@+id/toolbar"
+              android:maxLines="3"
+              android:padding="10dp"
+              android:text="Event Name"
+              android:textStyle="bold"
+              android:textColor="@android:color/black"
+              android:textSize="22sp"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/eventDate"
+              android:layout_below="@+id/eventName"
+              android:padding="10dp"
+              android:text="Event Date"
+              android:textColor="@color/md_green_500"
+              android:textSize="18dp"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/eventTime"
+              android:layout_below="@id/eventDate"
+              android:padding="10dp"
+              android:text="Event Time"
+              android:textColor="@color/md_green_500"
+              android:textSize="18dp"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/eventLocation"
+              android:layout_below="@id/eventTime"
+              android:padding="10dp"
+              android:text="Event Location"
+              android:textColor="@color/md_green_500"
+              android:textSize="18dp"/>
+
+    <!--
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/eventPostcode"
+              android:layout_below="@id/eventLocation"
+              android:padding="10dp"
+              android:text="Event Postcode"
+              android:textColor="@color/md_green_500"
+              android:textSize="18dp"/>
+              -->
+
+    <ImageView android:layout_width="match_parent" android:layout_height="270dp"
+               android:layout_below="@+id/eventLocation"
+               android:src="@drawable/nhsf_25th_symbol"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>

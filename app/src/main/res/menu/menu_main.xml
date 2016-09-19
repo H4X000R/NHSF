@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <group android:checkableBehavior="single">
+      <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/house"
+      ></item>
+      <item
+          android:id="@+id/nav_tab1"
+          android:title="About Us"
+          android:icon="@drawable/about_us1"
+      ></item>
+      <item
+          android:id="@+id/nav_tab2"
+          android:title="Campus"
+          android:icon="@drawable/campus"
+      ></item>
+      <item
+          android:id="@+id/nav_tab3"
+          android:title="Events"
+          android:icon="@drawable/events"
+      ></item>
+      <item
+          android:id="@+id/nav_tab4"
+          android:title="Learning"
+          android:icon="@drawable/learning"
+      ></item>
+      <item
+            android:id="@+id/nav_tab5"
+            android:title="Sewa"
+            android:icon="@drawable/sewa"
+      ></item>
+
+      </group>
+</menu>

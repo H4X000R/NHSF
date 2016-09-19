@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">NHSF</string>
+    <string name="action_settings">Settings</string>
+    <string name="Introduction">Introduction</string>
+    <string name="title_activity_natcom">National Committee</string>
+    <string name="title_activity_adminteam">Admin Team</string>
+    <string name="title_activity_tc">Team Coordinators</string>
+    <string name="action_email">Email</string>
+    <string name="title_activity_NHSFAstonImage">NHSF Aston</string>
+    <string name="title_activity_NHSFBCUImage">NHSF BCU</string>
+    <string name="title_activity_NHSFBirminghamImage">NHSF Birmingham</string>
+    <string name="title_activity_NHSFBPPImage">NHSF BPP</string>
+    <string name="title_activity_NHSFBradfordImage">NHSF Bradford</string>
+    <string name="title_activity_NHSFBrightonImage">NHSF Brighton</string>
+    <string name="title_activity_NHSFBristolImage">NHSF Bristol</string>
+    <string name="title_activity_NHSFBrunelImage">NHSF Brunel</string>
+    <string name="title_activity_NHSFBucksNewUniImage">NHSF Bucks New Uni</string>
+    <string name="title_activity_NHSFCityImage">NHSF City</string>
+    <string name="title_activity_NHSFCoventryImage">NHSF Coventry</string>
+    <string name="title_activity_NHSFDMUImage">NHSF DMU</string>
+    <string name="title_activity_NHSFExeterImage">NHSF Exeter</string>
+    <string name="title_activity_NHSFGreenwichImage">NHSF Greenwich</string>
+    <string name="title_activity_NHSFHertfordshireImage">NHSF Hertfordshire</string>
+    <string name="title_activity_NHSFHuddersfieldImage">NHSF Huddersfield</string>
+    <string name="title_activity_NHSFHullImage">NHSF Hull</string>
+    <string name="title_activity_NHSFImperialImage">NHSF Imperial</string>
+    <string name="title_activity_NHSFKCLImage">NHSF KCL</string>
+    <string name="title_activity_NHSFKeeleImage">NHSF Keele</string>
+    <string name="title_activity_NHSFKentImage">NHSF Kent</string>
+    <string name="title_activity_NHSFKingstonImage">NHSF Kingston</string>
+    <string name="title_activity_NHSFLeedsImage">NHSF Leeds</string>
+    <string name="title_activity_NHSFLeicesterImage">NHSF Leicester</string>
+    <string name="title_activity_NHSFLiverpoolImage">NHSF Liverpool</string>
+    <string name="title_activity_NHSFLoughboroughImage">NHSF Loughborough</string>
+    <string name="title_activity_NHSFLSBUImage">NHSF LSBU</string>
+    <string name="title_activity_NHSFLSEImage">NHSF LSE</string>
+    <string name="title_activity_NHSFManchesterImage">NHSF Manchester</string>
+    <string name="title_activity_NHSFMedwayImage">NHSF Medway</string>
+    <string name="title_activity_NHSFNorthamptonImage">NHSF Northampton</string>
+    <string name="title_activity_NHSFNorthumbriaImage">NHSF Northumbria</string>
+    <string name="title_activity_NHSFNottinghamImage">NHSF Nottingham</string>
+    <string name="title_activity_NHSFNTUImage">NHSF NTU</string>
+    <string name="title_activity_NHSFPlymouthImage">NHSF Plymouth</string>
+    <string name="title_activity_NHSFPortsmouthImage">NHSF Portsmouth</string>
+    <string name="title_activity_NHSFQMULImage">NHSF QMUL</string>
+    <string name="title_activity_NHSFReadingImage">NHSF Reading</string>
+    <string name="title_activity_NHSFRHULImage">NHSF RHUL</string>
+    <string name="title_activity_NHSFRoehamptonImage">NHSF Roehampton</string>
+    <string name="title_activity_NHSFSGULImage">NHSF SGUL</string>
+    <string name="title_activity_NHSFSheffieldImage">NHSF Sheffield</string>
+    <string name="title_activity_NHSFSOASImage">NHSF SOAS</string>
+    <string name="title_activity_NHSFSouthamptonImage">NHSF Southampton</string>
+    <string name="title_activity_NHSFSwanseaImage">NHSF Swansea</string>
+    <string name="title_activity_NHSFUEAImage">NHSF UEA</string>
+    <string name="title_activity_NHSFUWEImage">NHSF UWE</string>
+    <string name="title_activity_NHSFWarwickImage">NHSF Warwick</string>
+    <string name="title_activity_NHSFWestminsterImage">NHSF Westminster</string>
+    <string name="title_activity_NHSFYorkImage">NHSF York</string>
+    <string name="title_activity_eventDetails">Event Details</string>
+    <string name="title_activity_mapDirections">Get Directions</string>
+    <string name="placeholder_text">Please Enter Postcode of Destination...</string>
+    <string name="title_activity_mustKnowMantras">Must Know Mantras</string>
+    <string name="title_activity_mustRead">Must Read</string>
+    <string name="title_activity_bhagavadGita">Bhagavad Gita</string>
+    <string name="title_activity_whatishinduism">What is Hinduism</string>
+    <string name="title_activity_questions">14 Questions</string>
+    <string name="title_activity_hinduBasics">Hindu Basics</string>
+    <string name="title_activty_realQuestions">Real Questions</string>
+    <string name="title_activity_hinduismPrimerTopic">Hinduism - A Primer Topic</string>
+    <string name="title_activity_whyDoWe">Why Do We?</string>
+    <string name="title_activity_lotus">Lotus</string>
+    <string name="title_activity_pradakshina">Pradakshina</string>
+    <string name="title_activity_fast">Why do we fast?</string>
+    <string name="title_activity_trees">Trees and Plants</string>
+    <string name="title_ativity_bell">Bell in a temple</string>
+    <string name="title_activity_festivals">Festivals</string>
+    <string name="title_activity_janToJune">Jan to June</string>
+    <string name="title_activity_julyToDec">July to December</string>
+    <string name="title_activity_makarSankranti">Makar Sankranti</string>
+    <string name="title_activity_mahaShivratri">MahaShivratri</string>
+    <string name="title_activity_holi">Holi</string>
+    <string name="title_activity_ramnavmi">Ramnavmi</string>
+    <string name="title_activity_hanumanJayanti">Hanuman Jayanti</string>
+    <string name="title_activity_guruPurnima">Guru Purnima</string>
+    <string name="title_activity_rakshaBandhan">Raksha Bandhan</string>
+    <string name="title_activity_janmashtami">Janmashtami</string>
+    <string name="title_activity_ganeshChaturthi">Ganesh Chaturthi</string>
+    <string name="title_activity_navratri">Navratri</string>
+    <string name="title_activity_dusshera">Dusshera</string>
+    <string name="title_activity_diwali">Diwali</string>
+    <string name="title_activity_hum">HUM Magazine</string>
+    <string name="title_activity_importantDates">Important Dates</string>
+    <string name="title_activity_sewaCampaigns">Sewa Campaigns</string>
+    <string name="title_activity_sewaDay">Sewa Day</string>
+    <string name="title_activity_NDD">National Donation Day</string>
+    <string name="title_activity_helpHomeless">Help The Homeless</string>
+    <string name="title_activity_sewaWeek">Sewa Week</string>
+    <string name="title_activity_sewaBank">Idea Bank</string>
+    <string name="title_activity_sewaInspiration">Sewa Inspiration</string>
+    <string name="title_activity_sewaVideos">"Sewa Videos</string>
+    <string name="title_activity_waterChanges">Water Changes Everything</string>
+    <string name="title_activity_enoughFood">Enough Food For Everyone</string>
+    <string name="title_activity_shareMyDabba">Share My Dabba</string>
+    <string name="title_activity_makeTheHomeless">Make The Homeless</string>
+    <string name="title_activity_shareCareJoy">Share...Care...Joy</string>
+    <string name="title_activity_indiasPoor">India\'s Poor</string>
+    <string name="title_activity_rachelBeckwith">Rachel Beckwith\'s Last Wish</string>
+    <string name="title_activity_trulySelfless">A Truly Selfless Being</string>
+    <string name="title_activity_sewaQuotes">Sewa Quotes</string>
+    <string name="title_activity_eventsPlate">Events On A Plate</string>
+    <string name="title_activity_nationalCharity">National Charity</string>
+    <string name="title_activity_sewaGuide">Sewa Uni Guide</string>
+
+    <string-array name="tabs">
+        <item>ABOUT US</item>
+        <item>CAMPUS</item>
+        <item>EVENTS</item>
+        <item>LEARNING</item>
+        <item>SEWA</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    -->
+
+
+</resources>

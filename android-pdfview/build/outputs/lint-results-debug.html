@@ -1,0 +1,858 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Lint Report</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" type="text/css" href="lint-results-debug_files/hololike.css" />
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body>
+<h1>Lint Report</h1>
+<div class="titleSeparator"></div>
+Check performed at Sat Aug 13 02:52:59 BST 2016.<br/>
+32 errors and 8 warnings found:<br/><br/>
+<table class="overview">
+<tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-error.png" alt="Error" />
+<a href="#MissingSuperCall">MissingSuperCall: Missing Super Call</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-warning.png" alt="Warning" />
+<a href="#GradleDeprecated">GradleDeprecated: Deprecated Gradle Construct</a>
+</td></tr>
+<tr>
+<td class="countColumn">31</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-error.png" alt="Error" />
+<a href="#NewApi">NewApi: Calling new methods on older versions</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-warning.png" alt="Warning" />
+<a href="#OldTargetApi">OldTargetApi: Target SDK attribute is not targeting latest version</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-warning.png" alt="Warning" />
+<a href="#Recycle">Recycle: Missing <code>recycle()</code> calls</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-warning.png" alt="Warning" />
+<a href="#UseSparseArrays">UseSparseArrays: HashMap can be replaced with SparseArray</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-warning.png" alt="Warning" />
+<a href="#ViewConstructor">ViewConstructor: Missing View constructors for XML inflation</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-warning.png" alt="Warning" />
+<a href="#ClickableViewAccessibility">ClickableViewAccessibility: Accessibility in Custom Views</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (15)</a>
+</td></tr></table>
+<br/>
+<a name="Correctness"></a>
+<div class="category"><a href="#" title="Return to top">Correctness</a><div class="categorySeparator"></div>
+</div>
+<a name="MissingSuperCall"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">MissingSuperCall: Missing Super Call</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/PDFView.java">../../src/main/java/com/joanzapata/pdfview/PDFView.java</a>:316</span>: <span class="message">Overriding method should call <code>super.onDetachedFromWindow</code></span><br /><pre class="errorlines">
+<span class="lineno"> 313</span>     }
+<span class="lineno"> 314</span> 
+<span class="lineno"> 315</span>     @Override
+<span class="lineno"> 316</span>     protected void <span class="errorspan">onDetachedFromWindow() {</span>
+<span class="lineno"> 317</span>         recycle();
+<span class="lineno"> 318</span>     }
+</pre>
+</div>
+<div class="metadata">Priority: 9 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Missing Super Call.</div>
+<div class="explanation">
+Some methods, such as <code>View#onDetachedFromWindow</code>, require that you also call the super implementation as part of your method.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "MissingSuperCall" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="GradleDeprecated"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">GradleDeprecated: Deprecated Gradle Construct</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:1</span>: <span class="message">'android-library' is deprecated; use 'com.android.library' instead</span><br /><pre class="errorlines">
+<span class="lineno">   1</span> <span class="errorspan">apply plugin: 'android-library'</span>
+<span class="lineno">   2</span> 
+<span class="lineno">   3</span> description = 'android-pdfview'
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Deprecated Gradle Construct.</div>
+<div class="explanation">
+This detector looks for deprecated Gradle constructs which currently work but will likely stop working in a future update.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "GradleDeprecated" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NewApi"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">NewApi: Calling new methods on older versions</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:51</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#cancel</code></span><br /><pre class="errorlines">
+<span class="lineno">  48</span> 
+<span class="lineno">  49</span>     public void startXAnimation(float xFrom, float xTo) {
+<span class="lineno">  50</span>         if (animation != null) {
+<span class="lineno">  51</span>             animation.<span class="errorspan">cancel();</span>
+<span class="lineno">  52</span>         }
+<span class="lineno">  53</span>         animation = ValueAnimator.ofFloat(xFrom, xTo);
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:53</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#ofFloat</code></span><br /><pre class="errorlines">
+<span class="lineno">  50</span>         if (animation != null) {
+<span class="lineno">  51</span>             animation.cancel();
+<span class="lineno">  52</span>         }
+<span class="lineno">  53</span>         animation = ValueAnimator.<span class="errorspan">ofFloat(xFrom, xTo);</span>
+<span class="lineno">  54</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  55</span>         animation.addUpdateListener(new XAnimation());
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:54</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#setInterpolator</code></span><br /><pre class="errorlines">
+<span class="lineno">  51</span>             animation.cancel();
+<span class="lineno">  52</span>         }
+<span class="lineno">  53</span>         animation = ValueAnimator.ofFloat(xFrom, xTo);
+<span class="lineno">  54</span>         animation.<span class="errorspan">setInterpolator(new DecelerateInterpolator());</span>
+<span class="lineno">  55</span>         animation.addUpdateListener(new XAnimation());
+<span class="lineno">  56</span>         animation.setDuration(400);
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:55</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#addUpdateListener</code></span><br /><pre class="errorlines">
+<span class="lineno">  52</span>         }
+<span class="lineno">  53</span>         animation = ValueAnimator.ofFloat(xFrom, xTo);
+<span class="lineno">  54</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  55</span>         animation.<span class="errorspan">addUpdateListener(new XAnimation());</span>
+<span class="lineno">  56</span>         animation.setDuration(400);
+<span class="lineno">  57</span>         animation.start();
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:56</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#setDuration</code></span><br /><pre class="errorlines">
+<span class="lineno">  53</span>         animation = ValueAnimator.ofFloat(xFrom, xTo);
+<span class="lineno">  54</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  55</span>         animation.addUpdateListener(new XAnimation());
+<span class="lineno">  56</span>         animation.<span class="errorspan">setDuration(400);</span>
+<span class="lineno">  57</span>         animation.start();
+<span class="lineno">  58</span>     }
+</pre>
+<button id="NewApiDivLink" onclick="reveal('NewApiDiv');" />+ 26 More Occurrences...</button>
+<div id="NewApiDiv" style="display: none">
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:57</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#start</code></span><br /><pre class="errorlines">
+<span class="lineno">  54</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  55</span>         animation.addUpdateListener(new XAnimation());
+<span class="lineno">  56</span>         animation.setDuration(400);
+<span class="lineno">  57</span>         animation.<span class="errorspan">start();</span>
+<span class="lineno">  58</span>     }
+<span class="lineno">  59</span>     
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:62</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#cancel</code></span><br /><pre class="errorlines">
+<span class="lineno">  59</span>     
+<span class="lineno">  60</span>     public void startYAnimation(float yFrom, float yTo) {
+<span class="lineno">  61</span>         if (animation != null) {
+<span class="lineno">  62</span>             animation.<span class="errorspan">cancel();</span>
+<span class="lineno">  63</span>         }
+<span class="lineno">  64</span>         animation = ValueAnimator.ofFloat(yFrom, yTo);
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:64</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#ofFloat</code></span><br /><pre class="errorlines">
+<span class="lineno">  61</span>         if (animation != null) {
+<span class="lineno">  62</span>             animation.cancel();
+<span class="lineno">  63</span>         }
+<span class="lineno">  64</span>         animation = ValueAnimator.<span class="errorspan">ofFloat(yFrom, yTo);</span>
+<span class="lineno">  65</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  66</span>         animation.addUpdateListener(new YAnimation());
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:65</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#setInterpolator</code></span><br /><pre class="errorlines">
+<span class="lineno">  62</span>             animation.cancel();
+<span class="lineno">  63</span>         }
+<span class="lineno">  64</span>         animation = ValueAnimator.ofFloat(yFrom, yTo);
+<span class="lineno">  65</span>         animation.<span class="errorspan">setInterpolator(new DecelerateInterpolator());</span>
+<span class="lineno">  66</span>         animation.addUpdateListener(new YAnimation());
+<span class="lineno">  67</span>         animation.setDuration(400);
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:66</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#addUpdateListener</code></span><br /><pre class="errorlines">
+<span class="lineno">  63</span>         }
+<span class="lineno">  64</span>         animation = ValueAnimator.ofFloat(yFrom, yTo);
+<span class="lineno">  65</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  66</span>         animation.<span class="errorspan">addUpdateListener(new YAnimation());</span>
+<span class="lineno">  67</span>         animation.setDuration(400);
+<span class="lineno">  68</span>         animation.start();
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:67</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#setDuration</code></span><br /><pre class="errorlines">
+<span class="lineno">  64</span>         animation = ValueAnimator.ofFloat(yFrom, yTo);
+<span class="lineno">  65</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  66</span>         animation.addUpdateListener(new YAnimation());
+<span class="lineno">  67</span>         animation.<span class="errorspan">setDuration(400);</span>
+<span class="lineno">  68</span>         animation.start();
+<span class="lineno">  69</span>     }
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:68</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#start</code></span><br /><pre class="errorlines">
+<span class="lineno">  65</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  66</span>         animation.addUpdateListener(new YAnimation());
+<span class="lineno">  67</span>         animation.setDuration(400);
+<span class="lineno">  68</span>         animation.<span class="errorspan">start();</span>
+<span class="lineno">  69</span>     }
+<span class="lineno">  70</span> 
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:73</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#cancel</code></span><br /><pre class="errorlines">
+<span class="lineno">  70</span> 
+<span class="lineno">  71</span>     public void startZoomAnimation(float zoomFrom, float zoomTo) {
+<span class="lineno">  72</span>         if (animation != null) {
+<span class="lineno">  73</span>             animation.<span class="errorspan">cancel();</span>
+<span class="lineno">  74</span>         }
+<span class="lineno">  75</span>         animation = ValueAnimator.ofFloat(zoomFrom, zoomTo);
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:75</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#ofFloat</code></span><br /><pre class="errorlines">
+<span class="lineno">  72</span>         if (animation != null) {
+<span class="lineno">  73</span>             animation.cancel();
+<span class="lineno">  74</span>         }
+<span class="lineno">  75</span>         animation = ValueAnimator.<span class="errorspan">ofFloat(zoomFrom, zoomTo);</span>
+<span class="lineno">  76</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  77</span>         ZoomAnimation zoomAnim = new ZoomAnimation();
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:76</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#setInterpolator</code></span><br /><pre class="errorlines">
+<span class="lineno">  73</span>             animation.cancel();
+<span class="lineno">  74</span>         }
+<span class="lineno">  75</span>         animation = ValueAnimator.ofFloat(zoomFrom, zoomTo);
+<span class="lineno">  76</span>         animation.<span class="errorspan">setInterpolator(new DecelerateInterpolator());</span>
+<span class="lineno">  77</span>         ZoomAnimation zoomAnim = new ZoomAnimation();
+<span class="lineno">  78</span>         animation.addUpdateListener(zoomAnim);
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:78</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#addUpdateListener</code></span><br /><pre class="errorlines">
+<span class="lineno">  75</span>         animation = ValueAnimator.ofFloat(zoomFrom, zoomTo);
+<span class="lineno">  76</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  77</span>         ZoomAnimation zoomAnim = new ZoomAnimation();
+<span class="lineno">  78</span>         animation.<span class="errorspan">addUpdateListener(zoomAnim);</span>
+<span class="lineno">  79</span>         animation.addListener(zoomAnim);
+<span class="lineno">  80</span>         animation.setDuration(400);
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:79</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#addListener</code></span><br /><pre class="errorlines">
+<span class="lineno">  76</span>         animation.setInterpolator(new DecelerateInterpolator());
+<span class="lineno">  77</span>         ZoomAnimation zoomAnim = new ZoomAnimation();
+<span class="lineno">  78</span>         animation.addUpdateListener(zoomAnim);
+<span class="lineno">  79</span>         animation.<span class="errorspan">addListener(zoomAnim);</span>
+<span class="lineno">  80</span>         animation.setDuration(400);
+<span class="lineno">  81</span>         animation.start();
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:80</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#setDuration</code></span><br /><pre class="errorlines">
+<span class="lineno">  77</span>         ZoomAnimation zoomAnim = new ZoomAnimation();
+<span class="lineno">  78</span>         animation.addUpdateListener(zoomAnim);
+<span class="lineno">  79</span>         animation.addListener(zoomAnim);
+<span class="lineno">  80</span>         animation.<span class="errorspan">setDuration(400);</span>
+<span class="lineno">  81</span>         animation.start();
+<span class="lineno">  82</span>     }
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:81</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#start</code></span><br /><pre class="errorlines">
+<span class="lineno">  78</span>         animation.addUpdateListener(zoomAnim);
+<span class="lineno">  79</span>         animation.addListener(zoomAnim);
+<span class="lineno">  80</span>         animation.setDuration(400);
+<span class="lineno">  81</span>         animation.<span class="errorspan">start();</span>
+<span class="lineno">  82</span>     }
+<span class="lineno">  83</span> 
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:86</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#cancel</code></span><br /><pre class="errorlines">
+<span class="lineno">  83</span> 
+<span class="lineno">  84</span>     public void stopAll() {
+<span class="lineno">  85</span>         if (animation != null) {
+<span class="lineno">  86</span>             animation.<span class="errorspan">cancel();</span>
+<span class="lineno">  87</span>             animation = null;
+<span class="lineno">  88</span>         }
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:91</span>: <span class="message">Class requires API level 11 (current min is 8): <code>android.animation.ValueAnimator.AnimatorUpdateListener</code></span><br /><pre class="errorlines">
+<span class="lineno">  88</span>         }
+<span class="lineno">  89</span>     }
+<span class="lineno">  90</span> 
+<span class="lineno">  91</span>     class XAnimation implements <span class="errorspan">AnimatorUpdateListener {</span>
+<span class="lineno">  92</span> 
+<span class="lineno">  93</span>         @Override
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:95</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#getAnimatedValue</code></span><br /><pre class="errorlines">
+<span class="lineno">  92</span> 
+<span class="lineno">  93</span>         @Override
+<span class="lineno">  94</span>         public void onAnimationUpdate(ValueAnimator animation) {
+<span class="lineno">  95</span>             float offset = (Float) animation.<span class="errorspan">getAnimatedValue();</span>
+<span class="lineno">  96</span>             pdfView.moveTo(offset, pdfView.getCurrentYOffset());
+<span class="lineno">  97</span>         }
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:101</span>: <span class="message">Class requires API level 11 (current min is 8): <code>android.animation.ValueAnimator.AnimatorUpdateListener</code></span><br /><pre class="errorlines">
+<span class="lineno">  98</span> 
+<span class="lineno">  99</span>     }
+<span class="lineno"> 100</span>     
+<span class="lineno"> 101</span>     class YAnimation implements <span class="errorspan">AnimatorUpdateListener {</span>
+<span class="lineno"> 102</span> 
+<span class="lineno"> 103</span>         @Override
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:105</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#getAnimatedValue</code></span><br /><pre class="errorlines">
+<span class="lineno"> 102</span> 
+<span class="lineno"> 103</span>         @Override
+<span class="lineno"> 104</span>         public void onAnimationUpdate(ValueAnimator animation) {
+<span class="lineno"> 105</span>             float offset = (Float) animation.<span class="errorspan">getAnimatedValue();</span>
+<span class="lineno"> 106</span>             pdfView.moveTo(pdfView.getCurrentXOffset(), offset);
+<span class="lineno"> 107</span>         }
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:111</span>: <span class="message">Class requires API level 11 (current min is 8): <code>android.animation.Animator.AnimatorListener</code></span><br /><pre class="errorlines">
+<span class="lineno"> 108</span> 
+<span class="lineno"> 109</span>     }
+<span class="lineno"> 110</span> 
+<span class="lineno"> 111</span>     class ZoomAnimation implements AnimatorUpdateListener, <span class="errorspan">AnimatorListener {</span>
+<span class="lineno"> 112</span> 
+<span class="lineno"> 113</span>         @Override
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:111</span>: <span class="message">Class requires API level 11 (current min is 8): <code>android.animation.ValueAnimator.AnimatorUpdateListener</code></span><br /><pre class="errorlines">
+<span class="lineno"> 108</span> 
+<span class="lineno"> 109</span>     }
+<span class="lineno"> 110</span> 
+<span class="lineno"> 111</span>     class ZoomAnimation implements <span class="errorspan">AnimatorUpdateListener, AnimatorListener {</span>
+<span class="lineno"> 112</span> 
+<span class="lineno"> 113</span>         @Override
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/AnimationManager.java">../../src/main/java/com/joanzapata/pdfview/AnimationManager.java</a>:115</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.animation.ValueAnimator#getAnimatedValue</code></span><br /><pre class="errorlines">
+<span class="lineno"> 112</span> 
+<span class="lineno"> 113</span>         @Override
+<span class="lineno"> 114</span>         public void onAnimationUpdate(ValueAnimator animation) {
+<span class="lineno"> 115</span>             float zoom = (Float) animation.<span class="errorspan">getAnimatedValue();</span>
+<span class="lineno"> 116</span>             pdfView.zoomCenteredTo(zoom, new PointF(pdfView.getWidth() / 2, pdfView.getHeight() / 2));
+<span class="lineno"> 117</span>         }
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/PDFView.java">../../src/main/java/com/joanzapata/pdfview/PDFView.java</a>:233</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.os.AsyncTask#executeOnExecutor</code></span><br /><pre class="errorlines">
+<span class="lineno"> 230</span> 
+<span class="lineno"> 231</span>         // Start decoding document
+<span class="lineno"> 232</span>         decodingAsyncTask = new DecodingAsyncTask(uri, this);
+<span class="lineno"> 233</span>         decodingAsyncTask.<span class="errorspan">executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);</span>
+<span class="lineno"> 234</span> 
+<span class="lineno"> 235</span>         renderingAsyncTask = new RenderingAsyncTask(this);
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/PDFView.java">../../src/main/java/com/joanzapata/pdfview/PDFView.java</a>:233</span>: <span class="message">Field requires API level 11 (current min is 8): <code>android.os.AsyncTask#THREAD_POOL_EXECUTOR</code></span><br /><pre class="errorlines">
+<span class="lineno"> 230</span> 
+<span class="lineno"> 231</span>         // Start decoding document
+<span class="lineno"> 232</span>         decodingAsyncTask = new DecodingAsyncTask(uri, this);
+<span class="lineno"> 233</span>         decodingAsyncTask.executeOnExecutor(AsyncTask.<span class="errorspan">THREAD_POOL_EXECUTOR);</span>
+<span class="lineno"> 234</span> 
+<span class="lineno"> 235</span>         renderingAsyncTask = new RenderingAsyncTask(this);
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/PDFView.java">../../src/main/java/com/joanzapata/pdfview/PDFView.java</a>:236</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.os.AsyncTask#executeOnExecutor</code></span><br /><pre class="errorlines">
+<span class="lineno"> 233</span>         decodingAsyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+<span class="lineno"> 234</span> 
+<span class="lineno"> 235</span>         renderingAsyncTask = new RenderingAsyncTask(this);
+<span class="lineno"> 236</span>         renderingAsyncTask.<span class="errorspan">executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);</span>
+<span class="lineno"> 237</span>     }
+<span class="lineno"> 238</span> 
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/PDFView.java">../../src/main/java/com/joanzapata/pdfview/PDFView.java</a>:236</span>: <span class="message">Field requires API level 11 (current min is 8): <code>android.os.AsyncTask#THREAD_POOL_EXECUTOR</code></span><br /><pre class="errorlines">
+<span class="lineno"> 233</span>         decodingAsyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+<span class="lineno"> 234</span> 
+<span class="lineno"> 235</span>         renderingAsyncTask = new RenderingAsyncTask(this);
+<span class="lineno"> 236</span>         renderingAsyncTask.executeOnExecutor(AsyncTask.<span class="errorspan">THREAD_POOL_EXECUTOR);</span>
+<span class="lineno"> 237</span>     }
+<span class="lineno"> 238</span> 
+</pre>
+</div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ & Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Calling new methods on older versions.</div>
+<div class="explanation">
+This check scans through all the Android API calls in the application and warns about any calls that are not available on <b>all</b> versions targeted by this application (according to its minimum SDK attribute in the manifest).<br/>
+<br/>
+If you really want to use this API and don't need to support older devices just set the <code>minSdkVersion</code> in your <code>build.gradle</code> or <code>AndroidManifest.xml</code> files.<br/>
+<br/>
+If your code is <b>deliberately</b> accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the <code>@TargetApi</code> annotation specifying the local minimum SDK to apply, such as <code>@TargetApi(11)</code>, such that this check considers 11 rather than your manifest file's minimum SDK as the required API level.<br/>
+<br/>
+If you are deliberately setting <code>android:</code> attributes in style definitions, make sure you place this in a <code>values-vNN</code> folder in order to avoid running into runtime conflicts on certain devices where manufacturers have added custom attributes whose ids conflict with the new ones on later platforms.<br/>
+<br/>
+Similarly, you can use tools:targetApi="11" in an XML file to indicate that the element will only be inflated in an adequate context.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NewApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="OldTargetApi"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">OldTargetApi: Target SDK attribute is not targeting latest version</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../AndroidManifest.xml">../../AndroidManifest.xml</a>:29</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the <code>android.os.Build.VERSION_CODES</code> javadoc for details.</span><br /><pre class="errorlines">
+<span class="lineno">  26</span>     
+<span class="lineno">  27</span> 	&lt;!-- Min version 8 (2.2) -->
+<span class="lineno">  28</span> 	&lt;uses-sdk android:minSdkVersion="8"  
+<span class="lineno">  29</span>               <span class="errorspan">android:targetSdkVersion="17"/></span>
+<span class="lineno">  30</span>               
+<span class="lineno">  31</span> &lt;/manifest>
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Target SDK attribute is not targeting latest version.</div>
+<div class="explanation">
+When your application runs on a version of Android that is more recent than your <code>targetSdkVersion</code> specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the <code>targetSdkVersion</code> is less than 14, your app may get an option button in the UI.<br/>
+<br/>
+To fix this issue, set the <code>targetSdkVersion</code> to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</div><br/>To suppress this error, use the issue id "OldTargetApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Performance"></a>
+<div class="category"><a href="#" title="Return to top">Performance</a><div class="categorySeparator"></div>
+</div>
+<a name="Recycle"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">Recycle: Missing <code>recycle()</code> calls</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/org/vudroid/core/utils/PathFromUri.java">../../src/main/java/org/vudroid/core/utils/PathFromUri.java</a>:15</span>: <span class="message">This <code>Cursor</code> should be freed up after use with <code>#close()</code></span><br /><pre class="errorlines">
+<span class="lineno">  12</span>         {
+<span class="lineno">  13</span>             return uri.getPath();
+<span class="lineno">  14</span>         }
+<span class="lineno">  15</span>         final Cursor cursor = resolver.<span class="errorspan">query(uri, new String[]{"_data"}, null, null, null);</span>
+<span class="lineno">  16</span>         if (cursor.moveToFirst())
+<span class="lineno">  17</span>         {
+</pre>
+</div>
+<div class="metadata">Priority: 7 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing <code>recycle()</code> calls.</div>
+<div class="explanation">
+Many resources, such as TypedArrays, VelocityTrackers, etc., should be recycled (with a <code>recycle()</code> call) after use. This lint check looks for missing <code>recycle()</code> calls.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "Recycle" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UseSparseArrays"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseSparseArrays: HashMap can be replaced with SparseArray</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/org/vudroid/core/DecodeServiceBase.java">../../src/main/java/org/vudroid/core/DecodeServiceBase.java</a>:36</span>: <span class="message">Use <code>new SparseArray&lt;SoftReference&lt;CodecPage>>(...)</code> instead for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  33</span>     private final ExecutorService executorService = Executors.newSingleThreadExecutor();
+<span class="lineno">  34</span>     public static final String DECODE_SERVICE = "ViewDroidDecodeService";
+<span class="lineno">  35</span>     private final Map&lt;Object, Future&lt;?>> decodingFutures = new ConcurrentHashMap&lt;Object, Future&lt;?>>();
+<span class="lineno">  36</span>     private final HashMap&lt;Integer, SoftReference&lt;CodecPage>> pages = <span class="errorspan">new HashMap&lt;Integer, SoftReference&lt;CodecPage>>();</span>
+<span class="lineno">  37</span>     private ContentResolver contentResolver;
+<span class="lineno">  38</span>     private Queue&lt;Integer> pageEvictionQueue = new LinkedList&lt;Integer>();
+</pre>
+<span class="location"><a href="../../src/main/java/org/vudroid/core/DocumentView.java">../../src/main/java/org/vudroid/core/DocumentView.java</a>:25</span>: <span class="message">Use <code>new SparseArray&lt;Page>(...)</code> instead for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  22</span>     final ZoomModel zoomModel;
+<span class="lineno">  23</span>     private final CurrentPageModel currentPageModel;
+<span class="lineno">  24</span>     DecodeService decodeService;
+<span class="lineno">  25</span>     private final HashMap&lt;Integer, Page> pages = <span class="errorspan">new HashMap&lt;Integer, Page>();</span>
+<span class="lineno">  26</span>     private boolean isInitialized = false;
+<span class="lineno">  27</span>     private int pageToGoTo;
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: HashMap can be replaced with SparseArray.</div>
+<div class="explanation">
+For maps where the keys are of type integer, it's typically more efficient to use the Android <code>SparseArray</code> API. This check identifies scenarios where you might want to consider using <code>SparseArray</code> instead of <code>HashMap</code> for better performance.<br/>
+<br/>
+This is <b>particularly</b> useful when the value types are primitives like ints, where you can use <code>SparseIntArray</code> and avoid auto-boxing the values from <code>int</code> to <code>Integer</code>.<br/>
+<br/>
+If you need to construct a <code>HashMap</code> because you need to call an API outside of your control which requires a <code>Map</code>, you can suppress this warning using for example the <code>@SuppressLint</code> annotation.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseSparseArrays" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability"></a>
+<div class="category"><a href="#" title="Return to top">Usability</a><div class="categorySeparator"></div>
+</div>
+<a name="ViewConstructor"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ViewConstructor: Missing View constructors for XML inflation</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/org/vudroid/core/DocumentView.java">../../src/main/java/org/vudroid/core/DocumentView.java</a>:21</span>: <span class="message">Custom view <code>DocumentView</code> is missing constructor used by tools: <code>(Context)</code> or <code>(Context,AttributeSet)</code> or <code>(Context,AttributeSet,int)</code></span><br /><pre class="errorlines">
+<span class="lineno">  18</span> import java.util.HashMap;
+<span class="lineno">  19</span> import java.util.Map;
+<span class="lineno">  20</span> 
+<span class="lineno">  21</span> public class <span class="errorspan">DocumentView extends View implements ZoomListener {</span>
+<span class="lineno">  22</span>     final ZoomModel zoomModel;
+<span class="lineno">  23</span>     private final CurrentPageModel currentPageModel;
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing View constructors for XML inflation.</div>
+<div class="explanation">
+Some layout tools (such as the Android layout editor for Studio &amp; Eclipse) needs to find a constructor with one of the following signatures:<br/>
+* <code>View(Context context)</code><br/>
+* <code>View(Context context, AttributeSet attrs)</code><br/>
+* <code>View(Context context, AttributeSet attrs, int defStyle)</code><br/>
+<br/>
+If your custom view needs to perform initialization which does not apply when used in a layout editor, you can surround the given code with a check to see if <code>View#isInEditMode()</code> is false, since that method will return <code>false</code> at runtime but true within a user interface editor.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ViewConstructor" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Accessibility"></a>
+<div class="category"><a href="#" title="Return to top">Accessibility</a><div class="categorySeparator"></div>
+</div>
+<a name="ClickableViewAccessibility"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ClickableViewAccessibility: Accessibility in Custom Views</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/org/vudroid/core/DocumentView.java">../../src/main/java/org/vudroid/core/DocumentView.java</a>:152</span>: <span class="message">Custom view <code>org/vudroid/core/DocumentView</code> overrides <code>onTouchEvent</code> but not <code>performClick</code></span><br /><pre class="errorlines">
+<span class="lineno"> 149</span>     }
+<span class="lineno"> 150</span> 
+<span class="lineno"> 151</span>     @Override
+<span class="lineno"> 152</span>     public boolean <span class="errorspan">onTouchEvent(MotionEvent ev) {</span>
+<span class="lineno"> 153</span>         super.onTouchEvent(ev);
+<span class="lineno"> 154</span> 
+</pre>
+<span class="location"><a href="../../src/main/java/com/joanzapata/pdfview/util/DragPinchListener.java">../../src/main/java/com/joanzapata/pdfview/util/DragPinchListener.java</a>:128</span>: <span class="message"><code>com/joanzapata/pdfview/util/DragPinchListener#onTouch</code> should call <code>View#performClick</code> when a click is detected</span><br /><pre class="errorlines">
+<span class="lineno"> 125</span>     private long lastClickTime;
+<span class="lineno"> 126</span> 
+<span class="lineno"> 127</span>     @Override
+<span class="lineno"> 128</span>     public boolean <span class="errorspan">onTouch(View v, MotionEvent event) {</span>
+<span class="lineno"> 129</span>         mView = v ;
+<span class="lineno"> 130</span>         switch (event.getAction()) {
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Accessibility</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Accessibility in Custom Views.</div>
+<div class="explanation">
+If a <code>View</code> that overrides <code>onTouchEvent</code> or uses an <code>OnTouchListener</code> does not also implement <code>performClick</code> and call it when clicks are detected, the <code>View</code> may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in <code>View#performClick</code> as some accessibility services invoke <code>performClick</code> when a click action should occur.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ClickableViewAccessibility" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="MissingIssues"></a>
+<div class="category">Disabled Checks<div class="categorySeparator"></div>
+</div>
+The following issues were not run by lint, either because the check is not enabled by default, or because it was disabled with a command line flag or via one or more lint.xml configuration files in the project directories.
+<br/><br/>
+<a name="AppLinksAutoVerifyError"></a>
+<div class="issue">
+<div class="id">AppLinksAutoVerifyError<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: App Links Auto Verification Failure.</div>
+<div class="explanation">
+Ensures that app links are correctly set and associated with website.
+</div>
+<br/><div class="moreinfo">More info: <a href="https://g.co/appindexing/applinks">https://g.co/appindexing/applinks</a>
+</div><br/>To suppress this error, use the issue id "AppLinksAutoVerifyError" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="AppLinksAutoVerifyWarning"></a>
+<div class="issue">
+<div class="id">AppLinksAutoVerifyWarning<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Potential App Links Auto Verification Failure.</div>
+<div class="explanation">
+Ensures that app links are correctly set and associated with website.
+</div>
+<br/><div class="moreinfo">More info: <a href="https://g.co/appindexing/applinks">https://g.co/appindexing/applinks</a>
+</div><br/>To suppress this error, use the issue id "AppLinksAutoVerifyWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="BackButton"></a>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Back button.</div>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/patterns/pure-android.html">http://developer.android.com/design/patterns/pure-android.html</a>
+</div><br/>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="EasterEgg"></a>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains easter egg.</div>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="FieldGetter"></a>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using getter instead of field.</div>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#internal_get_set">http://developer.android.com/guide/practices/design/performance.html#internal_get_set</a>
+</div><br/>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="GoogleAppIndexingApiWarning"></a>
+<div class="issue">
+<div class="id">GoogleAppIndexingApiWarning<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing support for Google App Indexing Api.</div>
+<div class="explanation">
+Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search.
+</div>
+<br/><div class="moreinfo">More info: <a href="https://g.co/AppIndexing/AndroidStudio">https://g.co/AppIndexing/AndroidStudio</a>
+</div><br/>To suppress this error, use the issue id "GoogleAppIndexingApiWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconExpectedSize"></a>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon has incorrect size.</div>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="LogConditional"></a>
+<div class="issue">
+<div class="id">LogConditional<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unconditional Logging Calls.</div>
+<div class="explanation">
+The BuildConfig class (available in Tools 17) provides a constant, "DEBUG", which indicates whether the code is being built in release mode or in debug mode. In release mode, you typically want to strip out all the logging calls. Since the compiler will automatically remove all code which is inside a "if (false)" check, surrounding your logging calls with a check for BuildConfig.DEBUG is a good idea.<br/>
+<br/>
+If you <b>really</b> intend for the logging to be present in release mode, you can suppress this warning with a @SuppressLint annotation for the intentional logging calls.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "LogConditional" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="MangledCRLF"></a>
+<div class="issue">
+<div class="id">MangledCRLF<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 2 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Mangled file line endings.</div>
+<div class="explanation">
+On Windows, line endings are typically recorded as carriage return plus newline: \r\n.<br/>
+<br/>
+This detector looks for invalid line endings with repeated carriage return characters (without newlines). Previous versions of the ADT plugin could accidentally introduce these into the file, and when editing the file, the editor could produce confusing visual artifacts.
+</div>
+<br/><div class="moreinfo">More info: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421">https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421</a>
+</div><br/>To suppress this error, use the issue id "MangledCRLF" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NegativeMargin"></a>
+<div class="issue">
+<div class="id">NegativeMargin<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Negative Margins.</div>
+<div class="explanation">
+Margin values should be positive. Negative values are generally a sign that you are making assumptions about views surrounding the current one, or may be tempted to turn off child clipping to allow a view to escape its parent. Turning off child clipping to do this not only leads to poor graphical performance, it also results in wrong touch event handling since touch events are based strictly on a chain of parent-rect hit tests. Finally, making assumptions about the size of strings can lead to localization problems.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NegativeMargin" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NewerVersionAvailable"></a>
+<div class="issue">
+<div class="id">NewerVersionAvailable<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Newer Library Versions Available.</div>
+<div class="explanation">
+This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NewerVersionAvailable" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SelectableText"></a>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 7 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Dynamic text should probably be selectable.</div>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="StopShip"></a>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 10 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains <code>STOPSHIP</code> marker.</div>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="TypographyQuotes"></a>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ & Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Typography</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Straight quotes can be replaced with curvy quotes.</div>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)
+</div>
+<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Quotation_mark">http://en.wikipedia.org/wiki/Quotation_mark</a>
+</div><br/>To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedIds"></a>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 1 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused id.</div>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="SuppressInfo"></a>
+<div class="category">Suppressing Warnings and Errors<div class="categorySeparator"></div>
+</div>
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a <code>@SuppressLint</code> annotation in the Java code<br/>
+2. With a <code>tools:ignore</code> attribute in the XML file<br/>
+3. With ignore flags specified in the <code>build.gradle</code> file, as explained below<br/>
+4. With a <code>lint.xml</code> configuration file in the project<br/>
+5. With a <code>lint.xml</code> configuration file passed to lint via the --config flag<br/>
+6. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a <code>@SuppressLint("id")</code> annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as <code>"UnusedResources"</code> or <code>{"UnusedResources","UnusedIds"}</code>, or it can be <code>"all"</code> to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a <code>tools:ignore="id"</code> attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the <code>xmlns:android</code> declaration:<br/>
+<code>xmlns:tools="http://schemas.android.com/tools"</code><br/>
+<br/>
+To suppress a lint warning in a <code>build.gradle</code> file, add a section like this:<br/>
+<br/>
+android {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;lintOptions {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disable 'TypographyFractions','TypographyQuotes'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+}<br/>
+<br/>
+Here we specify a comma separated list of issue id's after the disable command. You can also use <code>warning</code> or <code>error</code> instead of <code>disable</code> to change the severity of issues.<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named <code>lint.xml</code> and place it at the root directory of the project in which it applies.<br/>
+<br/>
+The format of the <code>lint.xml</code> file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Disable this given check in this project --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="ObsoleteLayoutParam"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="UselessLeaf"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/main.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+<code>$ lint --ignore UnusedResources,UselessLeaf /my/project/path</code><br/>
+<br/>
+For more information, see <a href="http://g.co/androidstudio/suppressing-lint-warnings">http://g.co/androidstudio/suppressing-lint-warnings</a><br/>
+
+
+</body>
+</html>

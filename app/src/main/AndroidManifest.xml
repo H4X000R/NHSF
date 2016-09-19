@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.divyeshbc.NHSF"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Parse settings -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+    <permission
+        android:name="com.divyeshbc.NHSF.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.divyeshbc.NHSF.permission.C2D_MESSAGE"/>
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--  -->
+    <application
+        android:name=".ParseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/nhsf_25th_app_logo_androidx144"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Custom">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="NHSF"
+            android:screenOrientation="portrait">
+
+            <!--
+            android:parentActivityName=".SplashActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.divyeshbc.NHSF.SplashActivity" />
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.aboutUs.IntroductionActivity"
+            android:label="@string/Introduction"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.divyeshbc.NHSF.MainActivity"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.aboutUs.NationalCommitteeActivity"
+            android:label="@string/title_activity_natcom"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.divyeshbc.NHSF.MainActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.aboutUs.AdminTeamActivity"
+            android:label="@string/title_activity_adminteam"
+            android:parentActivityName=".tabs.aboutUs.NationalCommitteeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.aboutUs.NationalCommitteeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.aboutUs.TeamCoordinatorsActivity"
+            android:label="@string/title_activity_tc"
+            android:parentActivityName=".tabs.aboutUs.NationalCommitteeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.aboutUs.NationalCommitteeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFAstonImageActivity"
+            android:label="@string/title_activity_NHSFAstonImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBCUImageActivity"
+            android:label="@string/title_activity_NHSFBCUImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBirminghamImageActivity"
+            android:label="@string/title_activity_NHSFBirminghamImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBPPImageActivity"
+            android:label="@string/title_activity_NHSFBPPImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBradfordImageActivity"
+            android:label="@string/title_activity_NHSFBradfordImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBrightonImageActivity"
+            android:label="@string/title_activity_NHSFBrightonImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBristolImageActivity"
+            android:label="@string/title_activity_NHSFBristolImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBrunelImageActivity"
+            android:label="@string/title_activity_NHSFBrunelImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFBucksImageActivity"
+            android:label="@string/title_activity_NHSFBucksNewUniImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFCityImageActivity"
+            android:label="@string/title_activity_NHSFCityImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFCoventryImageActivity"
+            android:label="@string/title_activity_NHSFCoventryImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFDMUImageActivity"
+            android:label="@string/title_activity_NHSFDMUImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFExeterImageActivity"
+            android:label="@string/title_activity_NHSFExeterImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFGreenwichImageActivity"
+            android:label="@string/title_activity_NHSFGreenwichImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFHertfordshireImageActivity"
+            android:label="@string/title_activity_NHSFHertfordshireImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFHuddersfieldImageActivity"
+            android:label="@string/title_activity_NHSFHuddersfieldImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFHullImageActivity"
+            android:label="@string/title_activity_NHSFHullImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFImperialImageActivity"
+            android:label="@string/title_activity_NHSFImperialImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFKCLImageActivity"
+            android:label="@string/title_activity_NHSFKCLImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFKeeleImageActivity"
+            android:label="@string/title_activity_NHSFKeeleImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFKentImageActivity"
+            android:label="@string/title_activity_NHSFKentImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFKingstonImageActivity"
+            android:label="@string/title_activity_NHSFKingstonImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLeedsImageActivity"
+            android:label="@string/title_activity_NHSFLeedsImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLeicesterImageActivity"
+            android:label="@string/title_activity_NHSFLeicesterImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLiverpoolImageActivity"
+            android:label="@string/title_activity_NHSFLiverpoolImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLoughboroughImageActivity"
+            android:label="@string/title_activity_NHSFLoughboroughImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLSBUImageActivity"
+            android:label="@string/title_activity_NHSFLSBUImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFLSEImageActivity"
+            android:label="@string/title_activity_NHSFLSEImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFManchesterImageActivity"
+            android:label="@string/title_activity_NHSFManchesterImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFMedwayImageActivity"
+            android:label="@string/title_activity_NHSFMedwayImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFNorthamptonImageActivity"
+            android:label="@string/title_activity_NHSFNorthamptonImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFNorthumbriaImageActivity"
+            android:label="@string/title_activity_NHSFNorthumbriaImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFNottinghamImageActivity"
+            android:label="@string/title_activity_NHSFNottinghamImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFNTUImageActivity"
+            android:label="@string/title_activity_NHSFNTUImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFPlymouthImageActivity"
+            android:label="@string/title_activity_NHSFPlymouthImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFPortsmouthImageActivity"
+            android:label="@string/title_activity_NHSFPortsmouthImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFQMULImageActivity"
+            android:label="@string/title_activity_NHSFQMULImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFreadingImageActivity"
+            android:label="@string/title_activity_NHSFReadingImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFRHULImageActivity"
+            android:label="@string/title_activity_NHSFRHULImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFRoehamptonImageActivity"
+            android:label="@string/title_activity_NHSFRoehamptonImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSGULImageActivity"
+            android:label="@string/title_activity_NHSFSGULImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSheffieldImageActivity"
+            android:label="@string/title_activity_NHSFSheffieldImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSOASImageActivity"
+            android:label="@string/title_activity_NHSFSOASImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSouthamptonImageActivity"
+            android:label="@string/title_activity_NHSFSouthamptonImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFSwanseaImageActivity"
+            android:label="@string/title_activity_NHSFSwanseaImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFUEAImageActivity"
+            android:label="@string/title_activity_NHSFUEAImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFUWEImageActivity"
+            android:label="@string/title_activity_NHSFUWEImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFWarwickImageActivity"
+            android:label="@string/title_activity_NHSFWarwickImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFWestminsterImageActivity"
+            android:label="@string/title_activity_NHSFWestminsterImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFYorkImageActivity"
+            android:label="@string/title_activity_NHSFYorkImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.events.EventsActivity"
+            android:label="@string/title_activity_eventDetails">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.learning.MustKnowMantrasActivity"
+            android:label="@string/title_activity_mustKnowMantras">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.learning.MustReadActivity"
+            android:label="@string/title_activity_mustRead">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.learning.BhagavadGitaActivity"
+            android:label="@string/title_activity_bhagavadGita"
+            android:parentActivityName=".tabs.learning.MustReadActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.MustReadActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.WhatIsHinduismActivity"
+            android:label="@string/title_activity_whatishinduism"
+            android:parentActivityName=".tabs.learning.MustReadActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.MustReadActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.QuestionsActivity"
+            android:label="@string/title_activity_questions"
+            android:parentActivityName=".tabs.learning.WhatIsHinduismActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhatIsHinduismActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.HinduBasicsActivity"
+            android:label="@string/title_activity_hinduBasics"
+            android:parentActivityName=".tabs.learning.WhatIsHinduismActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhatIsHinduismActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.RealQuestionsActivity"
+            android:label="@string/title_activity_hinduBasics"
+            android:parentActivityName=".tabs.learning.WhatIsHinduismActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhatIsHinduismActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.HinduismPrimerTopicActivity"
+            android:label="@string/title_activity_hinduBasics"
+            android:parentActivityName=".tabs.learning.WhatIsHinduismActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhatIsHinduismActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.WhyDoWeActivity"
+            android:label="@string/title_activity_whyDoWe"
+            android:parentActivityName=".tabs.learning.MustReadActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.MustReadActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.LotusActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.PradakshinaActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.FastActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.TreesPlantsActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.BellActivity"
+            android:label="@string/title_activity_lotus"
+            android:parentActivityName=".tabs.learning.WhyDoWeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.WhyDoWeActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.FestivalsActivity"
+            android:label="@string/title_activity_festivals">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.learning.JanToJuneActivity"
+            android:label="@string/title_activity_janToJune">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.learning.MakarSankrantiActivity"
+            android:label="@string/title_activity_makarSankranti"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.MahashivratriActivity"
+            android:label="@string/title_activity_mahaShivratri"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.HoliActivity"
+            android:label="@string/title_activity_holi"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.RamnavmiActivity"
+            android:label="@string/title_activity_ramnavmi"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.HanumanJayantiActivity"
+            android:label="@string/title_activity_hanumanJayanti"
+            android:parentActivityName=".tabs.learning.JanToJuneActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JanToJuneActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.JulyToDecActivity"
+            android:label="@string/title_activity_julyToDec">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.learning.GuruPurnimaActivity"
+            android:label="@string/title_activity_guruPurnima"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.RakshaBandhanActivity"
+            android:label="@string/title_activity_rakshaBandhan"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.JanmashtamiActivity"
+            android:label="@string/title_activity_janmashtami"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.GaneshChaturthiActivity"
+            android:label="@string/title_activity_ganeshChaturthi"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.NavratriActivity"
+            android:label="@string/title_activity_navratri"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.DussheraActivity"
+            android:label="@string/title_activity_dusshera"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.DiwaliActivity"
+            android:label="@string/title_activity_diwali"
+            android:parentActivityName=".tabs.learning.JulyToDecActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.learning.JulyToDecActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.learning.HUMActivity"
+            android:label="@string/title_activity_hum">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.learning.ImportantDatesActivity"
+            android:label="@string/title_activity_importantDates">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.SewaCampaignsActivity"
+            android:label="@string/title_activity_sewaCampaigns">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.SewaDayActivity"
+            android:label="@string/title_activity_sewaDay"
+            android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaCampaignsActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.NationalDonationDayActivity"
+            android:label="@string/title_activity_NDD"
+            android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaCampaignsActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.HelpTheHomelessActivity"
+            android:label="@string/title_activity_helpHomeless"
+            android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaCampaignsActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.SewaWeekActivity"
+            android:label="@string/title_activity_sewaWeek"
+            android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaCampaignsActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.SewaBankActivity"
+            android:label="@string/title_activity_sewaBank"
+            android:parentActivityName=".tabs.sewa.SewaCampaignsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.SewaInspirationActivity"
+            android:label="@string/title_activity_sewaInspiration">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.SewaVideosActivity"
+            android:label="@string/title_activity_sewaVideos"
+            android:parentActivityName=".tabs.sewa.SewaInspirationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaInspirationActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.WaterChangesEverythingActivity"
+            android:label="@string/title_activity_waterChanges"
+            android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.EnoughFoodActivity"
+            android:label="@string/title_activity_enoughFood"
+            android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.ShareMyDabbaActivity"
+            android:label="@string/title_activity_shareMyDabba"
+            android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.MakeTheHomelessActivity"
+            android:label="@string/title_activity_makeTheHomeless"
+            android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.ShareCareJoyActivity"
+            android:label="@string/title_activity_shareCareJoy"
+            android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.IndiasPoorActivity"
+            android:label="@string/title_activity_indiasPoor"
+            android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.RachelBeckwithActivity"
+            android:label="@string/title_activity_rachelBeckwith"
+            android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.ATrulySelflessBeingActivity"
+            android:label="@string/title_activity_trulySelfless"
+            android:parentActivityName=".tabs.sewa.SewaVideosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaVideosActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.SewaQuotesActivity"
+            android:label="@string/title_activity_sewaQuotes"
+            android:parentActivityName=".tabs.sewa.SewaInspirationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs.sewa.SewaInspirationActivity"/>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.EventsOnAPlateActivity"
+            android:label="@string/title_activity_eventsPlate">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.NationalCharityActivity"
+            android:label="@string/title_activity_nationalCharity">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.sewa.SewaGuideActivity"
+            android:label="@string/title_activity_sewaGuide">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Congifuring Batch -->
+        <service android:name="com.batch.android.BatchPushService" />
+
+        <receiver android:name="com.batch.android.BatchPushReceiver"
+                  android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Configuring Parse -->
+        <!--
+        <service android:name="com.parse.PushService"/>
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE"/>
+                <action android:name="com.parse.push.intent.DELETE"/>
+                <action android:name="com.parse.push.intent.OPEN"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+
+                <category android:name="com.divyeshbc.NHSF"/>
+            </intent-filter>
+        </receiver>
+        -->
+
+        <!--  -->
+        <meta-data
+            android:name="com.divyeshbc.NHSF.notifcation_icon"
+            android:resource="@mipmap/nhsf_logo_push_android"/>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps">
+        </activity>
+    </application>
+
+</manifest>
