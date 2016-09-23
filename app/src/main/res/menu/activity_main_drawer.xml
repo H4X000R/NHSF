@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tab_1"
+            android:icon="@drawable/about_us1"
+            android:title="ABOUT US" />
+        <item
+            android:id="@+id/nav_tab_2"
+            android:icon="@drawable/campus"
+            android:title="CAMPUS" />
+        <item
+            android:id="@+id/nav_tab_3"
+            android:icon="@drawable/events"
+            android:title="EVENTS" />
+        <item
+            android:id="@+id/nav_tab_4"
+            android:icon="@drawable/learning"
+            android:title="LEARNING" />
+        <item
+            android:id="@+id/nav_tab_5"
+            android:icon="@drawable/sewa"
+            android:title="SEWA" />
+    </group>
+
+</menu>

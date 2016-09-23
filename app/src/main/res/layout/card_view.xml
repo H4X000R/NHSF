@@ -4,12 +4,10 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:clickable="true"
-                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                     android:background="@drawable/custom_bg"
                                     card_view:cardCornerRadius="5dp"
                                     card_view:cardUseCompatPadding="true"
-                                    card_view:cardElevation="5.5sp"
-                                    android:navigationBarColor="@android:color/transparent">
+                                    card_view:cardElevation="5.5sp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -54,11 +52,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/chapterZone"
             android:padding="8dp"
-            android:textColor="@color/md_orange_700"
-            android:textSize="14dp"
             android:text=""
-            android:autoLink="email"
-            android:clickable="true"/>
-    </RelativeLayout>
-</android.support.v7.widget.CardView>
+            android:textColor="@color/md_orange_700"
+            android:textSize="14dp"/>
 
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

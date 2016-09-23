@@ -77,7 +77,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
                 .load(chapter.getThumbnail())
                 .resize(1300, 1300)
                 .into(viewHolder.iconView);
-        //.fetch();
+                //.fetch();
         //mPhotoViewAttacher = new PhotoViewAttacher(viewHolder.iconView);
 
         viewHolder.chapterName.setText(chapter.getTitle());
@@ -85,7 +85,6 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
         viewHolder.chapterZone.setText(chapter.getZone());
         viewHolder.chapterDetails.setText(chapter.getSubTitle());
         viewHolder.details = chapter;
-
 
 
         viewHolder.iconView.setOnClickListener(new View.OnClickListener() {
@@ -116,109 +115,106 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
                         intent = new Intent(context, NHSFBPPImageActivity.class);
                         break;
 
-                    //case 4:
-                        //Intent to NHSF Bradford Image
-                       // intent = new Intent(context, NHSFBradfordImageActivity.class);
-                       // break;
-
                     case 4:
+                        //Intent to NHSF Bradford Image
+                        intent = new Intent(context, NHSFBradfordImageActivity.class);
+                        break;
+
+                    case 5:
                         //Intent to NHSF Brighton Image
                         intent = new Intent(context, NHSFBrightonImageActivity.class);
                         break;
 
-                    case 5:
+                    case 6:
                         //Intent to nhsf_bristol Image
                         intent = new Intent(context, NHSFBristolImageActivity.class);
                         break;
 
-                    case 6:
+                    case 7:
                         //Intent to NHSF Brunel Image
                         intent = new Intent(context, NHSFBrunelImageActivity.class);
                         break;
 
-                    case 7:
+                    case 8:
                         //Intent to NHSF Bucks New Uni Image
                         intent = new Intent(context, NHSFBucksImageActivity.class);
                         break;
 
-                    case 8:
+                    case 9:
                         //Intent to NHSF City Image
                         intent = new Intent(context, NHSFCityImageActivity.class);
                         break;
 
-                    case 9:
+                    case 10:
                         //Intent to NHSF Coventry Image
                         intent = new Intent(context, NHSFCoventryImageActivity.class);
                         break;
 
-                    case 10:
+                    case 11:
                         //Intent to NHSF DMU Image
                         intent = new Intent(context, NHSFDMUImageActivity.class);
                         break;
 
-                    case 11:
+                    case 12:
                         //Intent to NHSF Exeter Image
                         intent = new Intent(context, NHSFExeterImageActivity.class);
                         break;
 
-                    case 12:
+                    case 13:
                         //Intent to NHSF Greenwich Image
                         intent = new Intent(context, NHSFGreenwichImageActivity.class);
                         break;
 
-                    case 13:
+                    case 14:
                         //Intent to NHSF Hertfordshire Image
                         intent = new Intent(context, NHSFHertfordshireImageActivity.class);
                         break;
 
-                    case 14:
+                    case 15:
                         //Intent to NHSF Huddersfield Image
                         intent = new Intent(context, NHSFHuddersfieldImageActivity.class);
                         break;
 
-                    case 15:
+                    case 16:
                         //Intent to NHSF Hull Image
                         intent = new Intent(context, NHSFHullImageActivity.class);
                         break;
 
-                    case 16:
+                    case 17:
                         //Intent to NHSF Imperial Image
                         intent = new Intent(context, NHSFImperialImageActivity.class);
                         break;
 
-                    case 17:
+                    case 18:
                         //Intent to NHSF KCL Image
                         intent = new Intent(context, NHSFKCLImageActivity.class);
                         break;
 
-                    case 18:
+                    case 19:
                         //Intent to NHSF Keele Image
                         intent = new Intent(context, NHSFKeeleImageActivity.class);
                         break;
 
-                    case 19:
+                    case 20:
                         //Intent to NHSF Kent Image
                         intent = new Intent(context, NHSFKentImageActivity.class);
                         break;
 
-                    case 20:
+                    case 21:
                         //Intent to NHSF Kingston Image
                         intent = new Intent(context, NHSFKingstonImageActivity.class);
                         break;
 
-                    case 21:
+                    case 22:
                         //Intent to NHSF Leeds Image
                         intent = new Intent(context, NHSFLeedsImageActivity.class);
                         break;
 
-                    case 22:
+                    case 23:
                         //Intent to NHSF Leicester Image
                         intent = new Intent(context, NHSFLeicesterImageActivity.class);
                         break;
-                    case 23:
-                        //Intent to NHSF Lincoln Image
-                        intent = new Intent(context, NHSFLincolnImageActivity.class);
-                        break;
+
                     case 24:
                         //Intent to NHSF Liverpool Image
                         intent = new Intent(context, NHSFLiverpoolImageActivity.class);
@@ -339,10 +335,10 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
                         intent = new Intent(context, NHSFWestminsterImageActivity.class);
                         break;
 
-//                    case 48:
+                    case 48:
                         //Intent to NHSF York Image
-  //                      intent = new Intent(context, NHSFYorkImageActivity.class);
-    //                    break;
+                        intent = new Intent(context, NHSFYorkImageActivity.class);
+                        break;
 
                     default:
                         break;
@@ -368,8 +364,6 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
         public TextView chapterDetails;
         public TextView chapterZone;
         public ImageView iconView;
-
-
         //public ImageView mImageView;
 
         public Chapter details;
@@ -385,8 +379,6 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
                     .findViewById(R.id.chapterZone);
             chapterDetails = (TextView) itemLayoutView
                     .findViewById(R.id.chapterDetails);
-
         }
     }
 }
-

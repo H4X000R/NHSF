@@ -1,8 +1,8 @@
 package com.divyeshbc.NHSF.tabs.campus;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -20,17 +20,18 @@ import java.util.ArrayList;
 public class Tab2 extends Fragment {
 
     private RecyclerView mRecyclerView;
-    private CardViewAdapter adapter;
+
+    private CardView cardView;
+
     private ArrayList<Chapter> chapters;
 
     private RecyclerView.Adapter mAdapter;
 
-    private FloatingActionButton fab1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.tab_2, container, false);
+        View v = inflater.inflate(R.layout.tab_2,container,false);
 
         //Fetching setChapters to retrieve data
         setChapters();
@@ -49,69 +50,40 @@ public class Tab2 extends Fragment {
         // set the adapter object to the Recyclerview
         mRecyclerView.setAdapter(mAdapter);
 
-
-        //Floating Action Button For Email Copied from AdminTeam
-       /* fab1 = (FloatingActionButton) fab1.findViewById(R.id.fab1);
-        fab1.setOnClickListener(new View.OnClickListener() {
-
-            //3.0 -- Here setting the onClickListener for the FAB
-        @Override
-        public void onClick(View v) {
-
-        //Invoking new intent to allow user to send email
-           Intent emailIntent = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
-
-           //Setting an array up for the recipient
-            String emailRecipient[] = {"info@nhsf.org.uk"};
-            //Allowing the user to select with what application they would like to send the email
-            //startActivity(Intent.createChooser(emailIntent, "Send your email via:"));
-
-            //Here providing the email address to which the email is being sent
-            emailIntent.putExtra(Intent.EXTRA_EMAIL, emailRecipient);
-
-            //Prompt email clients only
-            emailIntent.setType("message/rfc822");
-
-            //Navigate to the above intent
-            startActivity(Intent.createChooser(emailIntent, "Choose an email client:"));
-        }
-        });*/
         return v;
-
     }
 
-
-    public void setChapters() {
+    public void setChapters(){
 
         final String[] affiliatedChapters = {"NHSF Aston", "NHSF BCU", "NHSF Birmingham", "NHSF BPP",
-                 "NHSF Brighton", "NHSF Bristol", "NHSF Brunel", "NHSF Bucks New Uni", "NHSF City", "NHSF Coventry",
+                "NHSF Bradford", "NHSF Brighton", "NHSF Bristol", "NHSF Brunel", "NHSF Bucks New Uni", "NHSF City", "NHSF Coventry",
                 "NHSF DMU", "NHSF Exeter", "NHSF Greenwich", "NHSF Hertfordshire", "NHSF Huddersfield", "NHSF Hull", "NHSF Imperial",
-                "NHSF KCL", "NHSF Keele", "NHSF Kent", "NHSF Kingston", "NHSF Leeds", "NHSF Leicester", "NHSF Lincoln", "NHSF Liverpool", "NHSF Loughborough",
+                "NHSF KCL", "NHSF Keele", "NHSF Kent", "NHSF Kingston", "NHSF Leeds", "NHSF Leicester", "NHSF Liverpool", "NHSF Loughborough",
                 "NHSF LSBU", "NHSF LSE", "NHSF Manchester", "NHSF Medway", "NHSF Northampton", "NHSF Northumbria", "NHSF Nottingham",
                 "NHSF NTU", "NHSF Plymouth", "NHSF Portsmouth", "NHSF QMUL", "NHSF Reading", "NHSF RHUL", "NHSF Roehampton", "NHSF SGUL",
-                "NHSF Sheffield", "NHSF Southampton", "NHSF Swansea", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster", };
+                "NHSF Sheffield", "NHSF Southampton", "NHSF Swansea", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster", "NHSF York"};
 
-        final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_brighton,
-                R.drawable.nhsf_bristol, R.drawable.nhsf_brunel, R.drawable.nhsf_bucks_new_uni, R.drawable.nhsf_city, R.drawable.nhsf_coventry,
-                R.drawable.nhsf_dmu, R.drawable.nhsf_exeter, R.drawable.nhsf_greenwich, R.drawable.nhsf_hertfordshire, R.drawable.nhsf_huddersfield,
-                R.drawable.nhsf_hull, R.drawable.nhsf_imperial, R.drawable.nhsf_kcl, R.drawable.nhsf_keele, R.drawable.nhsf_kent, R.drawable.nhsf_kingston,
-                R.drawable.nhsf_leeds, R.drawable.nhsf_leicester, R.drawable.nhsf_lincoln, R.drawable.nhsf_liverpool, R.drawable.nhsf_loughborough, R.drawable.nhsf_lsbu, R.drawable.nhsf_lse,
-                R.drawable.nhsf_manchester, R.drawable.nhsf_medway, R.drawable.nhsf_northampton, R.drawable.nhsf_northumbria, R.drawable.nhsf_nottingham,
-                R.drawable.nhsf_ntu, R.drawable.nhsf_plymouth, R.drawable.nhsf_portsmouth, R.drawable.nhsf_qmul, R.drawable.nhsf_reading, R.drawable.nhsf_rhul,
-                R.drawable.nhsf_roehampton, R.drawable.nhsf_sgul, R.drawable.nhsf_sheffield, R.drawable.nhsf_southampton, R.drawable.nhsf_swansea,
-                R.drawable.nhsf_uea, R.drawable.nhsf_uwe, R.drawable.nhsf_warwick, R.drawable.nhsf_westminster };
+        final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_bradford, R.drawable.nhsf_brighton,
+                             R.drawable.nhsf_bristol, R.drawable.nhsf_brunel, R.drawable.nhsf_bucks_new_uni, R.drawable.nhsf_city, R.drawable.nhsf_coventry,
+                             R.drawable.nhsf_dmu, R.drawable.nhsf_exeter, R.drawable.nhsf_greenwich, R.drawable.nhsf_hertfordshire, R.drawable.nhsf_huddersfield,
+                             R.drawable.nhsf_hull, R.drawable.nhsf_imperial, R.drawable.nhsf_kcl, R.drawable.nhsf_keele, R.drawable.nhsf_kent, R.drawable.nhsf_kingston,
+                             R.drawable.nhsf_leeds, R.drawable.nhsf_leicester, R.drawable.nhsf_liverpool, R.drawable.nhsf_loughborough, R.drawable.nhsf_lsbu, R.drawable.nhsf_lse,
+                             R.drawable.nhsf_manchester, R.drawable.nhsf_medway, R.drawable.nhsf_northampton, R.drawable.nhsf_northumbria, R.drawable.nhsf_nottingham,
+                             R.drawable.nhsf_ntu, R.drawable.nhsf_plymouth, R.drawable.nhsf_portsmouth, R.drawable.nhsf_qmul, R.drawable.nhsf_reading, R.drawable.nhsf_rhul,
+                             R.drawable.nhsf_roehampton, R.drawable.nhsf_sgul, R.drawable.nhsf_sheffield, R.drawable.nhsf_southampton, R.drawable.nhsf_swansea,
+                             R.drawable.nhsf_uea, R.drawable.nhsf_uwe, R.drawable.nhsf_warwick, R.drawable.nhsf_westminster, R.drawable.nhsf_york};
 
         final String[] zones = {
                 //NHSF Aston
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF BCU
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF Birmingham
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF BPP
                 "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Bradford
-               // "North Zone - Coordinator: Jay Badiani",
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF Brighton
                 "South Zone - Coordinator: Devisha Karadia",
                 //nhsf_bristol
@@ -123,9 +95,9 @@ public class Tab2 extends Fragment {
                 //NHSF City
                 "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Coventry
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF DMU
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF Exeter
                 "South Zone - Coordinator: Devisha Karadia",
                 //NHSF Greenwich
@@ -141,7 +113,7 @@ public class Tab2 extends Fragment {
                 //NHSF KCL
                 "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Keele
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF Kent
                 "South Zone - Coordinator: Devisha Karadia",
                 //NHSF Kingston
@@ -149,13 +121,11 @@ public class Tab2 extends Fragment {
                 //NHSF Leeds
                 "North Zone - Coordinator: Jay Badiani",
                 //NHSF Leicester
-                "Central Zone - Coordinator: Harshil Shah",
-                //NHSF Lincoln
-                "North Zone - Coordinator: Jay Badiani",
+                "Central Zone - Coordinator: TBC",
                 //NHSF Liverpool
                 "North Zone - Coordinator: Jay Badiani",
                 //NHSF Loughborough
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF LSBU
                 "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF LSE
@@ -165,13 +135,13 @@ public class Tab2 extends Fragment {
                 //NHSF MEDWAY
                 "South Zone - Coordinator: Devisha Karadia",
                 //NHSF NORTHAMPTON
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF NORTHUMBRIA
                 "North Zone - Coordinator: Jay Badiani",
                 //NHSF NOTTINGHAM
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF NTU
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF PLYMOUTH
                 "South Zone - Coordinator: Devisha Karadia",
                 //NHSF PORTSMOUTH
@@ -197,165 +167,230 @@ public class Tab2 extends Fragment {
                 //NHSF UWE
                 "South Zone - Coordinator: Devisha Karadia",
                 //NHSF WARWICK
-                "Central Zone - Coordinator: Harshil Shah",
+                "Central Zone - Coordinator: TBC",
                 //NHSF WESTMINSTER
                 "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF YORK
                 "North Zone - Coordinator: Jay Badiani"
-        };
+                };
 
 
         final String[] chapterCommittees = {
                 //--NHSF ASTON --
-                "aston@nhsf.org.uk",
+                "PRESIDENT: Shailee Patel \nVP: Dhimant Mehta \nSECRETARIES: Raj Sivlal & Karishma Patel \nTREASURERS: Ajay Mistry & Akshay Nagda " +
+                "\nEVENTS: Ashni Mehta, Avni Vaghela & Natasha Sandle \nPR: Hetal Patel, Trisha Kandlur & Priyesh Patel \nSEWA: Krishna Jethwa & Chandni Gadhia " +
+                "\nLEARNING: Akshay Bhardwa & Trusha Parikh \nSPORTS: Neelam Mistry & Colette Rodrigues \nRELIGIOUS: Trusha Parikh & Akshay Bhardwa " +
+                "\nADVISORY: Nikhil Parekh, Dev Patel, Anjali Bharania, Rupal Chavda & Radhika Madlani",
 
                 //-- NHSF BCU --
-                "birminghamcity@nhsf.org.uk",
+                "PRESIDENT: Akshay Depala \nVP: Kalindi Parikh \nSECRETARY: Sittal Patel \nTREASURER: Kushagra Rastogi" +
+                "\nEVENTS: Rahul Depala, Avni Shah, Jessica Chumber & Aman Sadhwani \nSEWA: Kiran Nayee & Kushal Thakkar, " +
+                        "\nLEARNING: Kiran Nayee & Kushal Thakkar \nSPORTS: Sachin Dadhania",
 
                 //-- NHSF BIRMINGHAM --
-                "birmingham@nhsf.org.uk",
+                "PRESIDENT: Anuj Popat \nVP: Dylan Patel-Vathvali \nSECRETARY: Noureen Lakhani \nTREASURER: Roshni Rupalaria" +
+                        "\nEVENTS: Sachin Malkan, Roshni Dodhia & Himani Amin \nPR: Janu Shah & Sham Patel \nSEWA: Thineswari Pandiyan, Sushma Roy & Vanisha Solanki " +
+                        "\nLEARNING: Henna Patel \nSPORTS: Reeya Patel & Rikesh Mistry \nDESIGNER: Janeena Sahota",
 
                 //-- NHSF BPP --
-                "bpp@nhsf.org.uk",
+                "PRESIDENT: Monica Mohan \nADVISORY: Ritesh Thakrar",
 
                 //-- NHSF BRADFORD --
-              //  "bradford@nhsf.org.uk",
+                "PRESIDENT: Mitesh Gunpath \nSECRETARY: Bindiya Kotecha \nEVENTS: Kieran Mistry \nPR: Fahim Mulla \nSEWA: Pavithra Natatrajan " +
+                        "\nLEARNING: Radhika Chaudhury \nSPORTS: Kirujan Ravichandran & Sagiram Surendirarasa",
 
                 //-- NHSF BRIGHTON --
-                "brighton@nhsf.org.uk",
+                "PRESIDENT: Yogesh Karunavannan \nVP: Shreena Patel \nSECRETARIES: Roshni Patel & Suhani Ghiya \nTREASURER: Nity Kapoor" +
+                        "\nEVENTS: Amisha Patel & Duckshini Sivalingam \nPR: Bhavisha Patel \nSEWA: Ramya Shanthikumar \nLEARNING: Chintan Patel" +
+                        "\nSPORTS: Krishan Patel \nMEDIA: Divya Lakhani",
 
                 //-- NHSF BRISTOL --
-                "bristol@nhsf.org.uk",
+                "PRESIDENT: Nihir Shah \nVP: Jagrati Chopra \nSECRETARY: Siddhant Shah \nTREASURER: Shria Radia" +
+                        "\nEVENTS: Rishi Nanavati & Bhawick Jain \nSEWA: Krishna Ravichandar " +
+                        "\nLEARNING: Krishna Ravichandar \nSPORTS: Vishal Davda & Aarti Gogna" +
+                        "\nSIKH REP: Gulpuvan Sidhu",
 
                 //-- NHSF BRUNEL--
-                "brunel@nhsf.org.uk",
+                "PRESIDENT: Anisha Devani \nVP: Priya Leela Nair \nSECRETARY: Neha Chauhan \nTREASURER: Reeya Chetri" +
+                        "\nEVENTS: Rajiv Chadha \nSEWA: Matthew Bavisi Bird \nLEARNING: Shivaley Tank " +
+                        "\nSPORTS: Tejas Depala \nWEB: Minisha Kiran Mahay \nMEETINGS OFFICER: Shivaley Tank " +
+                        "\nUNIVERSTIY OFFICER: Neha Joshi \nSPONSORSHIP: Priyen Patel",
 
                 //-- NHSF BUCKS NEW UNI --
-                "bucksnewuni@nhsf.org.uk",
+                "PRESIDENT: Anand Joshi \nVP: Rushi Patel \nSECRETARY: Karishma Sureja \nTREASURER: Rushi Patel",
 
                 //-- NHSF CITY --
-                "city@nhsf.org.uk",
+                "PRESIDENT: Anjlee Bathia \nVP: Karan Patel \nTREASURER: Palak Duggal \nEVENTS: Nyasha Sardana \nSEWA: Bhavik Khatri" +
+                "\nLEARNING: Bhavik Khatri \nSPORTS: Ayesha Sharma \nMARKETING: Nikul Shah \nCOMMUNICATION: Prabhdeep Matharu",
 
                 //-- NHSF COVENTRY --
-                "coventry@nhsf.org.uk",
+                "PRESIDENT: Akash Shah \nVP: Pragyan Tulsian \nSECRETARY: Nirali Patel \nTREASURER: Kishan Mistry ",
 
                 //-- NHSF DMU --
-                "dmu@nhsf.org.uk",
+                "PRESIDENT: Dipali Jivram \nVP: Ravi Jagatia & Rishal Rathod \nSECRETARIES: Rozy Shukla & Sharad Pala " +
+                        "\nTREASURER: Radhika Shikotra & Ajay Main \nEVENTS: Nikita Ladwa & Kanika Sharma \nSEWA: Jai Makwana & Rishan Gudka " +
+                        "\nSPORTS: Anirrudh Ganatra, Nikita Patel & Himansh",
 
                 // -- NHSF EXETER --
-                "exeter@nhsf.org.uk",
+                "PRESIDENT: Shivam Joshi & Neha Toteja \nSECRETARY: Navin Nagesh  \nTREASURER: Sai Suhruta Jasthi \nEVENTS: Nikita Sethu Menon & Praveena Nanthakumaran" +
+                        "\nSEWA: Visha Rach \nLEARNING: Yajur Kapoor \nSPORTS: Amaritpal Singh Siani \nPR: Ridhi Jogia",
 
                 // -- NHSF GREENWICH --
-                "greenwich@nhsf.org.uk",
+                "PRESIDENT: Deepa Dabaisa \nVP: Roshan Patel \nSECRETARY: Chetan Sablawat \nTREASURER: Mishali Paragjee " +
+                        "\nSPORTS: Sapna Chudasama & Bhumit Patel \nPR: Nikhil Parbat \nGREENWICH REP: Nidhi Naik",
 
                 // -- NHSF HERTFORDSHIRE --
-                "hertfordshire@nhsf.org.uk",
+                "PRESIDENT: Gayatri Bhudia \nVP: Sonali Pabali \nSECRETARY: Kishan Patel \nEVENTS: Rupa Carpenter & Mohit Vyas" +
+                        "\nLEARNING: Sapna Sodha & Priyali Patel \nSPORTS: Hanna Patel & Hari Patel \nMEDIA: Kishan Patel",
 
                 // -- NHSF HUDDERSFIELD --
-                "huddersfield@nhsf.org.uk",
+               "PRESIDENT: Seetal Mistry \nTREASURER: Rahul Hirani \nEVENTS: Natasha Patel \nLEARNING: Nilam Patel" +
+                       "\nSPORTS: Priyesh Patel \nADVISORY: Roshni Mistry",
 
                 // -- NHSF HULL --
-                "hull@nhsf.org.uk",
+                "PRESIDENT: Shiv Soni \nVP: Sonal Gohil \nTREASURER: Vivek Mistry \nSPORTS: Krishnaa Mistry & Jayesh Patel \nPR: Sharon George" +
+                        "\nADVISORY: Yogesh Namballa",
 
                 // -- NHSF IMPERIAL --
-                "imperial@nhsf.org.uk",
+                "PRESIDENT: Shaneil Tanna \nVP: Payal Kotecha & Aparna Joshi \nSECRETARY: Kapil Agarwal \nTREASURER: Vijay Ramadoss & Anjlee Patel" +
+                        "\nSEWA: Riddhi Shenoy & Roshni Vinda \nSPORTS: Sanjay Patel & Milan Nayee \nEDUCATION: Surya Kocherlakota \nBHAKTI: Sneha Varshani" +
+                        "\nCULTURE: Aaran Patel & Srideep Mallick",
 
                 // -- NHSF KCL --
-                "kcl@nhsf.org.uk",
+                "PRESIDENT: Hiten Mistry \nVP: Darshana Nair, Jaymin Patel & Seema Vaswani \nSECRETARY: Manisha Ghosh, \nTREASURER: Prince Naruka" +
+                        "\nEVENTS: Afiyah Falak, Aparjita Venkat & Mayank Varyani \nSEWA: Ishita Jhunjhunwala \nLEARNING: Arjun Varma " +
+                        "\nBHAKTI: Akshaya Rajangam \nMARKETING: Kaneesha Banker \nCAMPUS REPS: Anushka Bhargava, Maliekah Harjani, Urvi Parekh," +
+                        "Jaskiran Rana & Chandni Vasandani",
 
                 // -- NHSF KEELE --
-                "keele@nhsf.org.uk",
+                "PRESIDENT: Rishi Batra \nVP: Manish Gohil \nSECRETARY: Krupesh Patel \nTREASURER: Alex Patel \nEVENTS: Bhavisha Gondalia, Danisha Patel" +
+                        "& Shivani Patel \nPR: Amit Rajani \nSEWA: Bhavisha Gondalia, Danisha Patel & Shivani Patel \nLEARNING: Meena Chandarana & Urega Balakrishnan" +
+                        "\nSPORTS: Aman Grover & Revyath Varanthan \nADVISORY: Kusum Nathawat",
 
                 // -- NHSF KENT --
-                "kent@nhsf.org.uk",
+                "PRESIDENT: Kunal Patel \nSECRETARY: Meera Daya \nTREASURUER: Trina Mistry \nSEWA: Anokhi Desai \nLEARNING: Abi Nadarajah \nSPORTS: Rahul Dayalani" +
+                        "\nMARKETING: Viknesh Prabhakar \nSOCIAL: Lakchitha Kananathapillai & Pari Shah \nLOGISTICS: Karnan Narendrakumar",
 
                 // -- NHSF KINGSTON --
-                "kingston@nhsf.org.uk",
+                "PRESIDENT: Janak Dattani \nVP: Dhanik Parmar \nSECRETARY: Disha Patel \nTREASURER: Vichruti Hkumar \nEVENTS: Anisha Ruparelia & Abhishek Gautami" +
+                        "\nSEWA: Anisha Ruparelia \nLEARNING: Dipak Pindoria \nSPORTS: Abhishek Gautami, Mayur Depala & Nithusan Sivarasa \nSOCIAL: Sachin Patel" +
+                        "\nADVISORY: Bhavik Vara",
 
                 // -- NHSF LEEDS --
-                "leeds@nhsf.org.uk",
+                "PRESIDENT: Priya Shah \nVP: Kanaka Kulkarni \nSECRETARY: Aviral Sethi \nTREASURER: Sejal Mistry \nEVENTS: Jaskaran Dutta, Jainam Tolia & Rishi Thakerar" +
+                        "\nPUBLICITY: Rhea Bhandari \nSEWA: Mayur Parmar & Purvi Makwana \nLEARNING: Jeet Parmar \nSPORTS: Akshay Mistry \nSPONSORSHIP: Anurika Nehra" +
+                        "\nINTERSOCIETY REP: Jeet Parmar",
 
                 // -- NHSF LEICESTER --
-                "leicester@nhsf.org.uk",
-
-                // -- NHSF Lincoln
-                "lincoln@nhsf.org.uk",
+                "PRESIDENT: Hitesh Mankani \nVP: Sahil Kotecha & Sinthu Harini Uthayashankar \nSECRETARY: Henal Patel \nTREASURER: Savi Chaplot" +
+                        "\nPR: Shoban P Kannu \nEVENTS: Bhumika Hirani, Radhika Rana, Sanjana Masilamani & Gowshiee Ravindran \nSEWA: Sneha Nootigattu \nLEARNING: Deepa Lad" +
+                        "\nSPORTS: Tarun Sharma & Zaeem Rahim \nRELIGIOUS: Aditya Nidamarthi",
 
                 // -- NHSF LIVERPOOL --
-                "liverpool@nhsf.org.uk",
+                "PRESIDENT: Sandip Patel \nVP: Ananda Mohan & Vaishnavi Menon",
 
                 // -- NHSF LOUGHBOROUGH --
-                "loughborough@nhsf.org.uk",
+                "PRESIDENT: Harshil Shah \nVP: Niraj Dhodia \nSECRETARY: Tulsi Shah \nTREASURER: Suraj Shah \nEVENTS: Shreyasi Mukherjee \nSEWA: Erandika Mohanathasan" +
+                        "\nLEARNING: Shriya Ramaiya \nSPORTS: Nikhil Borkhatria \nSPONSORSHIP: Rhea Visavadia",
 
                 // -- NHSF LSBU --
-                "lsbu@nhsf.org.uk",
+                "PRESIDENT: Kishan Patel \nSECRETARY: Amalia Premgi \nTREASURER: Arun Aravinth \nMEDIA: Akshay Parmar \nGENERAL COMMITTEE MEMBER: Haran Pillai",
 
                 // -- NHSF LSE --
-                "lse@nhsf.org.uk",
+                "PRESIDENT: Sagar Ghelani \nVP: Dillon Halai \nSECRETARY: Tejan Shah \nTREASURER: Himansu Odedra \nEVENTS: Jay Depala \nSEWA: Ayush Oza" +
+                        "\nSPORTS: Sona Shah & Ajay Shah \nSPONSORSHIP: Khush Chudasama \nMEDIA: Yaxsaana Sivanathan",
 
                 // -- NHSF MANCHESTER --
-                "manchester@nhsf.org.uk",
+                "PRESIDENT: Shree Thakker \nVP: Pavan Mamtora \nSECRETARY: Shyam Pattni & Bhavesh Soneji \nTREASURER: Riyan Shah \nPR: Nikita Patel & Rupen Taylor" +
+                        "\nEVENTS: Rishi Sharma, Gita Shaparia, Priya Mahallingam, Sachin Tandon & Divya Mardania \nSEWA: Rishi Patel & Neharika Dembla" +
+                        "\nLEARNING: Krupa Thakkar & Hirendra Patel \nSPORTS: Talisha Patel \nPERFORMING ARTS: Sonam Kotecha & Priyanka Patel",
 
                 // -- NHSF MEDWAY --
-                "medway@nhsf.org.uk",
+                "PRESIDENT: Mayur Patel \nVP: Kash Mehta \nTREASURER: Preksha \nPR: Shavinder & Pradeepan \nLEARNING: Nidhi & Deesha Bhudia" +
+                "\nEVENTS: Kash Mehta",
 
                 // -- NHSF NORTHAMPTON --
-                "nothampton@nhsf.org.uk",
+                "PRESIDENT: Anna Chandrasehar \nSECRETARY: Saejal Odedra \nTREASURER: Neelam Chhabhadiya \nEVENTS: Feroz Shanmughanthan \nLEARNING: Bhakti Joshi" +
+                        "\nSPORTS: Sritharan Theiventhran",
 
                 // -- NHSF NORTHUMBRIA --
-                "loughborough@nhsf.org.uk",
+                "PRESIDENT: Karan Haveliwala \nSECRETARY: Emily Beaumont \nTREASURER: Shalin Mistry \nEVENTS: Shivani Patel \nMARKETING: Kotwarthanan Ganesha",
 
                 // -- NHSF NOTTINGHAM --
-                "nottingham@nhsf.org.uk",
+                "PRESIDENT: Vasant Limbachia \nVP: Dillon Shah & Khyati Thakkar \nSECTRETARY: Avnee Vaghjiani \nTREASURER: Rikesh Patel " +
+                        "\nPR: Nikita Sailesh Shah \nEVENTS: Sweta Patel & Nikita Patel \nSEWA: Radhika Chond \nLEARNING: Prit Thakar & Shivam Patel" +
+                        "\nSPORTS: Tanvi Shah & Dilan Chudasama \nMARKETING: Nikita Sailesh Shah \nARTISITIC DIRECTOR: Nikita Shah" +
+                        "\nSOCIAL: Prasann & Kinner Shah \nSPONSORSHIP: Shivani Bhayani \nHEAD OF KANGNA: Akshay Ladwa",
 
                 // -- NHSF NTU --
-                "nottinghamtrent@nhsf.org.uk",
+                "PRESIDENT: Palvi Sharma \nTREASURER: Amber Ali \nEVENTS: Keval Karia \nSEWA: Shruti Ahuja \nLEARNING: Shivani Kapoor" +
+                        "\nSPORTS: Alisaha Pugal \nSOCIAL: Krupa Dave",
 
                 // -- NHSF PLYMOUTH --
-                "plymouth@nhsf.org.uk",
+                "PRESIDENT: Pooja",
 
                 // -- NSHF PORTSMOUTH --
-                "portmouths@nhsf.org.uk",
+                "PRESIDENTS: Ashna Sejpal & Jay Amin \nVP: Chiraag Sanghani \nSECRETARY: Bina Choudury \nTREASURER: Ankit Nayee & Jay Sharma \nPR: Nisha KApur" +
+                        "\nEVENTS: Sarina Kholsa, Namita Shenolikar Shil Patel, Vimal Patel & Devika Sharma \nSEWA: Harshiv Nayee, Natasha Gukhool, Hitesh Patel, Manish Seth & Priyia Ravi" +
+                        "\nSPORTS: Ajay Upadyaya & Kamal Patel \nDHARMA: Khushal Shah, Tejal Mandalia, Alysha Gupta & Bhavisha Kataria \nSUPPORT: Monil Patel",
 
                 // -- NHSF QMUL --
-                "qmul@nhsf.org.uk",
+                "PRESIDENT: Chandan Varsani \nVP: Archana Sasitharan \nTREASURER: Shubhra Jain \nPR: Pareen Chhaganlal & Serena Patel \nEVENTS: Serena Desai," +
+                        "Abhishiktar Talukder, Jay Patel & Purvi Kirticumar \nSEWA: Roshni Mehta \nLEARNING: Shivam Malhotra & Harshil Kanji" +
+                        "\nSPORTS: Harshita Vig, Rishi Bhayani & Nishma Bechar \nMEDIA: Manthan Patel \nSPONSORSHIP: Pritish Patel \nBARTS REP: Shreeya Patel",
 
                 // -- NHSF READING
-                "reading@nhsf.org.uk",
+                "PRESIDENT: Sanja Bhagawan \nVP: Shreya Mashru \nSECRETARY: Daksh Jain \nTREASURER: Tamish Khullar \nEVENTS: Mohini Mistry & Natasha Menghani" +
+                        "\nSEWA: Dimpy Pandya \nLEARNING: Stuti Chauhan & Archana Chauhan \nSOCIAL: Shagun Wasan \nCREATIVE COORDINATOR: Stuti Chauhan" +
+                        "\nSPONSORSHIP: Hari Singh Sokhal",
 
                 // -- NHSF RHUL --
-                "rhul@nhsf.org.uk",
+                "PRESIDENT: Shreya Shrikhande \nVP: Jashma Karia \nSECRETARY: Aahuti Bharai \nTREASURER: Prishaa Ellagovan",
 
                 // -- NHSF ROEHAMPTON --
-                "roehampton@nhsf.org.uk",
+                "PRESIEDENT: Ashwini Mandalia \nVP: Anuj Radia & Cynthia Manoharadas \nTREASURER: Nakul Shah \nEVENTS: Neeta Patel & Chetna Sookdawar" +
+                        "\nSEWA: Arishma Amin \nLEARNING: Arishma Amin \nSPORTS: Cynthia Manoharadas",
 
                 // -- NHSF SGUL --
-                "sgul@nhsf.org.uk",
+                "PRESIDENT: Hershil Lakhani \nVP: Chandrika Chopra \nEVENTS: Abhi Chennupati & Tharshana Mahendrarajah \nSEWA: Sabeena Pushparajah" +
+                        "\nLEARNING: Talisha Modasia & Adam Gadhvi \nSPORTS: Zaib Hilal & Anish Patel \nCULTURE: Radhika Tanna & Alia Sahni " +
+                        "\nMEDIA: Poorani Kuganesan \nDIVIA COORDINATOR: Eesha Tripathi & Siddharth Praveen \nADVISROY: Bejaya Chowdury",
 
                 // -- NHSF SHEFFIELD --
-                "sheffield@nhsf.org.uk",
+                "PRESIDENT: Hina Sharma \nVP: Krishna Tejura & Vaidehi Tembhekar \nSECRETARY: Reesha Siniara \nTREASURER: Anuj Savani \nPR: Nicole Chahal & " +
+                        "Nikita Pankhania \nEVENTS: Aneesa Bhardwa & Anamil Kochar \nSEWA: Saakshi Barman & Tejal Mistry \nLEARNING: Dania Lakshmi" +
+                        "\nSPORTS: Akash Madhu & Ayesha Girach \nPERFORMING ARTS: Tanya Datta & Nikita Bharat",
 
                 // -- NHSF SOUTHAMPTON --
-                "southampton@nhsf.org.uk",
+                "PRESIDENT: Jay Dave \nVP: Vikram Palli \nSECRETARY: Sajeenth Thevabalasingam & Yue Huang \nTREASURER: Animesh Sahay \nEVETNS: Tara Ludra, Sonam Thanki" +
+                        "& Sahil Thakrar \nSEWA: Roshni Desai, Hemna Santilale & Jesal Patel \nLEARNING: Roshni Desai, Hemna Santilale & Jesal Patel" +
+                        "\nSPORTS: Suraj Vadukul, Alisha Sharma & Nikesh Patel \nSPONSORSHIP: Ravi Jayanti & Aravinthan Andy Vijaykumar" +
+                        "\nIT: Sivaruby Kangarathinam, Asmie Vanajaraj & Methusha Sakthipakan \nDANCE: Karishma Patel \nHEALTH: Darshan Patel",
 
                 // -- NHSF SWANSEA --
-                "swansea@nhsf.org.uk",
+                "PRESIDENT: Karan Dossa \nLEARNING: Krishan Karadia",
 
                 // -- NHSF UEA --
-                "east-anglia@nhsf.org.uk",
+                "PRESIDENT: Punit Naran \nSECRETARY: Jaymini Chohan \nTREASURER: Urvashi Ragobur \nSEWA: Punit Naran \nLEARNING: Kishan Jethwa" +
+                        "\nSPORTS: Rahul Mehta & Hinal Shah \nDIVERSITY: Abinayah Jayanthan & Prina Kakad \nAARTI COORDINATOR: Trisha Dhaliah" +
+                        "\nSOCIAL: Prabin Mohanty \nGENERAL COMMITTEE MEMBERS: Nischay Kakkar, Riti Sharma & Sandhya Rai \nHEALTH: Prabin Mohanty",
 
                 // -- NHSF UWE --
-                "uwe@nhsf.org.uk",
+                "PRESIDENTS: Janki Seth & Roshnie Mahani \nSECRETARY: Prachi Patel \nTREASURER: Kasturi Sothiraj \nEVENTS: Prashant Shukla & Pirruntha Siva " +
+                        "\nSEWA: Pratik Joshi \nLEARNING: Pratik Joshi \nSPORTS: Mevin Daniel \nDANCE: Astha Suri",
 
                 // -- NHSF WARWICK --
-                "warwick@nhsf.org.uk",
+                "PRESIDENTS:Hiran Adhia & Nishil Bathia \nSECRETARY: Minesh Patel \nTREASURER: Chandni Patel \nEVENTS: Monic Chotai & Priya Agarwal \nSEWA: Liana Malhan" +
+                        "\nLEARNING: Prianka Chotai \nSPORTS: Mirresh Pankahnia & Rajvir Kaur Padda \nMEDIA: Amar Suralia",
 
                 // -- NHSF WESTMINSTER --
-                "westminister@nhsf.org.uk",
+                "PRESIDENTS: Radhika Kotak & Kush Mahesh \nTREASURER: Reena Vadhia \nPR: Bhrindhan Manoharan \nEVENTS: Nikita Retnasingam \nSEWA: Preethy Jose " +
+                        "\nLEARNING: Nimesh Patel \nSPORTS: Harshil Kerai \nMEDIA: Fazil Muhammed",
 
                 // -- NHSF YORK --
-               // "york@nhsf.org.uk",
+                "PRESIDENT: \nSECRETARY: \nTREASURER:"
         };
+
 
 
         chapters = new ArrayList<Chapter>();

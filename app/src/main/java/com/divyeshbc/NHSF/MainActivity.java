@@ -1,6 +1,6 @@
 package com.divyeshbc.NHSF;
 
-import android.net.Uri;
+
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -15,60 +15,55 @@ import com.divyeshbc.NHSF.tabs.campus.Tab2;
 import com.divyeshbc.NHSF.tabs.events.Tab3;
 import com.divyeshbc.NHSF.tabs.learning.Tab4;
 import com.divyeshbc.NHSF.tabs.sewa.Tab5;
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
+
 
 public class MainActivity extends AppCompatActivity {
+
     DrawerLayout drawerLayout;
     Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
     FragmentTransaction fragmentTransaction;
     NavigationView navigationView;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close);
+        actionBarDrawerToggle= new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.drawer_open, R.string.drawer_close);
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
+
         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.main_container, new NHSF_UK());
+        fragmentTransaction.add(R.id.main_container,new NHSF_UK());
         fragmentTransaction.commit();
         getSupportActionBar().setTitle("NHSF (UK)");
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener(){
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.nav_home:
+                switch (item.getItemId())
+                {
+                    case R.id.home:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new NHSF_UK());
+                        fragmentTransaction.replace(R.id.main_container,new NHSF_UK());
                         fragmentTransaction.commit();
-                        getSupportActionBar().setTitle("NHSF UK");
+                        getSupportActionBar().setTitle("Home");
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
                     case R.id.nav_tab1:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new Tab1());
+                        fragmentTransaction.replace(R.id.main_container,new Tab1());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("About Us");
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
-                        break;
+                      break;
                     case R.id.nav_tab2:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new Tab2());
+                        fragmentTransaction.replace(R.id.main_container,new Tab2());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("Campus");
                         item.setChecked(true);
@@ -76,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.nav_tab3:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new Tab3());
+                        fragmentTransaction.replace(R.id.main_container,new Tab3());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("Events");
                         item.setChecked(true);
@@ -84,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.nav_tab4:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new Tab4());
+                        fragmentTransaction.replace(R.id.main_container,new Tab4());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("Learning");
                         item.setChecked(true);
@@ -92,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.nav_tab5:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new Tab5());
+                        fragmentTransaction.replace(R.id.main_container,new Tab5());
                         fragmentTransaction.commit();
                         drawerLayout.closeDrawers();
                         getSupportActionBar().setTitle("Sewa");
@@ -102,81 +97,13 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-      /*  navigationView = (NavigationView) findViewById(R.id.drawer_layout);
-        View headerView = getLayoutInflater().inflate(R.layout.navigation_drawer_header, navigationView, false);
-        navigationView.addHeaderView(headerView);
-
-        ImageView headerImage = (ImageView) headerView.findViewById(R.id.ib);
-
-        headerImage.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Logout",
-                        Toast.LENGTH_LONG).show();
-            }});
-
-     /*   ImageButton imagebutton = (ImageButton) findViewById(R.id.ib);
-        imagebutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "NHSF_UK",
-                        Toast.LENGTH_LONG).show();
-            }});
-            */
-
     }
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
+      super.onPostCreate(savedInstanceState);
         actionBarDrawerToggle.syncState();
-
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "Main Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://com.divyeshbc.NHSF/http/host/path")
-        );
-        AppIndex.AppIndexApi.start(client, viewAction);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "Main Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://com.divyeshbc.NHSF/http/host/path")
-        );
-        AppIndex.AppIndexApi.end(client, viewAction);
-        client.disconnect();
     }
 }
-
-
 
 

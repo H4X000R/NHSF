@@ -3,8 +3,7 @@
     android:orientation="vertical"
     android:background="@drawable/custom_bg"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:navigationBarColor="@android:color/transparent">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/listText"
