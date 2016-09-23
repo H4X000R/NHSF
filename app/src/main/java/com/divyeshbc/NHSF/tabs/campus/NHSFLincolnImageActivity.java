@@ -13,9 +13,8 @@ import com.divyeshbc.NHSF.R;
 import uk.co.senab.photoview.PhotoViewAttacher;
 
 /**
- * Created by Mikesh on 23/09/2016.
+ * Created by DivyeshBC on 13/11/15.
  */
-
 public class NHSFLincolnImageActivity extends BaseActivity implements CardViewAdapter.Clicklistener {
 
     private ImageView mImageView;
