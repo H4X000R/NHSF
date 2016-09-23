@@ -84,22 +84,22 @@ public class Tab2 extends Fragment {
     public void setChapters() {
 
         final String[] affiliatedChapters = {"NHSF Aston", "NHSF BCU", "NHSF Birmingham", "NHSF BPP",
-                "NHSF Bradford", "NHSF Brighton", "NHSF Bristol", "NHSF Brunel", "NHSF Bucks New Uni", "NHSF City", "NHSF Coventry",
+                 "NHSF Brighton", "NHSF Bristol", "NHSF Brunel", "NHSF Bucks New Uni", "NHSF City", "NHSF Coventry",
                 "NHSF DMU", "NHSF Exeter", "NHSF Greenwich", "NHSF Hertfordshire", "NHSF Huddersfield", "NHSF Hull", "NHSF Imperial",
-                "NHSF KCL", "NHSF Keele", "NHSF Kent", "NHSF Kingston", "NHSF Leeds", "NHSF Leicester", "NHSF Liverpool", "NHSF Loughborough",
+                "NHSF KCL", "NHSF Keele", "NHSF Kent", "NHSF Kingston", "NHSF Leeds", "NHSF Leicester", "NHSF Lincoln", "NHSF Liverpool", "NHSF Loughborough",
                 "NHSF LSBU", "NHSF LSE", "NHSF Manchester", "NHSF Medway", "NHSF Northampton", "NHSF Northumbria", "NHSF Nottingham",
                 "NHSF NTU", "NHSF Plymouth", "NHSF Portsmouth", "NHSF QMUL", "NHSF Reading", "NHSF RHUL", "NHSF Roehampton", "NHSF SGUL",
-                "NHSF Sheffield", "NHSF Southampton", "NHSF Swansea", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster", "NHSF York"};
+                "NHSF Sheffield", "NHSF Southampton", "NHSF Swansea", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster", };
 
-        final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_bradford, R.drawable.nhsf_brighton,
+        final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_brighton,
                 R.drawable.nhsf_bristol, R.drawable.nhsf_brunel, R.drawable.nhsf_bucks_new_uni, R.drawable.nhsf_city, R.drawable.nhsf_coventry,
                 R.drawable.nhsf_dmu, R.drawable.nhsf_exeter, R.drawable.nhsf_greenwich, R.drawable.nhsf_hertfordshire, R.drawable.nhsf_huddersfield,
                 R.drawable.nhsf_hull, R.drawable.nhsf_imperial, R.drawable.nhsf_kcl, R.drawable.nhsf_keele, R.drawable.nhsf_kent, R.drawable.nhsf_kingston,
-                R.drawable.nhsf_leeds, R.drawable.nhsf_leicester, R.drawable.nhsf_liverpool, R.drawable.nhsf_loughborough, R.drawable.nhsf_lsbu, R.drawable.nhsf_lse,
+                R.drawable.nhsf_leeds, R.drawable.nhsf_leicester, R.drawable.nhsf_lincoln, R.drawable.nhsf_liverpool, R.drawable.nhsf_loughborough, R.drawable.nhsf_lsbu, R.drawable.nhsf_lse,
                 R.drawable.nhsf_manchester, R.drawable.nhsf_medway, R.drawable.nhsf_northampton, R.drawable.nhsf_northumbria, R.drawable.nhsf_nottingham,
                 R.drawable.nhsf_ntu, R.drawable.nhsf_plymouth, R.drawable.nhsf_portsmouth, R.drawable.nhsf_qmul, R.drawable.nhsf_reading, R.drawable.nhsf_rhul,
                 R.drawable.nhsf_roehampton, R.drawable.nhsf_sgul, R.drawable.nhsf_sheffield, R.drawable.nhsf_southampton, R.drawable.nhsf_swansea,
-                R.drawable.nhsf_uea, R.drawable.nhsf_uwe, R.drawable.nhsf_warwick, R.drawable.nhsf_westminster, R.drawable.nhsf_york};
+                R.drawable.nhsf_uea, R.drawable.nhsf_uwe, R.drawable.nhsf_warwick, R.drawable.nhsf_westminster };
 
         final String[] zones = {
                 //NHSF Aston
@@ -111,7 +111,7 @@ public class Tab2 extends Fragment {
                 //NHSF BPP
                 "London Zone - Coordinator: Shivani Chudasama",
                 //NHSF Bradford
-                "North Zone - Coordinator: Jay Badiani",
+               // "North Zone - Coordinator: Jay Badiani",
                 //NHSF Brighton
                 "South Zone - Coordinator: Devisha Karadia",
                 //nhsf_bristol
@@ -150,6 +150,8 @@ public class Tab2 extends Fragment {
                 "North Zone - Coordinator: Jay Badiani",
                 //NHSF Leicester
                 "Central Zone - Coordinator: Harshil Shah",
+                //NHSF Lincoln
+                "North Zone - Coordinator: Jay Badiani",
                 //NHSF Liverpool
                 "North Zone - Coordinator: Jay Badiani",
                 //NHSF Loughborough
@@ -217,7 +219,7 @@ public class Tab2 extends Fragment {
                 "bpp@nhsf.org.uk",
 
                 //-- NHSF BRADFORD --
-                "bradford@nhsf.org.uk",
+              //  "bradford@nhsf.org.uk",
 
                 //-- NHSF BRIGHTON --
                 "brighton@nhsf.org.uk",
@@ -275,6 +277,9 @@ public class Tab2 extends Fragment {
 
                 // -- NHSF LEICESTER --
                 "leicester@nhsf.org.uk",
+
+                // -- NHSF Lincoln
+                "lincoln@nhsf.org.uk",
 
                 // -- NHSF LIVERPOOL --
                 "liverpool@nhsf.org.uk",
@@ -349,7 +354,7 @@ public class Tab2 extends Fragment {
                 "westminister@nhsf.org.uk",
 
                 // -- NHSF YORK --
-                "york@nhsf.org.uk",
+               // "york@nhsf.org.uk",
         };
 
 
