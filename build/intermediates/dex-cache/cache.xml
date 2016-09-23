@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="0765979e802b1669c90dc36076559461d5eb6ad1">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-9.2.1_46127a3cff91a0d23502e8ec7c0d3f1217f903fe\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="e719de687ac45141de3dd613907860a495580af0">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.2.1_3a8742f03a915c6675e741a0e6de0880df286ad7\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="5337354083e89ed67151859ab0b6b80935c60eaf">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.2.1_acd374b21fe7c8e489f8cd59dc1227c8ab40b3c4\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="6c09228ff931eb30b68dd27fe34ed90d978b6892">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-9.2.1_255227c0b4f0411bb810dd85c35d7855def17762\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_b4adb5812169a58bc18235f8084facafbe3b6907\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="4b515e6e269bfe848f5b43ac09bce54d6617d4fd">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-9.2.1_d7b5ab441bf559a347fdadd4ef18f9d49e41b408\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="def5530cb13311617fc8f962e2a90225bb6904e2">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-9.2.1_7a9a13d7a6f14c922fe51cd16dd45c7404c7cdf8\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_38d1537c0577e74220930729d2ecf63c693ee378\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ea05446d196c329c3929a543ade929ea143d50ff">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_436b289950cc2e1521ad44dbea8306ad7f459998\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.commit451\PhotoView\1.2.4\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="890be6e1e56a883c9b407a11e067a61886dec123">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.commit451-PhotoView-1.2.4_b9540286e3a2c1c555728f48d8737ffe15bc1947\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="3a42c5696fa39930d39770f7e5552a9c965fbe09">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.2.1_8feede9658efc0d98fb3ece56f4ddb4f883c9ee1\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="89ab748a6c0ab6ac1d3671f2356d6181e8108bc5">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-9.2.1_99052b8707f346ed04ee877a4c189ecd661058d6\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="e1bec33f1ec5367e25676638b430b9d585f3dbec">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.2.1_8c5d2174df250dd8368e3605397b4d1b121b8571\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="3627eacd7f7cafb5e8ae683992e7b2f9b7dcab1a">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.2.1_991f947e37612b44db2d917bf70288a460dab668\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.2.1_5ce89abaec411f8a628985cc24abd95074770a8c\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.2.1_11a8a9e4c7d562f6c2f443d4ae70d196fcdcb335\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="07c569a77f437c5c71eac8b1b636a50bebb69a93">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.2.1_8029511315034efaf5be154f511d0a4f2ce8152b\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-9.2.1_ca1bb6c86cfa1c7a5595f889239bfe2073659f70\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="310ef01419435979cc82847cf085799a8d00e7e9">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.2.1_109bab7a9fe1f08eb97abd59f66eddea386d3959\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.davemorrissey.labs\subsampling-scale-image-view\3.4.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="36cea48a105ddeef047b645ab0f86f72993e8676">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.davemorrissey.labs-subsampling-scale-image-view-3.4.1_a5d2a230f1a2ba68e6087267b0fb2a63048947bb\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_ce76bf294192b9648c87fabc872daf4e79b730e2\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="b24c1a80d8ccaecee7b8b80209b4e273dc22b14d">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-9.2.1_afec61bfba1da4e508e05157bdd5493607a48da6\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="77e2e4803396fa79009ace04d9be84184aafcc31">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-9.2.1_da8556a816aa70b09edfd93ffc43c189776e19e1\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.batch.android\batch-sdk\1.5.3\jars\libs\batch.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1429cb79231de1d533ec1c9e0c801e89c8133fc1">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\batch_e40cf918ead2da6332528747af30edac380676b6\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="8aada8a0e9e9b3ecdda5e80f17c6a51a468e302a">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-9.2.1_c43122d01d1152b16fd398d2a940a2c3e1029efb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Mikesh\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_91956568ee1cec017b05d7eb070957d4667939bd\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="4c2b01baa64ba25f8dbdf7f7f828bc5664dab55e">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.2.1_89f6baa715edb13ee68a3d23c01dcebc207b81db\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="9f2282b9fc24f24c69665032dede1bc7201cf006">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-9.2.1_47eeb0777617344befef25f1819309ee33afb773\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="a65d98c9409f271d3209f4cc1f7d8e0391665fa5">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-9.2.1_7dbe0bdceff10220affba53d2102ef4e0dec34ee\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="dd1907a2e855eeb2be8aa3486f3d4d4f1c8b22af">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-9.2.1_347aaafb2629411da8d48096439852dc2d78703b\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.2.1_695692996adb96bd90687440805e5b0a9005bb45\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_add9ce67aafcc6b9b04a78acdac3f83583cd619f\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1141496362c8876f0da4b645fbaf22c0a3618372">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.2.1_ef2776b3a2dd0f1b6205c97c12e48632e77a1db2\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="d4cf4cb5683bcc36a9dba8597bbc1a52d9140ba3">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c89448af128c6bce318f776278603d0429f4d8d3\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_5a6b8d0055a7bb5e1a4c1454b4555f12bfe23cb9\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="0979debb5b4d955ddc0e80bb192f4f00c2f91750">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-9.2.1_cfb386d0685d3cf7944a788e182287811b307e52\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ac78f93fc89c497a65f9d9a352cd405996d2f65a">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.2.1_76f6086325333c5b81ce692a37e53139a6d3bc25\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_fd733801c7920d0ac6a77dbb6869a813e12aa3d9\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="05a2710d284c03087013a667a324c9e2aba5bc91">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-9.2.1_73dbcf32ad819f58b2ccf1cba1a6a9f7a9717946\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_e460a6796d5dacfac7dab102240e5ccd9e68ffec\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="f3b0ff905873c91ab64addba30cc1e77bed34c4d">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-9.2.1_4aca2ab44fa79543fa9c7042580b60139517f681\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="35a01d7cb4ff6b5976777bf5827fd8f206fb8757">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.2.1_b6b1500c1d1578158dbefd78d855658e3d005c65\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Mikesh\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_46dee9fd1ada1fdda4d578353dcb8cf297aa2549\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="152cba5ca28fd4a5191a8577a0fa96d61122041e">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-9.2.1_b952dcc2ca0f3266ff74fa4e632cb0423166f02f\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ee19e33a798d11a5cf309a40155b8223fadcdeea">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.2.1_e5fcfb247ca0104509c05e93fccfd1f38931f0ec\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_6f16a0d8f1ad4f0953fc6132d5f84b6b55266fcd\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="7bb417e9ac8645285342935679e75d371b58b62b">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-9.2.1_cccf9d2c4f072e317beee2ee9d56e7d2b5703c70\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="f06a0705d7b8b9d18b00d056fe0e07bec75514e6">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.2.1_efa523063c9cf1bd0fa2d45afa0999c6c6157b1c\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="48917c60ea81213ea39cbd7123996a5401106dc3">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.2.1_e8650688fdbf08762e0382a7026c515928457afa\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="d41b5d21cc9dd7d210f0ae82ac509ba7f091d611">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.2.1_11c2d213aaf199d860a0ff11b35f09d66e178e16\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="357a8702c49044417d4856861c8f435e7c74ef09">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-9.2.1_4274a74a0983ef2d5cc08338aebbbf4a23f593f3\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ee409046028e5657a2a69edaa2eba00d6511a74c">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.2.1_dc63ce8d7d08ed664f29a2518ace493e4e9948b5\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\libs\Parse-1.10.1.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="181b435832725bec96c11ff568bdfbccdacab944">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\2\Parse-1.10.1_c94f040c0a19cc8b6be13567677abf8a8f535481\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_fdfd2e09d2491699be28ee615f4d9f45a2e8e864\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.batch.android\batch-sdk\1.5.3\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="e36e6582217bb22ae37cb7fca1c18e8b82a72cb4">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.batch.android-batch-sdk-1.5.3_1a52801ef021583005b6e0daed72ad229f3c85e0\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_2e1e26aa0a67e94fa3bd07a15cefb984353d189b\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-contextmanager\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ccc963cafe59ce185c49f47baff7eedcb8589bdf">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-contextmanager-9.2.1_2bd16e9aab1e7c4f272f58f6e4b763db736d79ad\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_e433d016c7fee87490e935280ece858df4fa6fc9\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="428c9bac95b2f72921224e289553a04bea61cda5">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.2.1_04b73be0012153b36223b6ccc4da8fff8be9d033\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="05d2e01f33fb2097b51fce3f938dc37a75fe2d6b">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.2.1_57a90b58525a84e6d325c0b878f3c0e0cf4f7625\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="edf9a22ebf25281619265079aec8f5d433da1a5c">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-9.2.1_cda9eb880b6baeb50a3db8a51061f8b78bd016f7\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-9.2.1_14fefc378f357bd9abdd1f722599a1fb5b679770\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="2506c5893e125e2f9cfc522378e893620c21b109">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.2.1_d496df682102e01bf8f215069e7904006be520b9\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="36e2b438f9b0d68fb2482c8f389e249e32840cff">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.2.1_33cdb4e4b6e50cb2f31f6a7dc6c97fedb6dcde52\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="d064f813cd835f17853e39221b247cf6a997a2db">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-9.2.1_b569f9dbcfef5253017170e3defcdf11ed6e95d9\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.2.1_1d21d3a641fa18add6d47225c64907a7c51e0438\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="bbd51be332bace144b3d16501ec0af379c3c8750">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.2.1_66ba3dd5d8e6adb5aa47d145b549627f64e2110b\classes.dex" />
+    </item>
+    <item
+        jar="G:\NHSF-Android-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="6a0f2d219f82db499ac03d5a985c4eb3e83fc422">
+        <dex dex="G:\NHSF-Android-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.2.1_63776f5c1b281467cfb066325fa3e4680871d81f\classes.dex" />
+    </item>
+
+</items>
