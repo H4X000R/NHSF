@@ -4,7 +4,8 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
                 android:background="?android:selectableItemBackground"
-                android:clickable="true">
+                android:clickable="true"
+              android:navigationBarColor="@android:color/transparent">
 
     <TextView
         android:id="@+id/listText"
