@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/NHSF-App.iml" filepath="$PROJECT_DIR$/NHSF-App.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-pdfview/android-pdfview.iml" filepath="$PROJECT_DIR$/android-pdfview/android-pdfview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asyncTaskJson/asyncTaskJson.iml" filepath="$PROJECT_DIR$/asyncTaskJson/asyncTaskJson.iml" />
     </modules>
   </component>
 </project>

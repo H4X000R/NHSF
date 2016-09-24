@@ -3,7 +3,7 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fitsSystemWindows="true">
 
     <!--
@@ -35,8 +35,9 @@
         app:backgroundTint="@color/md_orange_500"
         android:src="@mipmap/ic_create_white_24dp"
         android:clickable="true"
-        android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
-        android:layout_marginBottom="20dp" android:layout_marginRight="20dp"/>
+        android:layout_marginBottom="28dp" android:layout_marginRight="19dp"
+        android:layout_marginTop="480dp"
+        android:layout_alignParentRight="true"/>
 
     <!-- </RelativeLayout> -->
 

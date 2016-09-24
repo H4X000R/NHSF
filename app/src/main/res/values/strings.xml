@@ -30,6 +30,7 @@
     <string name="title_activity_NHSFKingstonImage">NHSF Kingston</string>
     <string name="title_activity_NHSFLeedsImage">NHSF Leeds</string>
     <string name="title_activity_NHSFLeicesterImage">NHSF Leicester</string>
+    <string name="title_activity_NHSFLincolnImage">NHSF Lincoln</string>
     <string name="title_activity_NHSFLiverpoolImage">NHSF Liverpool</string>
     <string name="title_activity_NHSFLoughboroughImage">NHSF Loughborough</string>
     <string name="title_activity_NHSFLSBUImage">NHSF LSBU</string>
@@ -119,10 +120,17 @@
         <item>SEWA</item>
     </string-array>
     <string name="title_activity_maps">Map</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <!--
     <string name="title_activity_splash">SplashActivity</string>
 
     <string name="hello_world">Hello world!</string>
     -->
+
 
 </resources>

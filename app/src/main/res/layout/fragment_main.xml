@@ -5,4 +5,5 @@
           android:textColor="@color/basePrimaryBackgroundColour"
           android:textSize="20sp"
           android:gravity="center"
+          android:orientation="vertical"
           android:text=" The page Number is 1"/>
