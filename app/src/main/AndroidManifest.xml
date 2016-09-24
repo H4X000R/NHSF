@@ -37,7 +37,9 @@
 
         <activity
             android:name=".SplashActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -46,7 +48,9 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
 
             <!--
             android:parentActivityName=".SplashActivity">
@@ -133,15 +137,6 @@
         <activity
             android:name=".tabs.campus.NHSFBPPImageActivity"
             android:label="@string/title_activity_NHSFBPPImage">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".tabs.campus.NHSFBradfordImageActivity"
-            android:label="@string/title_activity_NHSFBradfordImage">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW"/>
 
@@ -320,6 +315,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".tabs.campus.NHSFLincolnImageActivity"
+            android:label="@string/title_activity_NHSFLincolnImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".tabs.campus.NHSFLiverpoolImageActivity"
             android:label="@string/title_activity_NHSFLiverpoolImage">
             <intent-filter>
@@ -437,7 +441,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".tabs.campus.NHSFReadingImageActivity"
+            android:name=".tabs.campus.NHSFreadingImageActivity"
             android:label="@string/title_activity_NHSFReadingImage">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW"/>
@@ -538,15 +542,6 @@
         <activity
             android:name=".tabs.campus.NHSFWestminsterImageActivity"
             android:label="@string/title_activity_NHSFWestminsterImage">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".tabs.campus.NHSFYorkImageActivity"
-            android:label="@string/title_activity_NHSFYorkImage">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW"/>
 
