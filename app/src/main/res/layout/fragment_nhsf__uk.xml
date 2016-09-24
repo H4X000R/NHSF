@@ -2,15 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONTENT COMMING SOON"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:src="@drawable/alumni" >
+        </ImageView>
 
 
 </RelativeLayout>

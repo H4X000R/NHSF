@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TestSlidingTab.iml" filepath="$PROJECT_DIR$/TestSlidingTab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NHSF-App.iml" filepath="$PROJECT_DIR$/NHSF-App.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-pdfview/android-pdfview.iml" filepath="$PROJECT_DIR$/android-pdfview/android-pdfview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
