@@ -1,7 +1,8 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"> <!--No Action Bar as the main theme is being replaced by custom Theme-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"><!--No Action Bar as the main theme is being replaced by custom Theme-->
+    <item name="android:navigationBarColor" tools:targetApi="21">@color/baseSecondaryBackgroundColour</item>
     </style>
     <!-- Customize your theme here. -->
 
