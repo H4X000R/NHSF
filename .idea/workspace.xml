@@ -21,18 +21,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fe990d7-9e4e-4245-b098-33f05b614505" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/compileDebugAidl/dependency.store" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/compileDebugAndroidTestAidl/dependency.store" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/alumni_jpg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/generated/source/buildConfig/androidTest/debug/com/joanzapata/pdfview/test/BuildConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/generated/source/buildConfig/debug/com/joanzapata/pdfview/BuildConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NHSF-App.iws" />
@@ -3840,7 +3828,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474762007577</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Code for making bottom status bar same colour as top toolbar does not work ... appears to be firmware  preventing the colour to change for bottom navigation tried on 5.0 lollipop (LG D885 &quot;G3&quot; )and 6.0 Marshmellow (Nexus7) both with developer mode unlocked and enabled and disabled. Updated code on nhsf_fragment_uk to match_parent for width and height to fix image scaling issue on large screen device. This now works app runs smoothly no app crashes">
+      <created>1474762067541</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1474762067541</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
