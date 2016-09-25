@@ -2,7 +2,11 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <devices>
+          <device id="7in WSVGA (Tablet)" />
+        </devices>
+      </config>
     </shared>
     <layouts>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
@@ -16,340 +20,20 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe990d7-9e4e-4245-b098-33f05b614505" name="Default" comment="Added newly affiliated chapter NHSF Lincoln and added code for making bottom status bar same colour as top toolbar but this does not work ... looks like firmware issue preventing colour change looking into this issue">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Parse_1_10_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/PhotoView_1_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_19.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/batch_sdk_1_5_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_23_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/picasso_2_5_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/subsampling_scale_image_view_3_4_1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_android-pdfview_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_android-pdfview_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_android-pdfview_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_android-pdfview_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/res/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/build/outputs/aar/android-pdfview-debug.aar" afterPath="$PROJECT_DIR$/android-pdfview/build/outputs/aar/android-pdfview-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/build/outputs/aar/android-pdfview-release.aar" afterPath="$PROJECT_DIR$/android-pdfview/build/outputs/aar/android-pdfview-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-release.apk" afterPath="$PROJECT_DIR$/app/app-release.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_aston.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_aston.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_birmingham.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_birmingham.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_greenwich.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_greenwich.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_hull.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_hull.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_lincoln.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_lincoln.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_manchester.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_manchester.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_medway.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nhsf_medway.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="6fe990d7-9e4e-4245-b098-33f05b614505" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/compileDebugAidl/dependency.store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/compileDebugAndroidTestAidl/dependency.store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/alumni_jpg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/generated/source/buildConfig/androidTest/debug/com/joanzapata/pdfview/test/BuildConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/generated/source/buildConfig/debug/com/joanzapata/pdfview/BuildConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/packageDebugResources/merger.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NHSF-Android-master.iml" afterPath="$PROJECT_DIR$/NHSF-Android-master.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NHSF-App.iml" afterPath="$PROJECT_DIR$/NHSF-App.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android-pdfview/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/android-pdfview.iml" afterPath="$PROJECT_DIR$/android-pdfview/android-pdfview.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/build.gradle" afterPath="$PROJECT_DIR$/android-pdfview/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/android-pdfview/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/pom.xml" afterPath="$PROJECT_DIR$/android-pdfview/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/project.properties" afterPath="$PROJECT_DIR$/android-pdfview/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/res/.gitignore" afterPath="$PROJECT_DIR$/android-pdfview/res/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/src/main/java/com/joanzapata/pdfview/exception/FileNotFoundException.java" afterPath="$PROJECT_DIR$/android-pdfview/src/main/java/com/joanzapata/pdfview/exception/FileNotFoundException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-pdfview/src/main/java/com/joanzapata/pdfview/util/FileUtils.java" afterPath="$PROJECT_DIR$/android-pdfview/src/main/java/com/joanzapata/pdfview/util/FileUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="$PROJECT_DIR$/app/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/asyncTaskJson.iml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/asyncTaskJson.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/generated/source/buildConfig/androidTest/debug/learn2crack/asynctask/test/BuildConfig.java" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/generated/source/buildConfig/androidTest/debug/learn2crack/asynctask/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/generated/source/buildConfig/debug/learn2crack/asynctask/BuildConfig.java" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/generated/source/buildConfig/debug/learn2crack/asynctask/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/multi/values-sw720dp-land-v13.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/multi/values-sw720dp-land-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/multi/values-v11.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/multi/values-v11.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/multi/values-v14.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/multi/values-v14.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/menu.json" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/blame/res/debug/single/menu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/menu/main.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/values-v11/values-v11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/values-v14/values-v14.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/values-v14/values-v14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/asyncTaskJson/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/java/learn2crack/asynctask/MainActivity.java" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/java/learn2crack/asynctask/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/java/learn2crack/asynctask/library/JSONParser.java" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/java/learn2crack/asynctask/library/JSONParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values-sw600dp/dimens.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values-sw600dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values-sw720dp-land/dimens.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values-sw720dp-land/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values-v11/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values-v14/styles.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values-v14/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/asyncTaskJson/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/proguard-rules.pro" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/divyeshbc/NHSF/ApplicationTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/divyeshbc/NHSF/ApplicationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" afterPath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/BaseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/Chapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/Chapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/Information.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/Information.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/MainActivityFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/MainActivityFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/MapsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/MapsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/NHSF_UK.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/NHSF_UK.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/ParseApplication.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/ParseApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/RecyclerItemClickListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/RecyclerItemClickListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/SplashActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/SubInformation.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/SubInformation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/DividerItemDecoration.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/DividerItemDecoration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/SlidingTabLayout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/SlidingTabLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/SlidingTabStrip.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/SlidingTabStrip.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/AdminTeamActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/AdminTeamActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/IntroductionActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/IntroductionActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/JSONAdminItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/JSONAdminItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/JSONTCItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/JSONTCItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/NationalCommitteeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/NationalCommitteeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/RecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/RecyclerViewAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/RecyclerViewAdapterAdminTeam.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/RecyclerViewAdapterAdminTeam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/RecyclerViewAdapterNationalCommiitee.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/RecyclerViewAdapterNationalCommiitee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/RecyclerViewAdapterTC.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/RecyclerViewAdapterTC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/Tab1.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/Tab1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/TeamCoordinatorsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/aboutUs/TeamCoordinatorsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/CardViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/CardViewAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/ChapterImageHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/ChapterImageHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFAstonImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFAstonImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBCUImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBCUImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBPPImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBPPImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBirminghamImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBirminghamImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBradfordImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBradfordImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBrightonImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBrightonImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBristolImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBristolImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBrunelImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBrunelImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBucksImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFBucksImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFCityImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFCityImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFCoventryImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFCoventryImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFDMUImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFDMUImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFExeterImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFExeterImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFGreenwichImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFGreenwichImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFHertfordshireImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFHertfordshireImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFHuddersfieldImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFHuddersfieldImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFHullImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFHullImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFImperialImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFImperialImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFKCLImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFKCLImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFKeeleImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFKeeleImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFKentImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFKentImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFKingstonImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFKingstonImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLSBUImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLSBUImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLSEImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLSEImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLeedsImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLeedsImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLeicesterImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLeicesterImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLincolnImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLincolnImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLiverpoolImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLiverpoolImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLoughboroughImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFLoughboroughImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFManchesterImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFManchesterImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFMedwayImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFMedwayImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFNTUImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFNTUImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFNorthamptonImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFNorthamptonImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFNorthumbriaImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFNorthumbriaImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFNottinghamImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFNottinghamImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFPlymouthImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFPlymouthImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFPortsmouthImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFPortsmouthImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFQMULImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFQMULImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFRHULImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFRHULImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFRoehamptonImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFRoehamptonImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSGULImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSGULImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSOASImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSOASImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSheffieldImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSheffieldImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSouthamptonImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSouthamptonImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSwanseaImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFSwanseaImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFUEAImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFUEAImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFUWEImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFUWEImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFWarwickImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFWarwickImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFWestminsterImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFWestminsterImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFYorkImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFYorkImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFreadingImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/NHSFreadingImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/Tab2.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/campus/Tab2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/events/EventsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/events/EventsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/events/JSONEventsItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/events/JSONEventsItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/events/RecyclerViewAdapterEvents.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/events/RecyclerViewAdapterEvents.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/events/Tab3.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/events/Tab3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/BellActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/BellActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/BhagavadGitaActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/BhagavadGitaActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/DiwaliActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/DiwaliActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/DussheraActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/DussheraActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/FastActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/FastActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/FestivalsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/FestivalsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/GaneshChaturthiActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/GaneshChaturthiActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/GuruPurnimaActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/GuruPurnimaActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HUMActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HUMActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HanumanJayantiActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HanumanJayantiActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HinduBasicsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HinduBasicsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HinduismPrimerTopicActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HinduismPrimerTopicActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HoliActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/HoliActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/ImportantDatesActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/ImportantDatesActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/JSONImportantDateItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/JSONImportantDateItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/JanToJuneActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/JanToJuneActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/JanmashtamiActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/JanmashtamiActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/JulyToDecActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/JulyToDecActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/LotusActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/LotusActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/MahashivratriActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/MahashivratriActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/MakarSankrantiActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/MakarSankrantiActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/MustKnowMantrasActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/MustKnowMantrasActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/MustReadActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/MustReadActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/NavratriActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/NavratriActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/PradakshinaActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/PradakshinaActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/QuestionsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/QuestionsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RakshaBandhanActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RakshaBandhanActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RamnavmiActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RamnavmiActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RealQuestionsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RealQuestionsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterFestivals.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterFestivals.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterImportantDates.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterImportantDates.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterJanToJune.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterJanToJune.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterJulyToDec.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterJulyToDec.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterLearning.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterLearning.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterMustRead.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterMustRead.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterWhatIsHinduism.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterWhatIsHinduism.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterWhyDoWe.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/RecyclerViewAdapterWhyDoWe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/Tab4.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/Tab4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/TreesPlantsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/TreesPlantsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/WhatIsHinduismActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/WhatIsHinduismActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/WhyDoWeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/learning/WhyDoWeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/ATrulySelflessBeingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/ATrulySelflessBeingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/EnoughFoodActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/EnoughFoodActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/EventsOnAPlateActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/EventsOnAPlateActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/HelpTheHomelessActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/HelpTheHomelessActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/IndiasPoorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/IndiasPoorActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/MakeTheHomelessActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/MakeTheHomelessActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/NationalCharityActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/NationalCharityActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/NationalDonationDayActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/NationalDonationDayActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RachelBeckwithActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RachelBeckwithActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RecyclerViewAdapterSewa.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RecyclerViewAdapterSewa.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RecyclerViewAdapterSewaCampaigns.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RecyclerViewAdapterSewaCampaigns.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RecyclerViewAdapterSewaInspiration.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RecyclerViewAdapterSewaInspiration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RecyclerViewAdapterSewaVideos.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/RecyclerViewAdapterSewaVideos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaBankActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaBankActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaCampaignsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaCampaignsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaDayActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaDayActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaGuideActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaGuideActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaInspirationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaInspirationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaQuotesActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaQuotesActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaVideoImage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaVideoImage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaVideosActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaVideosActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaWeekActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/SewaWeekActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/ShareCareJoyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/ShareCareJoyActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/ShareMyDabbaActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/ShareMyDabbaActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/Tab5.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/Tab5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/WaterChangesEverythingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/tabs/sewa/WaterChangesEverythingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/color/colour_state.xml" afterPath="$PROJECT_DIR$/app/src/main/res/color/colour_state.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v21/custom_bg.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v21/custom_bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/custom_bg.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/admin_team.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/admin_team.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/chapter_image_zoom.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/chapter_image_zoom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_row.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_row.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_admin.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_admin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_important_dates.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_important_dates.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_learning.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_learning.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_natcom.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_natcom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_sewa.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_sewa.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_sewa_videos.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_sewa_videos.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_tc.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_row_tc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_tab_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_tab_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/event_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/event_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/event_details2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/event_details2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/events_plate.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/events_plate.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/festivals.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/festivals.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_nhsf__uk.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_nhsf__uk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/hinduism_made_simple.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/hinduism_made_simple.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/hum_magazine.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/hum_magazine.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/important_dates.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/important_dates.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/jan_to_june.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/jan_to_june.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/july_to_dec.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/july_to_dec.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/must_read.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/must_read.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/natcom_tc.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/natcom_tc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/national_committee.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/national_committee.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/navigation_drawer_header.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/navigation_drawer_header.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sewa_campaigns.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sewa_campaigns.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sewa_inspiration.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sewa_inspiration.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sewa_videos.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sewa_videos.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/splash.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/splash.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tab_1.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tab_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tab_2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tab_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tab_3.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tab_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tab_4.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tab_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tab_5.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tab_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/what_is_nhsf.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/what_is_nhsf.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/why_do_we.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/why_do_we.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/wordpress_feed_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/wordpress_feed_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/intro_pdf_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/intro_pdf_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_email.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_email.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_events.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_events.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_splash.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_splash.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/all_colours.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/all_colours.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colour_theme.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colour_theme.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml" afterPath="$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asyncTaskJson/asyncTaskJson.iml" afterPath="$PROJECT_DIR$/asyncTaskJson/asyncTaskJson.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/.classpath" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/.project" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/AndroidManifest.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/bin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/bin/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/gen/learn2crack/asynctask/BuildConfig.java" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/gen/learn2crack/asynctask/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/gen/learn2crack/asynctask/R.java" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/gen/learn2crack/asynctask/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/proguard-project.txt" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/proguard-project.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/project.properties" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/menu/main.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values-sw600dp/dimens.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values-sw600dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values-sw720dp-land/dimens.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values-sw720dp-land/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values-v11/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values-v14/styles.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values-v14/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values/dimens.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values/strings.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values/styles.xml" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/src/learn2crack/asynctask/MainActivity.java" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/src/learn2crack/asynctask/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/src/learn2crack/asynctask/library/JSONParser.java" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/AsyncTaskJson/src/learn2crack/asynctask/library/JSONParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asynctask_json/asynctask_json/JSON/index.php" afterPath="$PROJECT_DIR$/asynctask_json/asynctask_json/JSON/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editor.xml" afterPath="$PROJECT_DIR$/editor.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectFilesBackup/.idea/workspace.xml" afterPath="$PROJECT_DIR$/projectFilesBackup/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="NHSF-App.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -381,7 +65,21 @@
     <favorites_list name="NHSF-App" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="fragment_nhsf__uk.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_nhsf__uk.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -3490,9 +3188,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/BaseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/divyeshbc/NHSF/SplashActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_nhsf__uk.xml" />
         <option value="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_nhsf__uk.xml" />
       </list>
     </option>
   </component>
@@ -3513,7 +3211,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -3530,27 +3228,117 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="TestSlidingTab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="TestSlidingTab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NHSF-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestSlidingTab" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestSlidingTab" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestSlidingTab" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestSlidingTab" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="color" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestSlidingTab" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="AndroidView">
-        <subPane />
       </pane>
       <pane id="Scratches" />
     </panes>
@@ -4038,7 +3826,21 @@
       <option name="project" value="LOCAL" />
       <updated>1474677410823</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added newly affiliated chapter NHSF Lincoln and added code for making bottom status bar same colour as top toolbar but this does not work ... looks like firmware issue preventing colour change looking into this issue">
+      <created>1474759353022</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1474759353022</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Code for making bottom status bar same colour as top toolbar does not work ... appears to be firmware  preventing the colour to change for bottom navigation tried on 5.0 lollipop (LG D885 &quot;G3&quot; )and 6.0 Marshmellow (Nexus7) both with developer mode unlocked and enabled and disabled. Updated code on nhsf_fragment_uk to match_parent for width and height to fix image scaling issue on large screen device. This now works app runs smoothly no app crashes">
+      <created>1474762007577</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1474762007577</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -4054,29 +3856,30 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24079755" sideWeight="0.44704992" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4077156" sideWeight="0.3070707" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24079755" sideWeight="0.5529501" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.48865354" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24079755" sideWeight="0.44704992" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24079755" sideWeight="0.5529501" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.48865354" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19515885" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.48487142" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297546" sideWeight="0.48487142" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4077156" sideWeight="0.69292927" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4084,7 +3887,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14901665" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -4108,23 +3910,14 @@
     <MESSAGE value="Updated Chapters - Lincoln Image crashing app when tapped on and navigation not changing colour" />
     <MESSAGE value="Updated Chapters - Lincoln Image crashing app when tapped on and navigation not changing colour (Take a look at android manifest activity for NHSFLincolnImageActivity&quot;)" />
     <MESSAGE value="Added newly affiliated chapter NHSF Lincoln and added code for making bottom status bar same colour as top toolbar but this does not work ... looks like firmware issue preventing colour change looking into this issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added newly affiliated chapter NHSF Lincoln and added code for making bottom status bar same colour as top toolbar but this does not work ... looks like firmware issue preventing colour change looking into this issue" />
+    <MESSAGE value="Code for making bottom status bar same colour as top toolbar does not work ... appears to be firmware  preventing the colour to change for bottom navigation tried on 5.0 lollipop (LG D885 &quot;G3&quot; )and 6.0 Marshmellow (Nexus7) both with developer mode unlocked and enabled and disabled. Updated code on nhsf_fragment_uk to match_parent for width and height to fix image scaling issue on large screen device. This now works app runs smoothly no app crashes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code for making bottom status bar same colour as top toolbar does not work ... appears to be firmware  preventing the colour to change for bottom navigation tried on 5.0 lollipop (LG D885 &quot;G3&quot; )and 6.0 Marshmellow (Nexus7) both with developer mode unlocked and enabled and disabled. Updated code on nhsf_fragment_uk to match_parent for width and height to fix image scaling issue on large screen device. This now works app runs smoothly no app crashes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_tab_view.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/event_details.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -4391,20 +4184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -4519,16 +4298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_nhsf__uk.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/asyncTaskJson/asyncTaskJson.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -4552,6 +4321,38 @@
       </provider>
       <provider editor-type-id="android-manifest">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/alumni_jpg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_nhsf__uk.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
