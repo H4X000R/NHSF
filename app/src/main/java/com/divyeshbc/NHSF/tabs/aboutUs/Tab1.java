@@ -64,7 +64,7 @@ public class Tab1 extends Fragment implements RecyclerViewAdapter.ClickListener{
         List<Information> data = new ArrayList<>();
 
         //String array of text for the recycler view
-        String[] text = {"Introduction", "National Committee (Natcom)"};
+        String[] text = {"Introduction", "National Committee (NatCom)"};
         String[] subText = {"What is NHSF?", "Admin Team and Team Coordinators"};
 
         //For loop to go through entire length of the menu string
