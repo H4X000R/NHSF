@@ -1,8 +1,9 @@
 <application>
-  <component name="FileTypeManager" version="16">
+  <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="alumi" type="Images" />
       <mapping pattern="alumni_page_collage" type="Images" />
+      <mapping pattern="*.xml (v2.1)" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
