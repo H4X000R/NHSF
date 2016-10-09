@@ -8,42 +8,17 @@ repositories {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 23
     buildToolsVersion "24.0.2"
 
     defaultConfig {
-        minSdkVersion 22
-        targetSdkVersion 24
-    }
-
-    // based on http://stackoverflow.com/a/27372806/115145
-
-    applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            output.processManifest.doLast {
-                def manifestOutFile = output.processManifest.manifestOutputFile
-                def xml = new XmlParser().parse(manifestOutFile)
-                def usesSdk = xml.'uses-sdk'
-
-                usesSdk.replaceNode{
-                    'uses-sdk'('android:minSdkVersion': '22',
-                            'android:targetSdkVersion': '24')
-                }
-
-                def fw=new FileWriter(manifestOutFile.toString())
-
-                new XmlNodePrinter(new PrintWriter(fw)).print(xml)
-            }
-        }
-    }
-
-
-    defaultConfig {
         applicationId "com.divyeshbc.NHSF"
+        minSdkVersion 19
+        targetSdkVersion 23
         versionCode 6
-        versionName "3.0.1"
-        // Enabling multidex support.
+        versionName "7.0"
         multiDexEnabled true
+
     }
     buildTypes {
         release {
@@ -51,30 +26,25 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    dexOptions {
-        incremental true
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
-    }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
     compile project(':android-pdfview')
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:design:24.2.1'
-    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.android.support:cardview-v7:24.2.1'
-    compile 'com.batch.android:batch-sdk:1.5.+'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.batch.android:batch-sdk:1.5+'
     compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.4.1'
     compile 'com.commit451:PhotoView:1.2.4'
-    compile 'com.google.android.gms:play-services:9.6.1'
-    compile 'com.google.android.gms:play-services-ads:9.6.1'
-    compile 'com.google.android.gms:play-services-identity:9.6.1'
-    compile 'com.google.android.gms:play-services-gcm:9.6.1'
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-identity:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+
+
 }

@@ -11,11 +11,22 @@
     card_view:cardElevation="5.5sp"
     android:navigationBarColor="@android:color/transparent">
 
-    <ImageView
+
+    <WebView
+        android:id="@+id/mainwebview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/alumni_jpg"
-        tools:ignore="ContentDescription" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </WebView>
+
+
+    <!--   <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scaleType="fitXY"
+           android:src="@drawable/alumni_jpg"
+           tools:ignore="ContentDescription" /> -->
 
 </RelativeLayout>
