@@ -296,7 +296,7 @@ public class Tab2 extends Fragment {
                 "nothampton@nhsf.org.uk",
 
                 // -- NHSF NORTHUMBRIA --
-                "northumbria@nhsf.org.uk",
+                "loughborough@nhsf.org.uk",
 
                 // -- NHSF NOTTINGHAM --
                 "nottingham@nhsf.org.uk",
