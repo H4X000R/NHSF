@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.WindowManager;
 
+import com.divyeshbc.NHSF.tabs.AR17;
 import com.divyeshbc.NHSF.tabs.WellWisher;
 import com.divyeshbc.NHSF.tabs.aboutUs.Tab1;
 import com.divyeshbc.NHSF.tabs.campus.Tab2;
@@ -122,10 +123,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.nav_tab_7:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new WellWisher());
+                        fragmentTransaction.replace(R.id.main_container, new AR17());
                         fragmentTransaction.commit();
                         drawerLayout.closeDrawers();
-                        getSupportActionBar().setTitle("Well Wisher");
+                        getSupportActionBar().setTitle("Ambition Run 2017");
                         item.setChecked(true);
                         break;
                 }
