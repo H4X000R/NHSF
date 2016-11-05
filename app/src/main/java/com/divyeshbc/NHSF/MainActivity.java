@@ -111,22 +111,6 @@ public class MainActivity extends AppCompatActivity {
                         getSupportActionBar().setTitle("Sewa");
                         item.setChecked(true);
                         break;
-                    case R.id.nav_tab_6:
-                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new Alumni());
-                        fragmentTransaction.commit();
-                        drawerLayout.closeDrawers();
-                        getSupportActionBar().setTitle("Alumni");
-                        item.setChecked(true);
-                        break;
-                    case R.id.nav_tab_7:
-                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new WellWisher());
-                        fragmentTransaction.commit();
-                        drawerLayout.closeDrawers();
-                        getSupportActionBar().setTitle("Well Wisher");
-                        item.setChecked(true);
-                        break;
                 }
                 return false;
             }

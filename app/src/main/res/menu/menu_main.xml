@@ -32,16 +32,6 @@
             android:title="Sewa"
             android:icon="@drawable/sewa"
       ></item>
-      <item
-      android:id="@+id/nav_tab_6"
-      android:icon="@drawable/ic_cast_light"
-      android:title="Alumni"
-          ></item>
-      <item
-          android:id="@+id/nav_tab_7"
-          android:icon="@drawable/ic_cast_dark"
-          android:title="Well Wisher"
-          ></item>
 
       </group>
 </menu>

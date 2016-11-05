@@ -22,14 +22,6 @@
             android:id="@+id/nav_tab_5"
             android:icon="@drawable/sewa"
             android:title="SEWA" />
-        <item
-            android:id="@+id/nav_tab_6"
-            android:icon="@drawable/ic_cast_light"
-            android:title="ALUMNI" />
-        <item
-            android:id="@+id/nav_tab_7"
-            android:icon="@drawable/ic_cast_light"
-            android:title="Well Wisher" />
     </group>
 
 </menu>
