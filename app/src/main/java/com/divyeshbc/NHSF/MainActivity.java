@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.WindowManager;
 
+import com.divyeshbc.NHSF.tabs.WellWisher;
 import com.divyeshbc.NHSF.tabs.aboutUs.Tab1;
 import com.divyeshbc.NHSF.tabs.campus.Tab2;
 import com.divyeshbc.NHSF.tabs.events.Tab3;
@@ -109,6 +110,22 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.commit();
                         drawerLayout.closeDrawers();
                         getSupportActionBar().setTitle("Sewa");
+                        item.setChecked(true);
+                        break;
+                    case R.id.nav_tab_6:
+                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.main_container, new WellWisher());
+                        fragmentTransaction.commit();
+                        drawerLayout.closeDrawers();
+                        getSupportActionBar().setTitle("Well Wisher");
+                        item.setChecked(true);
+                        break;
+                    case R.id.nav_tab_7:
+                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.main_container, new WellWisher());
+                        fragmentTransaction.commit();
+                        drawerLayout.closeDrawers();
+                        getSupportActionBar().setTitle("Well Wisher");
                         item.setChecked(true);
                         break;
                 }
