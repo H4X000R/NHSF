@@ -16,7 +16,10 @@ import java.util.ArrayList;
 
 /**
  * Created by DivyeshBC on 25/05/15.
+ *
+ * v7.0 - 01/01/17 - Adding NHSF Anglia Rusking and NHSF Wolverhampton
  */
+
 public class Tab2 extends Fragment {
 
     private RecyclerView mRecyclerView;
@@ -83,15 +86,15 @@ public class Tab2 extends Fragment {
 
     public void setChapters() {
 
-        final String[] affiliatedChapters = {"NHSF Aston", "NHSF BCU", "NHSF Birmingham", "NHSF BPP",
+        final String[] affiliatedChapters = {"NHSF Anglia Ruskin", "NHSF Aston", "NHSF BCU", "NHSF Birmingham", "NHSF BPP",
                 "NHSF Brighton", "NHSF Bristol", "NHSF Brunel", "NHSF Bucks New Uni", "NHSF City", "NHSF Coventry",
                 "NHSF DMU", "NHSF Exeter", "NHSF Greenwich", "NHSF Hertfordshire", "NHSF Huddersfield", "NHSF Hull", "NHSF Imperial",
                 "NHSF KCL", "NHSF Keele", "NHSF Kent", "NHSF Kingston", "NHSF Leeds", "NHSF Leicester", "NHSF Lincoln", "NHSF Liverpool", "NHSF Loughborough",
                 "NHSF LSBU", "NHSF LSE", "NHSF Manchester", "NHSF Medway", "NHSF Northampton", "NHSF Northumbria", "NHSF Nottingham",
                 "NHSF NTU", "NHSF Plymouth", "NHSF Portsmouth", "NHSF QMUL", "NHSF Reading", "NHSF RHUL", "NHSF Roehampton", "NHSF SGUL",
-                "NHSF Sheffield", "NHSF Southampton", "NHSF Swansea", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster"};
+                "NHSF Sheffield", "NHSF Southampton", "NHSF Swansea", "NHSF UEA", "NHSF UWE", "NHSF Warwick", "NHSF Westminster", "NHSF Wolverhampton"};
 
-        final int[] logos = {R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_brighton,
+        final int[] logos = {R.drawable.nhsf_anglia_ruskin, R.drawable.nhsf_aston, R.drawable.nhsf_bcu, R.drawable.nhsf_birmingham, R.drawable.nhsf_bpp, R.drawable.nhsf_brighton,
                 R.drawable.nhsf_bristol, R.drawable.nhsf_brunel, R.drawable.nhsf_bucks_new_uni, R.drawable.nhsf_city, R.drawable.nhsf_coventry,
                 R.drawable.nhsf_dmu, R.drawable.nhsf_exeter, R.drawable.nhsf_greenwich, R.drawable.nhsf_hertfordshire, R.drawable.nhsf_huddersfield,
                 R.drawable.nhsf_hull, R.drawable.nhsf_imperial, R.drawable.nhsf_kcl, R.drawable.nhsf_keele, R.drawable.nhsf_kent, R.drawable.nhsf_kingston,
@@ -99,9 +102,11 @@ public class Tab2 extends Fragment {
                 R.drawable.nhsf_manchester, R.drawable.nhsf_medway, R.drawable.nhsf_northampton, R.drawable.nhsf_northumbria, R.drawable.nhsf_nottingham,
                 R.drawable.nhsf_ntu, R.drawable.nhsf_plymouth, R.drawable.nhsf_portsmouth, R.drawable.nhsf_qmul, R.drawable.nhsf_reading, R.drawable.nhsf_rhul,
                 R.drawable.nhsf_roehampton, R.drawable.nhsf_sgul, R.drawable.nhsf_sheffield, R.drawable.nhsf_southampton, R.drawable.nhsf_swansea,
-                R.drawable.nhsf_uea, R.drawable.nhsf_uwe, R.drawable.nhsf_warwick, R.drawable.nhsf_westminster};
+                R.drawable.nhsf_uea, R.drawable.nhsf_uwe, R.drawable.nhsf_warwick, R.drawable.nhsf_westminster, R.drawable.nhsf_wolverhampton};
 
         final String[] zones = {
+                //NHSF Anglia Ruskin - v7.0
+                "South Zone - Coordinator: Devisha Karadia",
                 //NHSF Aston
                 "Central Zone - Coordinator: Harshil Shah",
                 //NHSF BCU
@@ -197,11 +202,16 @@ public class Tab2 extends Fragment {
                 //NHSF WARWICK
                 "Central Zone - Coordinator: Harshil Shah",
                 //NHSF WESTMINSTER
-                "London Zone - Coordinator: Shivani Chudasama"
+                "London Zone - Coordinator: Shivani Chudasama",
+                //NHSF WOLVERHAMPTON -- v7.0
+                "Central Zone - Coordinator: Harshil Shah"
         };
 
 
         final String[] chapterCommittees = {
+                //--NHSF ANGLIA RUSKIN v7.0 --
+                "angliaruskin@nhsf.org.uk",
+
                 //--NHSF ASTON --
                 "aston@nhsf.org.uk",
 
@@ -346,6 +356,8 @@ public class Tab2 extends Fragment {
                 // -- NHSF WESTMINSTER --
                 "westminister@nhsf.org.uk",
 
+                //-- NHSF WOLVERHAMPTON v7.0 --
+                "wolves@nhsf.org.uk"
         };
 
 

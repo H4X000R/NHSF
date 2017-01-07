@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/chapterZone"
             android:padding="8dp"
-            android:textColor="@color/md_orange_700"
+            android:textColor="@color/md_yellow_700"
             android:textSize="14dp"
             android:text=""
             android:autoLink="email"

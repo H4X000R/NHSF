@@ -2,35 +2,46 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
       <group android:checkableBehavior="single">
-            <item
+
+                  <item
                   android:id="@+id/nav_home"
                   android:title="Home"
-                  android:icon="@drawable/house"
+                  android:icon="@drawable/home_white"
             ></item>
             <item
           android:id="@+id/nav_tab1"
           android:title="About Us"
-          android:icon="@drawable/about_us1"
+          android:icon="@drawable/about_us_white"
       ></item>
       <item
           android:id="@+id/nav_tab2"
           android:title="Campus"
-          android:icon="@drawable/campus"
+          android:icon="@drawable/campus_white"
       ></item>
       <item
           android:id="@+id/nav_tab3"
           android:title="Events"
-          android:icon="@drawable/events"
+          android:icon="@drawable/events_white"
       ></item>
       <item
           android:id="@+id/nav_tab4"
           android:title="Learning"
-          android:icon="@drawable/learning"
+          android:icon="@drawable/learning_white"
       ></item>
       <item
             android:id="@+id/nav_tab5"
             android:title="Sewa"
-            android:icon="@drawable/sewa"
+            android:icon="@drawable/sewa_white"
+      ></item>
+      <item
+            android:id="@+id/nav_tab6"
+            android:title="Ambition Run 2017"
+            android:icon="@drawable/ar_white"
+      ></item>
+      <item
+            android:id="@+id/nav_tab7"
+            android:title="Well Wisher"
+            android:icon="@drawable/well_wisher_white"
       ></item>
 
       </group>

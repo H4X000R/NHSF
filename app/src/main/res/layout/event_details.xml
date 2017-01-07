@@ -26,7 +26,7 @@
               android:layout_below="@+id/eventName"
               android:padding="10dp"
               android:text="Event Date"
-              android:textColor="@color/md_green_500"
+              android:textColor="@color/md_pink_200"
               android:textSize="18dp"/>
 
     <TextView android:layout_width="match_parent"
@@ -35,7 +35,7 @@
               android:layout_below="@id/eventDate"
               android:padding="10dp"
               android:text="Event Time"
-              android:textColor="@color/md_green_500"
+              android:textColor="@color/md_pink_200"
               android:textSize="18dp"/>
 
     <TextView android:layout_width="match_parent"
@@ -44,7 +44,7 @@
               android:layout_below="@id/eventTime"
               android:padding="10dp"
               android:text="Event Location"
-              android:textColor="@color/md_green_500"
+              android:textColor="@color/md_pink_200"
               android:textSize="18dp"/>
 
     <!--

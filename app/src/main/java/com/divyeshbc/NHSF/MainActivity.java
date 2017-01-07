@@ -1,5 +1,7 @@
 package com.divyeshbc.NHSF;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -54,6 +56,157 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        //----------------------------HOME TAB-------------------------------
+        // Here setting up Home Tab icon colour states for Navigation Menu --
+        int[][] statesHome = new int[][] {
+
+                new int[] { android.R.attr.state_checked }, //  true
+                new int[] { -android.R.attr.state_checked } // false
+        };
+
+        int[] coloursHome = new int[] {
+
+                //Colour codes taken from icons made by Karan in Photoshop
+                Color.rgb(239,102,65), //Medium Pinky Orange
+                Color.rgb(73,68,67) //Dark Grey
+
+        };
+
+        final ColorStateList homeTab = new ColorStateList(statesHome, coloursHome);
+        //----------------------------HOME TAB-------------------------------
+
+        //--------------------------ABOUT US TAB------------------------------
+        // Here setting up About Us icon colour states for Navigation Menu --
+        int[][] statesAboutUs = new int[][] {
+
+                new int[] { android.R.attr.state_checked }, //  true
+                new int[] { -android.R.attr.state_checked} // false
+        };
+
+        int[] coloursAboutUs = new int[] {
+
+                //Colour codes taken from icons made by Karan in Photoshop
+                Color.rgb(111,193,225), //Light Blue
+                Color.rgb(73,68,67) //Dark Grey
+
+        };
+
+        final ColorStateList aboutUsTab = new ColorStateList(statesAboutUs, coloursAboutUs);
+        //--------------------------ABOUT US TAB------------------------------
+
+        //---------------------------CAMPUS TAB-------------------------------
+        // Here setting up Campus Tab icon colour states for Navigation Menu --
+        int[][] statesCampus = new int[][] {
+
+                new int[] { android.R.attr.state_checked }, //  true
+                new int[] { -android.R.attr.state_checked} // false
+        };
+
+        int[] coloursCampus = new int[] {
+
+                //Colour codes taken from icons made by Karan in Photoshop
+                Color.rgb(253,216,53), //Medium Yellow
+                Color.rgb(73,68,67) //Dark Grey
+
+        };
+
+        final ColorStateList campusTab = new ColorStateList(statesCampus, coloursCampus);
+        //---------------------------CAMPUS TAB-------------------------------
+
+        //---------------------------EVENTS TAB-------------------------------
+        // Here setting up Events Tab icon colour states for Navigation Menu --
+        int[][] statesEvents = new int[][] {
+
+                new int[] { android.R.attr.state_checked }, //  true
+                new int[] { -android.R.attr.state_checked} // false
+        };
+
+        int[] coloursEvents = new int[] {
+
+                //Colour codes taken from icons made by Karan in Photoshop
+                Color.rgb(254,126,139), //Pink
+                Color.rgb(73,68,67) //Dark Grey
+
+        };
+
+        final ColorStateList eventsTab = new ColorStateList(statesEvents, coloursEvents);
+        //---------------------------EVENTS TAB-------------------------------
+
+        //---------------------------LEARNING TAB-----------------------------
+        // Here setting up Learning Tab icon colour states for Navigation Menu --
+        int[][] statesLearning = new int[][] {
+
+                new int[] { android.R.attr.state_checked }, //  true
+                new int[] { -android.R.attr.state_checked} // false
+        };
+
+        int[] coloursLearning = new int[] {
+
+                //Colour codes taken from icons made by Karan in Photoshop
+                Color.rgb(52,221,202), //Teal
+                Color.rgb(73,68,67) //Dark Grey
+
+        };
+
+        final ColorStateList learningTab = new ColorStateList(statesLearning, coloursLearning);
+        //---------------------------LEARNING TAB-----------------------------
+
+        //----------------------------SEWA TAB--------------------------------
+        // Here setting up Sewa Tab icon colour states for Navigation Menu --
+        int[][] statesSewa = new int[][] {
+
+                new int[] { android.R.attr.state_checked }, //  true
+                new int[] { -android.R.attr.state_checked} // false
+        };
+
+        int[] coloursSewa = new int[] {
+
+                //Colour codes taken from icons made by Karan in Photoshop
+                Color.rgb(186,104,200), //Purple
+                Color.rgb(73,68,67) //Dark Grey
+
+        };
+
+        final ColorStateList sewaTab = new ColorStateList(statesSewa, coloursSewa);
+        //----------------------------SEWA TAB--------------------------------
+
+        //------------------------AMBITION RUN TAB----------------------------
+        // Here setting up Ambition Run Tab icon colour states for Navigation Menu --
+        int[][] statesAR = new int[][] {
+
+                new int[] { android.R.attr.state_checked }, //  true
+                new int[] { -android.R.attr.state_checked} // false
+        };
+
+        int[] coloursAR = new int[] {
+
+                Color.rgb(40,50,113), //Dark Deep Blue
+                Color.rgb(73,68,67) //Dark Grey
+
+        };
+
+        final ColorStateList arTab = new ColorStateList(statesAR, coloursAR);
+        //------------------------AMBITION RUN TAB-----------------------------
+
+        //--------------------------WELL WISHER TAB----------------------------
+        // Here setting up Well Wisher Tab icon colour states for Navigation Menu --
+        int[][] statesWW = new int[][] {
+
+                new int[] { android.R.attr.state_checked }, //  true
+                new int[] { -android.R.attr.state_checked} // false
+        };
+
+        int[] coloursWW = new int[] {
+
+                Color.rgb(42,93,7), //Dark Green
+                Color.rgb(73,68,67) //Dark Grey
+
+        };
+
+        final ColorStateList wwTab = new ColorStateList(statesWW, coloursWW);
+        //--------------------------WELL WISHER TAB-----------------------------
+
+
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close);
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
         fragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -61,6 +214,9 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
         getSupportActionBar().setTitle("NHSF (UK)");
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
+        //--
+        //navigationView.setItemIconTintList(null);
+        // --
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
@@ -70,6 +226,8 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.main_container, new NHSF_UK());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("NHSF UK");
+                        navigationView.setItemIconTintList(homeTab); //Setting the Home Icon colour state
+                        navigationView.setItemTextColor(homeTab); //Setting the Home Text colour state
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
@@ -78,6 +236,8 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.main_container, new Tab1());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("About Us");
+                        navigationView.setItemIconTintList(aboutUsTab); //Setting the About Us Icon colour state
+                        navigationView.setItemTextColor(aboutUsTab); //Setting the About Us Text colour state
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
@@ -86,6 +246,8 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.main_container, new Tab2());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("Campus");
+                        navigationView.setItemIconTintList(campusTab); //Setting the Campus Icon colour state
+                        navigationView.setItemTextColor(campusTab); //Setting the Campus Text colour state
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
@@ -94,6 +256,8 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.main_container, new Tab3());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("Events");
+                        navigationView.setItemIconTintList(eventsTab); //Setting the Events Icon colour state
+                        navigationView.setItemTextColor(eventsTab); //Setting the Events Text colour state
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
@@ -102,6 +266,8 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.main_container, new Tab4());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("Learning");
+                        navigationView.setItemIconTintList(learningTab); //Setting the Learning Icon colour state
+                        navigationView.setItemTextColor(learningTab); //Setting the Learning Text colour state
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
@@ -111,22 +277,28 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.commit();
                         drawerLayout.closeDrawers();
                         getSupportActionBar().setTitle("Sewa");
+                        navigationView.setItemIconTintList(sewaTab); //Setting the Sewa Icon colour state
+                        navigationView.setItemTextColor(sewaTab); //Setting the Sewa Text colour state
                         item.setChecked(true);
                         break;
-                    case R.id.nav_tab_6:
-                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new WellWisher());
-                        fragmentTransaction.commit();
-                        drawerLayout.closeDrawers();
-                        getSupportActionBar().setTitle("Well Wisher");
-                        item.setChecked(true);
-                        break;
-                    case R.id.nav_tab_7:
+                    case R.id.nav_tab6:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction.replace(R.id.main_container, new AR17());
                         fragmentTransaction.commit();
                         drawerLayout.closeDrawers();
                         getSupportActionBar().setTitle("Ambition Run 2017");
+                        navigationView.setItemIconTintList(arTab); //Setting the Ambition Run Icon colour state
+                        navigationView.setItemTextColor(arTab); //Setting the Ambition Run Text colour state
+                        item.setChecked(true);
+                        break;
+                    case R.id.nav_tab7:
+                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.main_container, new WellWisher());
+                        fragmentTransaction.commit();
+                        drawerLayout.closeDrawers();
+                        getSupportActionBar().setTitle("Well Wisher");
+                        navigationView.setItemIconTintList(wwTab); //Setting the Well Wisher Icon colour state
+                        navigationView.setItemTextColor(wwTab); //Setting the Well Wisher Text colour state
                         item.setChecked(true);
                         break;
                 }

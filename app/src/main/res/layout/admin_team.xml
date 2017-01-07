@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         app:layout_anchor="@+id/adminteam_recycler_view"
         android:layout_gravity="bottom|end|right"
-        app:backgroundTint="@color/md_orange_500"
+        app:backgroundTint="@color/md_light_blue_400"
         android:src="@mipmap/ic_create_white_24dp"
         android:clickable="true"
         android:layout_marginBottom="28dp" android:layout_marginRight="19dp"

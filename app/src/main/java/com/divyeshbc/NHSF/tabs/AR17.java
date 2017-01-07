@@ -20,7 +20,7 @@ import com.divyeshbc.NHSF.R;
 public class AR17 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.tab_7, container, false);
+        View rootView = inflater.inflate(R.layout.tab_6, container, false);
 
         final WebView webView = (WebView) rootView.findViewById(R.id.ARwebview);
         final ProgressDialog dialog = ProgressDialog.show(getActivity(), "", "Please wait, Loading Page...", true);

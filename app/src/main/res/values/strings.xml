@@ -6,6 +6,7 @@
     <string name="title_activity_adminteam">Admin Team</string>
     <string name="title_activity_tc">Team Coordinators</string>
     <string name="action_email">Email</string>
+    <string name="title_activity_NHSFAngliaRuskin">NHSF Anglia Ruskin</string>
     <string name="title_activity_NHSFAstonImage">NHSF Aston</string>
     <string name="title_activity_NHSFBCUImage">NHSF BCU</string>
     <string name="title_activity_NHSFBirminghamImage">NHSF Birmingham</string>
@@ -56,6 +57,7 @@
     <string name="title_activity_NHSFUWEImage">NHSF UWE</string>
     <string name="title_activity_NHSFWarwickImage">NHSF Warwick</string>
     <string name="title_activity_NHSFWestminsterImage">NHSF Westminster</string>
+    <string name="title_activity_NHSFWolverhamptonImage">NHSF Wolverhampton</string>
     <string name="title_activity_NHSFYorkImage">NHSF York</string>
     <string name="title_activity_eventDetails">Event Details</string>
     <string name="title_activity_mapDirections">Get Directions</string>

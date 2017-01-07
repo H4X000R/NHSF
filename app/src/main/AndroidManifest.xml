@@ -106,6 +106,15 @@
                 android:value=".tabs.aboutUs.NationalCommitteeActivity"/>
         </activity>
         <activity
+            android:name=".tabs.campus.NHSFAngliaRuskinImageActivity"
+            android:label="@string/title_activity_NHSFAngliaRuskin">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".tabs.campus.NHSFAstonImageActivity"
             android:label="@string/title_activity_NHSFAstonImage">
             <intent-filter>
@@ -549,6 +558,15 @@
         <activity
             android:name=".tabs.campus.NHSFWestminsterImageActivity"
             android:label="@string/title_activity_NHSFWestminsterImage">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs.campus.NHSFWolverhamptonImageActivity"
+            android:label="@string/title_activity_NHSFWolverhamptonImage">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW"/>
 

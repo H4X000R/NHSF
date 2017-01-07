@@ -13,7 +13,7 @@
 
 
     <WebView
-        android:id="@+id/WWwebview"
+        android:id="@+id/ARwebview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"

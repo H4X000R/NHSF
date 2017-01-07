@@ -1,7 +1,9 @@
 package com.divyeshbc.NHSF;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 public class SplashActivity extends BaseActivity {
 
@@ -34,6 +36,17 @@ public class SplashActivity extends BaseActivity {
 
         //Calling method nextActivity
         //nextActivity();
+
+        //Logic for setting the colour of the status bar
+        //If the Android OS on the phone is Android Lollipop
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            //Set Status bar colour to Orange
+            getWindow().setStatusBarColor(getResources().getColor(R.color.baseSecondaryBackgroundColour));
+
+        }
     }
 
     @Override

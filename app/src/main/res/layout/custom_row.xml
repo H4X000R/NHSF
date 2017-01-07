@@ -22,7 +22,7 @@
         android:layout_below="@id/listText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/md_red_500"
+        android:textColor="@color/md_light_blue_400"
         android:textSize="10sp"
         android:paddingLeft="10dp"
         android:paddingBottom="10dp"/>

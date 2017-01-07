@@ -20,9 +20,9 @@ import com.divyeshbc.NHSF.R;
 public class WellWisher extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.tab_6, container, false);
+        View rootView = inflater.inflate(R.layout.tab_7, container, false);
 
-        final WebView webView = (WebView) rootView.findViewById(R.id.WWwebview);
+        final WebView webView = (WebView) rootView.findViewById(R.id.Wellwisherwebview);
         final ProgressDialog dialog = ProgressDialog.show(getActivity(), "", "Please wait, Loading Page...", true);
 
 
@@ -68,7 +68,7 @@ public class WellWisher extends Fragment {
 
 
         });
-        webView.loadUrl("https://www.nhsf.org.uk/100in100/100in100payment");
+        webView.loadUrl("https://www.nhsf.org.uk/wellwisherspayment");
 
         return rootView;
 }
